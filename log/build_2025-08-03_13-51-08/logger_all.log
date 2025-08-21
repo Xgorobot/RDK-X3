@@ -1,0 +1,193 @@
+[0.819s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'xgo_head', '--parallel-workers', '4']
+[0.819s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['xgo_head'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fa5927340>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fa5926e60>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fa5926e60>>)
+[2.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.201s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.201s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.201s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.201s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.202s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.202s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/sunrise/xgo_demo'
+[2.203s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.203s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.206s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.296s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.297s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.297s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.298s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.298s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.299s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.299s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.300s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.301s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['ignore', 'ignore_ament_install']
+[2.301s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'ignore'
+[2.302s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'ignore_ament_install'
+[2.302s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['colcon_pkg']
+[2.302s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'colcon_pkg'
+[2.303s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['colcon_meta']
+[2.303s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'colcon_meta'
+[2.303s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['ros']
+[2.304s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'ros'
+[2.304s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['cmake', 'python']
+[2.304s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'cmake'
+[2.305s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'python'
+[2.305s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['python_setup_py']
+[2.305s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'python_setup_py'
+[2.306s] Level 1:colcon.colcon_core.package_identification:_identify(config/efficient_det) by extensions ['ignore', 'ignore_ament_install']
+[2.307s] Level 1:colcon.colcon_core.package_identification:_identify(config/efficient_det) by extension 'ignore'
+[2.307s] Level 1:colcon.colcon_core.package_identification:_identify(config/efficient_det) by extension 'ignore_ament_install'
+[2.308s] Level 1:colcon.colcon_core.package_identification:_identify(config/efficient_det) by extensions ['colcon_pkg']
+[2.308s] Level 1:colcon.colcon_core.package_identification:_identify(config/efficient_det) by extension 'colcon_pkg'
+[2.308s] Level 1:colcon.colcon_core.package_identification:_identify(config/efficient_det) by extensions ['colcon_meta']
+[2.308s] Level 1:colcon.colcon_core.package_identification:_identify(config/efficient_det) by extension 'colcon_meta'
+[2.309s] Level 1:colcon.colcon_core.package_identification:_identify(config/efficient_det) by extensions ['ros']
+[2.309s] Level 1:colcon.colcon_core.package_identification:_identify(config/efficient_det) by extension 'ros'
+[2.310s] Level 1:colcon.colcon_core.package_identification:_identify(config/efficient_det) by extensions ['cmake', 'python']
+[2.310s] Level 1:colcon.colcon_core.package_identification:_identify(config/efficient_det) by extension 'cmake'
+[2.310s] Level 1:colcon.colcon_core.package_identification:_identify(config/efficient_det) by extension 'python'
+[2.311s] Level 1:colcon.colcon_core.package_identification:_identify(config/efficient_det) by extensions ['python_setup_py']
+[2.311s] Level 1:colcon.colcon_core.package_identification:_identify(config/efficient_det) by extension 'python_setup_py'
+[2.312s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.312s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.313s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.313s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.314s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.315s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.315s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.316s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.316s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.317s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.317s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.317s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.318s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.318s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.318s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.319s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[2.319s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[2.320s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[2.320s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[2.320s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[2.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/xgo_body) by extensions ['ignore', 'ignore_ament_install']
+[2.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/xgo_body) by extension 'ignore'
+[2.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/xgo_body) by extension 'ignore_ament_install'
+[2.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/xgo_body) by extensions ['colcon_pkg']
+[2.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/xgo_body) by extension 'colcon_pkg'
+[2.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/xgo_body) by extensions ['colcon_meta']
+[2.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/xgo_body) by extension 'colcon_meta'
+[2.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/xgo_body) by extensions ['ros']
+[2.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/xgo_body) by extension 'ros'
+[2.342s] DEBUG:colcon.colcon_core.package_identification:Package 'src/xgo_body' with type 'ros.ament_cmake' and name 'xgo_body'
+[2.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/xgo_body_py) by extensions ['ignore', 'ignore_ament_install']
+[2.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/xgo_body_py) by extension 'ignore'
+[2.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/xgo_body_py) by extension 'ignore_ament_install'
+[2.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/xgo_body_py) by extensions ['colcon_pkg']
+[2.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/xgo_body_py) by extension 'colcon_pkg'
+[2.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/xgo_body_py) by extensions ['colcon_meta']
+[2.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/xgo_body_py) by extension 'colcon_meta'
+[2.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/xgo_body_py) by extensions ['ros']
+[2.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/xgo_body_py) by extension 'ros'
+[2.360s] DEBUG:colcon.colcon_core.package_identification:Package 'src/xgo_body_py' with type 'ros.ament_python' and name 'xgo_body_py'
+[2.361s] Level 1:colcon.colcon_core.package_identification:_identify(src/xgo_head) by extensions ['ignore', 'ignore_ament_install']
+[2.362s] Level 1:colcon.colcon_core.package_identification:_identify(src/xgo_head) by extension 'ignore'
+[2.362s] Level 1:colcon.colcon_core.package_identification:_identify(src/xgo_head) by extension 'ignore_ament_install'
+[2.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/xgo_head) by extensions ['colcon_pkg']
+[2.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/xgo_head) by extension 'colcon_pkg'
+[2.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/xgo_head) by extensions ['colcon_meta']
+[2.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/xgo_head) by extension 'colcon_meta'
+[2.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/xgo_head) by extensions ['ros']
+[2.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/xgo_head) by extension 'ros'
+[2.368s] DEBUG:colcon.colcon_core.package_identification:Package 'src/xgo_head' with type 'ros.ament_cmake' and name 'xgo_head'
+[2.369s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.369s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.370s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.370s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.370s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.513s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'xgo_body' in 'src/xgo_body'
+[2.513s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'xgo_body_py' in 'src/xgo_body_py'
+[2.517s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.517s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.534s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/sunrise/xgo_demo/install
+[2.537s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 49 installed packages in /opt/tros/humble
+[2.547s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 183 installed packages in /opt/ros/humble
+[2.556s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.989s] Level 5:colcon.colcon_core.verb:set package 'xgo_head' build argument 'cmake_args' from command line to 'None'
+[2.990s] Level 5:colcon.colcon_core.verb:set package 'xgo_head' build argument 'cmake_target' from command line to 'None'
+[2.990s] Level 5:colcon.colcon_core.verb:set package 'xgo_head' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.990s] Level 5:colcon.colcon_core.verb:set package 'xgo_head' build argument 'cmake_clean_cache' from command line to 'False'
+[2.990s] Level 5:colcon.colcon_core.verb:set package 'xgo_head' build argument 'cmake_clean_first' from command line to 'False'
+[2.990s] Level 5:colcon.colcon_core.verb:set package 'xgo_head' build argument 'cmake_force_configure' from command line to 'False'
+[2.991s] Level 5:colcon.colcon_core.verb:set package 'xgo_head' build argument 'ament_cmake_args' from command line to 'None'
+[2.991s] Level 5:colcon.colcon_core.verb:set package 'xgo_head' build argument 'catkin_cmake_args' from command line to 'None'
+[2.991s] Level 5:colcon.colcon_core.verb:set package 'xgo_head' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.991s] DEBUG:colcon.colcon_core.verb:Building package 'xgo_head' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sunrise/xgo_demo/build/xgo_head', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sunrise/xgo_demo/install/xgo_head', 'merge_install': False, 'path': '/home/sunrise/xgo_demo/src/xgo_head', 'symlink_install': False, 'test_result_base': None}
+[2.992s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.997s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.999s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sunrise/xgo_demo/src/xgo_head' with build type 'ament_cmake'
+[3.000s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sunrise/xgo_demo/src/xgo_head'
+[3.022s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[3.024s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.025s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.065s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/xgo_demo/build/xgo_head': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/xgo_demo/build/xgo_head -- -j4 -l4
+[147.366s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/xgo_demo/build/xgo_head' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/xgo_demo/build/xgo_head -- -j4 -l4
+[147.403s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/xgo_demo/build/xgo_head': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --install /home/sunrise/xgo_demo/build/xgo_head
+[147.504s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(xgo_head)
+[147.509s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/xgo_demo/build/xgo_head' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --install /home/sunrise/xgo_demo/build/xgo_head
+[147.530s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/install/xgo_head' for CMake module files
+[147.533s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/install/xgo_head' for CMake config files
+[147.534s] Level 1:colcon.colcon_core.shell:create_environment_hook('xgo_head', 'cmake_prefix_path')
+[147.536s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/install/xgo_head/share/xgo_head/hook/cmake_prefix_path.ps1'
+[147.541s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/xgo_demo/install/xgo_head/share/xgo_head/hook/cmake_prefix_path.dsv'
+[147.545s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/install/xgo_head/share/xgo_head/hook/cmake_prefix_path.sh'
+[147.553s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/install/xgo_head/lib'
+[147.554s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/install/xgo_head/bin'
+[147.554s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/install/xgo_head/lib/pkgconfig/xgo_head.pc'
+[147.556s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/install/xgo_head/lib/python3.10/site-packages'
+[147.558s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/install/xgo_head/bin'
+[147.560s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/install/xgo_head/share/xgo_head/package.ps1'
+[147.566s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sunrise/xgo_demo/install/xgo_head/share/xgo_head/package.dsv'
+[147.570s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/install/xgo_head/share/xgo_head/package.sh'
+[147.577s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/install/xgo_head/share/xgo_head/package.bash'
+[147.583s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/install/xgo_head/share/xgo_head/package.zsh'
+[147.592s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sunrise/xgo_demo/install/xgo_head/share/colcon-core/packages/xgo_head)
+[147.596s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(xgo_head)
+[147.598s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/install/xgo_head' for CMake module files
+[147.602s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/install/xgo_head' for CMake config files
+[147.603s] Level 1:colcon.colcon_core.shell:create_environment_hook('xgo_head', 'cmake_prefix_path')
+[147.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/install/xgo_head/share/xgo_head/hook/cmake_prefix_path.ps1'
+[147.607s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/xgo_demo/install/xgo_head/share/xgo_head/hook/cmake_prefix_path.dsv'
+[147.609s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/install/xgo_head/share/xgo_head/hook/cmake_prefix_path.sh'
+[147.613s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/install/xgo_head/lib'
+[147.613s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/install/xgo_head/bin'
+[147.614s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/install/xgo_head/lib/pkgconfig/xgo_head.pc'
+[147.615s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/install/xgo_head/lib/python3.10/site-packages'
+[147.617s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/install/xgo_head/bin'
+[147.620s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/install/xgo_head/share/xgo_head/package.ps1'
+[147.623s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sunrise/xgo_demo/install/xgo_head/share/xgo_head/package.dsv'
+[147.627s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/install/xgo_head/share/xgo_head/package.sh'
+[147.630s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/install/xgo_head/share/xgo_head/package.bash'
+[147.633s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/install/xgo_head/share/xgo_head/package.zsh'
+[147.636s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sunrise/xgo_demo/install/xgo_head/share/colcon-core/packages/xgo_head)
+[147.637s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[147.638s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[147.639s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[147.640s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[147.682s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[147.683s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[147.683s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[147.684s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[147.706s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[147.708s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sunrise/xgo_demo/install/local_setup.ps1'
+[147.716s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sunrise/xgo_demo/install/_local_setup_util_ps1.py'
+[147.730s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sunrise/xgo_demo/install/setup.ps1'
+[147.739s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sunrise/xgo_demo/install/local_setup.sh'
+[147.744s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sunrise/xgo_demo/install/_local_setup_util_sh.py'
+[147.748s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sunrise/xgo_demo/install/setup.sh'
+[147.756s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sunrise/xgo_demo/install/local_setup.bash'
+[147.762s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sunrise/xgo_demo/install/setup.bash'
+[147.771s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sunrise/xgo_demo/install/local_setup.zsh'
+[147.778s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sunrise/xgo_demo/install/setup.zsh'

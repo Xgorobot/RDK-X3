@@ -1,0 +1,40 @@
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::updateTopicInfo(QString)[m[K’:
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:68:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   68 | void MainWindow::updateTopicInfo([01;35m[KQString data[m[K){
+      |                                  [01;35m[K~~~~~~~~^~~~[m[K
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::onGpioData(int, int, int)[m[K’:
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:132:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool GpioReader::closeGpio()[m[K’ is private within this context
+  132 |         [01;31m[KgpioKeyLeftDown->closeGpio()[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/home/sunrise/xgo_demo/src/xgo_head/include/mainwindow.h:13[m[K,
+                 from [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:1[m[K:
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/include/GpioReader.h:31:10:[m[K [01;36m[Knote: [m[Kdeclared private here
+   31 |     bool [01;36m[KcloseGpio[m[K();
+      |          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:133:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool GpioReader::closeGpio()[m[K’ is private within this context
+  133 |         [01;31m[KgpioKeyLeftUp->closeGpio()[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/home/sunrise/xgo_demo/src/xgo_head/include/mainwindow.h:13[m[K,
+                 from [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:1[m[K:
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/include/GpioReader.h:31:10:[m[K [01;36m[Knote: [m[Kdeclared private here
+   31 |     bool [01;36m[KcloseGpio[m[K();
+      |          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:134:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool GpioReader::closeGpio()[m[K’ is private within this context
+  134 |         [01;31m[KgpioKeyRightDown->closeGpio()[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/home/sunrise/xgo_demo/src/xgo_head/include/mainwindow.h:13[m[K,
+                 from [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:1[m[K:
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/include/GpioReader.h:31:10:[m[K [01;36m[Knote: [m[Kdeclared private here
+   31 |     bool [01;36m[KcloseGpio[m[K();
+      |          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:135:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool GpioReader::closeGpio()[m[K’ is private within this context
+  135 |         [01;31m[KgpioKeyRightUp->closeGpio()[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/home/sunrise/xgo_demo/src/xgo_head/include/mainwindow.h:13[m[K,
+                 from [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:1[m[K:
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/include/GpioReader.h:31:10:[m[K [01;36m[Knote: [m[Kdeclared private here
+   31 |     bool [01;36m[KcloseGpio[m[K();
+      |          [01;36m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/xgo_head.dir/build.make:276: CMakeFiles/xgo_head.dir/src/mainwindow.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/xgo_head.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

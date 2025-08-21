@@ -1,0 +1,65 @@
+[0.063s] Invoking command in '/home/sunrise/xgo_demo/build/xgo_head': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/xgo_demo/build/xgo_head -- -j4 -l4
+[0.462s] [  2%] [34m[1mGenerating include/moc_rclcomm.cpp[0m
+[0.901s] [35m[1mConsolidate compiler generated dependencies of target xgo_head[0m
+[1.324s] [  5%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/main.cpp.o[0m
+[1.332s] [  8%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/mainwindow.cpp.o[0m
+[1.344s] [ 11%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/rclcomm.cpp.o[0m
+[1.346s] [ 14%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/include/moc_mainwindow.cpp.o[0m
+[39.434s] In file included from [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:1[m[K:
+[39.438s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/include/rclcomm.h:58:55:[m[K [01;35m[Kwarning: [m[Kuse of ‘[01m[Kauto[m[K’ in parameter declaration only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-fconcepts[m[K’
+[39.439s]    58 |     std::optional<QPoint> extractIndexFingerTip(const [01;35m[Kauto[m[K& target);
+[39.440s]       |                                                       [01;35m[K^~~~[m[K
+[39.493s] In file included from [01m[K/home/sunrise/xgo_demo/src/xgo_head/include/mainwindow.h:7[m[K,
+[39.494s]                  from [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/main.cpp:1[m[K:
+[39.496s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/include/rclcomm.h:58:55:[m[K [01;35m[Kwarning: [m[Kuse of ‘[01m[Kauto[m[K’ in parameter declaration only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-fconcepts[m[K’
+[39.497s]    58 |     std::optional<QPoint> extractIndexFingerTip(const [01;35m[Kauto[m[K& target);
+[39.499s]       |                                                       [01;35m[K^~~~[m[K
+[39.678s] In file included from [01m[K/home/sunrise/xgo_demo/build/xgo_head/include/../../../src/xgo_head/include/mainwindow.h:7[m[K,
+[39.679s]                  from [01m[K/home/sunrise/xgo_demo/build/xgo_head/include/moc_mainwindow.cpp:10[m[K:
+[39.681s] [01m[K/home/sunrise/xgo_demo/build/xgo_head/include/../../../src/xgo_head/include/rclcomm.h:58:55:[m[K [01;35m[Kwarning: [m[Kuse of ‘[01m[Kauto[m[K’ in parameter declaration only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-fconcepts[m[K’
+[39.682s]    58 |     std::optional<QPoint> extractIndexFingerTip(const [01;35m[Kauto[m[K& target);
+[39.683s]       |                                                       [01;35m[K^~~~[m[K
+[40.677s] In file included from [01m[K/home/sunrise/xgo_demo/src/xgo_head/include/mainwindow.h:7[m[K,
+[40.679s]                  from [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:1[m[K:
+[40.680s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/include/rclcomm.h:58:55:[m[K [01;35m[Kwarning: [m[Kuse of ‘[01m[Kauto[m[K’ in parameter declaration only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-fconcepts[m[K’
+[40.682s]    58 |     std::optional<QPoint> extractIndexFingerTip(const [01;35m[Kauto[m[K& target);
+[40.683s]       |                                                       [01;35m[K^~~~[m[K
+[41.708s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:[m[K In member function ‘[01m[Kvoid rclcomm::recvCompressedImageCallback(sensor_msgs::msg::CompressedImage_<std::allocator<void> >::SharedPtr)[m[K’:
+[41.710s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:358:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kpen[m[K’ was not declared in this scope
+[41.711s]   358 |       [01;31m[Kpen[m[K.setWidth(4);
+[41.715s]       |       [01;31m[K^~~[m[K
+[41.815s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:[m[K In member function ‘[01m[Kvoid rclcomm::recvHandFollowCallback(ai_msgs::msg::PerceptionTargets_<std::allocator<void> >::SharedPtr)[m[K’:
+[41.816s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:471:3:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kqint64[m[K’
+[41.818s]   471 |   [01;31m[Kqint64[m[K now = QDateTime::currentMSecsSinceEpoch();
+[41.819s]       |   [01;31m[K^~~~~~[m[K
+[41.973s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:483:27:[m[K [01;31m[Kerror: [m[K‘[01m[Know[m[K’ was not declared in this scope; did you mean ‘[01m[Kpow[m[K’?
+[41.975s]   483 |             p.timestamp = [01;31m[Know[m[K;
+[41.976s]       |                           [01;31m[K^~~[m[K
+[41.978s]       |                           [32m[Kpow[m[K
+[42.148s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:500:26:[m[K [01;31m[Kerror: [m[K‘[01m[Know[m[K’ was not declared in this scope; did you mean ‘[01m[Kpow[m[K’?
+[42.149s]   500 |         cleanupOldTracks([01;31m[Know[m[K);
+[42.150s]       |                          [01;31m[K^~~[m[K
+[42.151s]       |                          [32m[Kpow[m[K
+[42.156s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:470:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KtargetNum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[42.157s]   470 |   auto [01;35m[KtargetNum[m[K = targetList.size()
+[42.158s]       |        [01;35m[K^~~~~~~~~[m[K
+[42.159s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:[m[K At global scope:
+[42.160s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:504:60:[m[K [01;35m[Kwarning: [m[Kuse of ‘[01m[Kauto[m[K’ in parameter declaration only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-fconcepts[m[K’
+[42.161s]   504 | std::optional<QPoint> rclcomm::extractIndexFingerTip(const [01;35m[Kauto[m[K& target) {
+[42.164s]       |                                                            [01;35m[K^~~~[m[K
+[42.173s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:[m[K In member function ‘[01m[Kvoid rclcomm::cleanupOldTracks(qint64)[m[K’:
+[42.174s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:523:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass QQueue<TrackedPoint>[m[K’ has no member named ‘[01m[Ktail[m[K’
+[42.175s]   523 |     if (now - it.value().[01;31m[Ktail[m[K().timestamp > 5000) { // 超过5秒无更新
+[42.176s]       |                          [01;31m[K^~~~[m[K
+[121.539s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::updateTopicInfo(QString)[m[K’:
+[121.550s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:69:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[121.551s]    69 | void MainWindow::updateTopicInfo([01;35m[KQString data[m[K){
+[121.551s]       |                                  [01;35m[K~~~~~~~~^~~~[m[K
+[166.489s] [01m[Kc++:[m[K [01;31m[Kfatal error: [m[KKilled signal terminated program cc1plus
+[166.493s] compilation terminated.
+[166.515s] gmake[2]: *** [CMakeFiles/xgo_head.dir/build.make:262: CMakeFiles/xgo_head.dir/src/main.cpp.o] Error 1
+[166.536s] gmake[2]: *** Waiting for unfinished jobs....
+[209.221s] gmake[2]: *** [CMakeFiles/xgo_head.dir/build.make:290: CMakeFiles/xgo_head.dir/src/rclcomm.cpp.o] Error 1
+[209.224s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/xgo_head.dir/all] Error 2
+[209.225s] gmake: *** [Makefile:146: all] Error 2
+[209.359s] Invoked command in '/home/sunrise/xgo_demo/build/xgo_head' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/xgo_demo/build/xgo_head -- -j4 -l4

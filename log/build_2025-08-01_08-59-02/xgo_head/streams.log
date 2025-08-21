@@ -1,0 +1,15 @@
+[0.051s] Invoking command in '/home/sunrise/xgo_demo/build/xgo_head': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/xgo_demo/build/xgo_head -- -j4 -l4
+[0.374s] [  2%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/rclcomm.cpp.o[0m
+[28.108s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:[m[K In member function ‘[01m[Kvoid rclcomm::recvCompressedImageCallback(sensor_msgs::msg::CompressedImage_<std::allocator<void> >::SharedPtr)[m[K’:
+[28.109s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:312:95:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kconstexpr QPoint QRect::topLeft() const[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[28.110s]   312 |           textPoint.setX(this->mFaceAgeList[i].topLeft().x() == 0 ? 0 : this->mFaceAgeList[i].topLeft.x() * this->mX / this->mPictureX);
+[28.110s]       |                                                                                                      [32m[K()[m[K
+[28.111s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:313:95:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kconstexpr QPoint QRect::topLeft() const[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[28.112s]   313 |           textPoint.setY(this->mFaceAgeList[i].topLeft().y() == 0 ? 0 : this->mFaceAgeList[i].topLeft.y() * this->mY / this->mPictureY);
+[28.112s]       |                                                                                                      [32m[K()[m[K
+[39.029s] gmake[2]: *** wait: No child processes.  Stop.
+[39.030s] gmake[2]: *** Waiting for unfinished jobs....
+[39.031s] gmake[2]: *** wait: No child processes.  Stop.
+[39.032s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/xgo_head.dir/all] Error 2
+[39.034s] gmake: *** [Makefile:146: all] Interrupt
+[39.192s] Invoked command in '/home/sunrise/xgo_demo/build/xgo_head' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/xgo_demo/build/xgo_head -- -j4 -l4

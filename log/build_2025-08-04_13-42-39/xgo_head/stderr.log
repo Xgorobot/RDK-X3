@@ -1,0 +1,29 @@
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/SpiScreen2Inch.cpp:[m[K In constructor ‘[01m[KSpiScreen2Inch::SpiScreen2Inch(int, int, int, int, int, int)[m[K’:
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/SpiScreen2Inch.cpp:6:92:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KgpioCS[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+    6 | SpiScreen2Inch::SpiScreen2Inch(int controllerIndex, int deviceIndex, int spiFrequency, [01;35m[Kint gpioCS[m[K, int gpioRest, int gpioDC)
+      |                                                                                        [01;35m[K~~~~^~~~~~[m[K
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/SpiScreen2Inch.cpp:[m[K In member function ‘[01m[Kvoid SpiScreen2Inch::showImg(QImage*)[m[K’:
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/SpiScreen2Inch.cpp:159:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kresult[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  159 |   int [01;35m[Kresult[m[K = TGpioUtil::writeGpioValue(QString::number(this->mGpioDC).toStdString().c_str(), "1");
+      |       [01;35m[K^~~~~~[m[K
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/SpiScreen2Inch.cpp:[m[K In member function ‘[01m[Kvoid SpiScreen2Inch::spiCommand(uint8_t)[m[K’:
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/SpiScreen2Inch.cpp:199:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KresultGpio[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  199 |   int [01;35m[KresultGpio[m[K = TGpioUtil::writeGpioValue(QString::number(this->mGpioDC).toStdString().c_str(), "0");
+      |       [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/SpiScreen2Inch.cpp:204:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KresultSpi[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  204 |   bool [01;35m[KresultSpi[m[K = TSpiUtil::spiWrite(this->mSpi, (const uint8_t*)spi_tx_buffer, 1);
+      |        [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/SpiScreen2Inch.cpp:[m[K In member function ‘[01m[Kvoid SpiScreen2Inch::spiData(uint8_t)[m[K’:
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/SpiScreen2Inch.cpp:217:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kresult[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  217 |   bool [01;35m[Kresult[m[K = TSpiUtil::spiWrite(this->mSpi, (const uint8_t*)&oxValue, 1);
+      |        [01;35m[K^~~~~~[m[K
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::updateTopicInfo(QString)[m[K’:
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:69:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   69 | void MainWindow::updateTopicInfo([01;35m[KQString data[m[K){
+      |                                  [01;35m[K~~~~~~~~^~~~[m[K
+[01m[Kc++:[m[K [01;31m[Kfatal error: [m[KKilled signal terminated program cc1plus
+compilation terminated.
+gmake[2]: *** [CMakeFiles/xgo_head.dir/build.make:290: CMakeFiles/xgo_head.dir/src/rclcomm.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/xgo_head.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

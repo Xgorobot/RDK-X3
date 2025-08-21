@@ -1,0 +1,12 @@
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:[m[K In member function ‘[01m[Kvoid rclcomm::recvCompressedImageCallback(sensor_msgs::msg::CompressedImage_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:312:95:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kconstexpr QPoint QRect::topLeft() const[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+  312 |           textPoint.setX(this->mFaceAgeList[i].topLeft().x() == 0 ? 0 : this->mFaceAgeList[i].topLeft.x() * this->mX / this->mPictureX);
+      |                                                                                                      [32m[K()[m[K
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:313:95:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kconstexpr QPoint QRect::topLeft() const[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+  313 |           textPoint.setY(this->mFaceAgeList[i].topLeft().y() == 0 ? 0 : this->mFaceAgeList[i].topLeft.y() * this->mY / this->mPictureY);
+      |                                                                                                      [32m[K()[m[K
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/xgo_head.dir/all] Error 2
+gmake: *** [Makefile:146: all] Interrupt

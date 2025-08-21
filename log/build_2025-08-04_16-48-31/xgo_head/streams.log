@@ -1,0 +1,21 @@
+[3.910s] Invoking command in '/home/sunrise/xgo_demo/build/xgo_head': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/xgo_demo/build/xgo_head -- -j4 -l4
+[4.261s] [35m[1mConsolidate compiler generated dependencies of target xgo_head[0m
+[4.622s] [  2%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/MatrixLabel.cpp.o[0m
+[4.623s] [  5%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/mainwindow.cpp.o[0m
+[37.035s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::updateTopicInfo(QString)[m[K’:
+[37.036s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:68:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[37.037s]    68 | void MainWindow::updateTopicInfo([01;35m[KQString data[m[K){
+[37.038s]       |                                  [01;35m[K~~~~~~~~^~~~[m[K
+[37.046s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::onGpioData(int, int, int)[m[K’:
+[37.046s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:129:76:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool MatrixLabel::is_running_function[m[K’ is private within this context
+[37.047s]   129 |       if(m_labels[currentlabel]->is_hide_window && m_labels[currentlabel]->[01;31m[Kis_running_function[m[K == true)
+[37.048s]       |                                                                            [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[37.049s] In file included from [01m[K/home/sunrise/xgo_demo/src/xgo_head/include/mainwindow.h:11[m[K,
+[37.049s]                  from [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:1[m[K:
+[37.050s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/include/MatrixLabel.h:34:10:[m[K [01;36m[Knote: [m[Kdeclared private here
+[37.051s]    34 |     bool [01;36m[Kis_running_function[m[K = false;
+[37.052s]       |          [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[42.502s] gmake[2]: *** [CMakeFiles/xgo_head.dir/build.make:276: CMakeFiles/xgo_head.dir/src/mainwindow.cpp.o] Error 1
+[42.503s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/xgo_head.dir/all] Error 2
+[42.504s] gmake: *** [Makefile:146: all] Error 2
+[42.513s] Invoked command in '/home/sunrise/xgo_demo/build/xgo_head' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/xgo_demo/build/xgo_head -- -j4 -l4

@@ -1,0 +1,27 @@
+[0.074s] Invoking command in '/home/sunrise/xgo_demo/build/xgo_head': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/xgo_demo/build/xgo_head -- -j4 -l4
+[0.356s] [35m[1mConsolidate compiler generated dependencies of target xgo_head[0m
+[0.653s] [  2%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/mainwindow.cpp.o[0m
+[35.372s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::updateTopicInfo(QString)[m[K’:
+[35.374s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:69:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[35.383s]    69 | void MainWindow::updateTopicInfo([01;35m[KQString data[m[K){
+[35.384s]       |                                  [01;35m[K~~~~~~~~^~~~[m[K
+[43.409s] [  5%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/rclcomm.cpp.o[0m
+[76.700s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:[m[K In member function ‘[01m[Kvoid rclcomm::recvHandFollowCallback(ai_msgs::msg::PerceptionTargets_<std::allocator<void> >::SharedPtr)[m[K’:
+[76.701s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:492:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KtargetNum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[76.702s]   492 |   auto [01;35m[KtargetNum[m[K = targetList.size();
+[76.703s]       |        [01;35m[K^~~~~~~~~[m[K
+[76.704s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:[m[K In member function ‘[01m[Kstd::optional<QPointF> rclcomm::extractIndexFingerTip(ai_msgs::msg::Target)[m[K’:
+[76.704s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:528:19:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ai_msgs::msg::Point_<std::allocator<void> >, std::allocator<ai_msgs::msg::Point_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[76.705s]   528 |   for (int i = 0;[01;35m[Ki<pointList.size()[m[K; i++) {
+[76.706s]       |                  [01;35m[K~^~~~~~~~~~~~~~~~~[m[K
+[76.773s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:535:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kpf[m[K’ was not declared in this scope; did you mean ‘[01m[Kpt[m[K’?
+[76.774s]   535 |             return QPointF([01;31m[Kpf[m[K.x(), pt.y());
+[76.776s]       |                            [01;31m[K^~[m[K
+[76.777s]       |                            [32m[Kpt[m[K
+[76.778s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:535:40:[m[K [01;31m[Kerror: [m[Kexpression cannot be used as a function
+[76.779s]   535 |             return QPointF(pf.x(), [01;31m[Kpt.y()[m[K);
+[76.780s]       |                                    [01;31m[K~~~~^~[m[K
+[126.218s] gmake[2]: *** [CMakeFiles/xgo_head.dir/build.make:290: CMakeFiles/xgo_head.dir/src/rclcomm.cpp.o] Error 1
+[126.220s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/xgo_head.dir/all] Error 2
+[126.228s] gmake: *** [Makefile:146: all] Error 2
+[126.234s] Invoked command in '/home/sunrise/xgo_demo/build/xgo_head' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/xgo_demo/build/xgo_head -- -j4 -l4

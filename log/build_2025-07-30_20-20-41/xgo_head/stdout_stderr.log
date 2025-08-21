@@ -1,0 +1,18 @@
+[  2%] [34m[1mGenerating include/moc_rclcomm.cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target xgo_head[0m
+[  5%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/main.cpp.o[0m
+[  8%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/include/moc_mainwindow.cpp.o[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/rclcomm.cpp.o[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/include/moc_rclcomm.cpp.o[0m
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:[m[K In member function ‘[01m[Kvoid rclcomm::recvFaceAgeCallback(ai_msgs::msg::PerceptionTargets_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:552:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kj[m[K’ was not declared in this scope; did you mean ‘[01m[Kjn[m[K’?
+  552 |     auto faceAge = targetList[[01;31m[Kj[m[K].attributes;
+      |                               [01;31m[K^[m[K
+      |                               [32m[Kjn[m[K
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:565:7:[m[K [01;31m[Kerror: [m[K‘[01m[KmFaceAgeType[m[K’ was not declared in this scope; did you mean ‘[01m[KmFaceAge[m[K’?
+  565 |       [01;31m[KmFaceAgeType[m[K.append(text);
+      |       [01;31m[K^~~~~~~~~~~~[m[K
+      |       [32m[KmFaceAge[m[K
+gmake[2]: *** [CMakeFiles/xgo_head.dir/build.make:290: CMakeFiles/xgo_head.dir/src/rclcomm.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/xgo_head.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

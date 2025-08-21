@@ -1,0 +1,27 @@
+[0.065s] Invoking command in '/home/sunrise/xgo_demo/build/xgo_head': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/xgo_demo/build/xgo_head -- -j4 -l4
+[0.320s] [35m[1mConsolidate compiler generated dependencies of target xgo_head[0m
+[0.630s] [  2%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/rclcomm.cpp.o[0m
+[34.270s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:[m[K In member function ‘[01m[Kvoid rclcomm::recvHandFollowCallback(ai_msgs::msg::PerceptionTargets_<std::allocator<void> >::SharedPtr)[m[K’:
+[34.271s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:504:21:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[KQPointF[m[K’ and ‘[01m[Kstd::optional<QPointF>[m[K’)
+[34.271s]   504 |             p.pos = [01;31m[KindexTip[m[K;
+[34.272s]       |                     [01;31m[K^~~~~~~~[m[K
+[34.273s] In file included from [01m[K/usr/include/aarch64-linux-gnu/qt5/QtCore/qrect.h:45[m[K,
+[34.280s]                  from [01m[K/usr/include/aarch64-linux-gnu/qt5/QtGui/qpaintdevice.h:45[m[K,
+[34.281s]                  from [01m[K/usr/include/aarch64-linux-gnu/qt5/QtGui/qimage.h:46[m[K,
+[34.282s]                  from [01m[K/usr/include/aarch64-linux-gnu/qt5/QtGui/QImage:1[m[K,
+[34.283s]                  from [01m[K/home/sunrise/xgo_demo/src/xgo_head/include/rclcomm.h:5[m[K,
+[34.284s]                  from [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:1[m[K:
+[34.285s] [01m[K/usr/include/aarch64-linux-gnu/qt5/QtCore/qpoint.h:221:21:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr QPointF& QPointF::operator=(const QPointF&)[m[K’
+[34.287s]   221 | class Q_CORE_EXPORT [01;36m[KQPointF[m[K
+[34.288s]       |                     [01;36m[K^~~~~~~[m[K
+[34.290s] [01m[K/usr/include/aarch64-linux-gnu/qt5/QtCore/qpoint.h:221:21:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::optional<QPointF>[m[K’ to ‘[01m[Kconst QPointF&[m[K’
+[34.291s] [01m[K/usr/include/aarch64-linux-gnu/qt5/QtCore/qpoint.h:221:21:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr QPointF& QPointF::operator=(QPointF&&)[m[K’
+[34.292s] [01m[K/usr/include/aarch64-linux-gnu/qt5/QtCore/qpoint.h:221:21:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::optional<QPointF>[m[K’ to ‘[01m[KQPointF&&[m[K’
+[34.293s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:[m[K In member function ‘[01m[Kstd::optional<QPointF> rclcomm::extractIndexFingerTip(ai_msgs::msg::Target)[m[K’:
+[34.295s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:528:19:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ai_msgs::msg::Point_<std::allocator<void> >, std::allocator<ai_msgs::msg::Point_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[34.295s]   528 |   for (int i = 0;[01;35m[Ki<pointList.size()[m[K; i++) {
+[34.296s]       |                  [01;35m[K~^~~~~~~~~~~~~~~~~[m[K
+[84.222s] gmake[2]: *** [CMakeFiles/xgo_head.dir/build.make:290: CMakeFiles/xgo_head.dir/src/rclcomm.cpp.o] Error 1
+[84.223s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/xgo_head.dir/all] Error 2
+[84.225s] gmake: *** [Makefile:146: all] Error 2
+[84.235s] Invoked command in '/home/sunrise/xgo_demo/build/xgo_head' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/xgo_demo/build/xgo_head -- -j4 -l4

@@ -1,0 +1,20 @@
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:[m[K In member function ‘[01m[Kvoid rclcomm::recvFaceAgeCallback(ai_msgs::msg::PerceptionTargets_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:562:45:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kfloat[m[K’ to ‘[01m[Kconst string&[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>&[m[K’}
+  562 |       QString text = QString::fromStdString([01;31m[Kage[m[K);
+      |                                             [01;31m[K^~~[m[K
+      |                                             [01;31m[K|[m[K
+      |                                             [01;31m[Kfloat[m[K
+In file included from [01m[K/usr/include/aarch64-linux-gnu/qt5/QtCore/qobject.h:47[m[K,
+                 from [01m[K/usr/include/aarch64-linux-gnu/qt5/QtCore/QObject:1[m[K,
+                 from [01m[K/home/sunrise/xgo_demo/src/xgo_head/include/rclcomm.h:3[m[K,
+                 from [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:1[m[K:
+[01m[K/usr/include/aarch64-linux-gnu/qt5/QtCore/qstring.h:1555:58:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kstatic QString QString::fromStdString(const string&)[m[K’
+ 1555 | inline QString QString::fromStdString([01;36m[Kconst std::string &s[m[K)
+      |                                       [01;36m[K~~~~~~~~~~~~~~~~~~~^[m[K
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::updateTopicInfo(QString)[m[K’:
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:68:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   68 | void MainWindow::updateTopicInfo([01;35m[KQString data[m[K){
+      |                                  [01;35m[K~~~~~~~~^~~~[m[K
+gmake[2]: *** [CMakeFiles/xgo_head.dir/build.make:290: CMakeFiles/xgo_head.dir/src/rclcomm.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/xgo_head.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

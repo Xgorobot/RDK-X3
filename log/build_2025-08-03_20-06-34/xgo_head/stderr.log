@@ -1,0 +1,20 @@
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:[m[K In member function ‘[01m[Kvoid rclcomm::recvCompressedImageCallback(sensor_msgs::msg::CompressedImage_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:427:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass QList<TrackedPoint>::const_iterator[m[K’ has no member named ‘[01m[Kpos[m[K’
+  427 |         QPointF prev_pos = it_point.[01;31m[Kpos[m[K;
+      |                                     [01;31m[K^~~[m[K
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:437:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass QList<TrackedPoint>::const_iterator[m[K’ has no member named ‘[01m[Kpos[m[K’
+  437 |           const QPointF& curr_pos = it_point.[01;31m[Kpos[m[K;
+      |                                              [01;31m[K^~~[m[K
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:442:18:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTLog::d(const char [34], double&, double&, double&, double&)[m[K’
+  442 |           [01;31m[KTLog::d("draw line from (%f,%f) to (%f,%f)", prevX, prevY, currX, currY)[m[K;
+      |           [01;31m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/sunrise/xgo_demo/src/xgo_head/include/rclcomm.h:30[m[K,
+                 from [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:1[m[K:
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/include/TLog.h:27:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstatic void TLog::d(QString)[m[K’
+   27 |     static void [01;36m[Kd[m[K(QString txt);
+      |                 [01;36m[K^[m[K
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/include/TLog.h:27:17:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 5 provided
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::updateTopicInfo(QString)[m[K’:
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:69:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   69 | void MainWindow::updateTopicInfo([01;35m[KQString data[m[K){
+      |                                  [01;35m[K~~~~~~~~^~~~[m[K

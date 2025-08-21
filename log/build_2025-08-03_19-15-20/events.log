@@ -1,0 +1,1729 @@
+[0.000000] (-) TimerEvent: {}
+[0.000913] (xgo_body) JobQueued: {'identifier': 'xgo_body', 'dependencies': OrderedDict()}
+[0.001803] (xgo_body_py) JobQueued: {'identifier': 'xgo_body_py', 'dependencies': OrderedDict()}
+[0.003303] (xgo_head) JobQueued: {'identifier': 'xgo_head', 'dependencies': OrderedDict()}
+[0.004170] (xgo_body) JobStarted: {'identifier': 'xgo_body'}
+[0.043166] (xgo_body_py) JobStarted: {'identifier': 'xgo_body_py'}
+[0.078090] (xgo_head) JobStarted: {'identifier': 'xgo_head'}
+[0.099768] (-) TimerEvent: {}
+[0.110494] (xgo_body) JobProgress: {'identifier': 'xgo_body', 'progress': 'cmake'}
+[0.116447] (xgo_body) JobProgress: {'identifier': 'xgo_body', 'progress': 'build'}
+[0.121262] (xgo_body) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sunrise/xgo_demo/build/xgo_body', '--', '-j4', '-l4'], 'cwd': '/home/sunrise/xgo_demo/build/xgo_body', 'env': OrderedDict([('LANGUAGE', 'en_US.UTF-8'), ('USER', 'sunrise'), ('SSH_CLIENT', '192.168.157.219 64140 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/sunrise/.vscode-server/cli/servers/Stable-488a1f239235055e34e673291fb8d8c810886f81/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sunrise/xgo_demo/install/xgo_body/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/sunrise/.vscode-server/cli/servers/Stable-488a1f239235055e34e673291fb8d8c810886f81/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/sunrise'), ('TERM_PROGRAM_VERSION', '1.102.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-584a8930-6615-43e2-9101-c8764aec9cd4.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/sunrise/.vscode-server/cli/servers/Stable-488a1f239235055e34e673291fb8d8c810886f81/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/sunrise/.vscode-server/cli/servers/Stable-488a1f239235055e34e673291fb8d8c810886f81/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/sunrise/xgo_demo/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunrise'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/sunrise/.vscode-server/cli/servers/Stable-488a1f239235055e34e673291fb8d8c810886f81/server/bin/remote-cli:/opt/tros/humble/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sunrise/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-06ac1395be.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_body_py:/home/sunrise/xgo_demo/install/xgo_body:/opt/tros/humble:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/sunrise/xgo_demo/build/xgo_body'), ('SSH_CONNECTION', '192.168.157.219 64140 192.168.157.118 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sunrise/xgo_demo/install/xgo_body_py/lib/python3.10/site-packages:/home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages:/opt/tros/humble/lib/python3.10/site-packages:/opt/tros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_body:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble')]), 'shell': False}
+[0.200040] (-) TimerEvent: {}
+[0.301131] (-) TimerEvent: {}
+[0.402363] (-) TimerEvent: {}
+[0.505713] (-) TimerEvent: {}
+[0.608482] (-) TimerEvent: {}
+[0.710346] (-) TimerEvent: {}
+[0.827118] (-) TimerEvent: {}
+[0.928234] (-) TimerEvent: {}
+[1.030472] (-) TimerEvent: {}
+[1.132435] (-) TimerEvent: {}
+[1.235399] (-) TimerEvent: {}
+[1.338738] (-) TimerEvent: {}
+[1.441133] (-) TimerEvent: {}
+[1.543178] (-) TimerEvent: {}
+[1.644132] (-) TimerEvent: {}
+[1.745710] (-) TimerEvent: {}
+[1.846824] (-) TimerEvent: {}
+[1.947856] (-) TimerEvent: {}
+[2.048896] (-) TimerEvent: {}
+[2.150655] (-) TimerEvent: {}
+[2.255331] (-) TimerEvent: {}
+[2.280228] (xgo_head) JobProgress: {'identifier': 'xgo_head', 'progress': 'cmake'}
+[2.288933] (xgo_head) JobProgress: {'identifier': 'xgo_head', 'progress': 'build'}
+[2.290837] (xgo_head) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sunrise/xgo_demo/build/xgo_head', '--', '-j4', '-l4'], 'cwd': '/home/sunrise/xgo_demo/build/xgo_head', 'env': OrderedDict([('LANGUAGE', 'en_US.UTF-8'), ('USER', 'sunrise'), ('SSH_CLIENT', '192.168.157.219 64140 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/sunrise/.vscode-server/cli/servers/Stable-488a1f239235055e34e673291fb8d8c810886f81/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sunrise/xgo_demo/install/xgo_body/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/sunrise/.vscode-server/cli/servers/Stable-488a1f239235055e34e673291fb8d8c810886f81/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/sunrise'), ('TERM_PROGRAM_VERSION', '1.102.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-584a8930-6615-43e2-9101-c8764aec9cd4.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/sunrise/.vscode-server/cli/servers/Stable-488a1f239235055e34e673291fb8d8c810886f81/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/sunrise/.vscode-server/cli/servers/Stable-488a1f239235055e34e673291fb8d8c810886f81/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/sunrise/xgo_demo/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunrise'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/sunrise/.vscode-server/cli/servers/Stable-488a1f239235055e34e673291fb8d8c810886f81/server/bin/remote-cli:/opt/tros/humble/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sunrise/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-06ac1395be.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_body_py:/home/sunrise/xgo_demo/install/xgo_body:/opt/tros/humble:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/sunrise/xgo_demo/build/xgo_head'), ('SSH_CONNECTION', '192.168.157.219 64140 192.168.157.118 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sunrise/xgo_demo/install/xgo_body_py/lib/python3.10/site-packages:/home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages:/opt/tros/humble/lib/python3.10/site-packages:/opt/tros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_body:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble')]), 'shell': False}
+[2.302560] (xgo_body) StdoutLine: {'line': b'[  1%] Built target xgo_body__cpp\n'}
+[2.304373] (xgo_body) StdoutLine: {'line': b'[ 12%] Built target xgo_body__rosidl_generator_c\n'}
+[2.305215] (xgo_body) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_xgo_body\n'}
+[2.305949] (xgo_body) StdoutLine: {'line': b'[ 22%] Built target xgo_body__rosidl_typesupport_cpp\n'}
+[2.306677] (xgo_body) StdoutLine: {'line': b'[ 33%] Built target xgo_body__rosidl_typesupport_fastrtps_cpp\n'}
+[2.307676] (xgo_body) StdoutLine: {'line': b'[ 43%] Built target xgo_body__rosidl_typesupport_introspection_cpp\n'}
+[2.308551] (xgo_body) StdoutLine: {'line': b'[ 54%] Built target xgo_body__rosidl_typesupport_fastrtps_c\n'}
+[2.309366] (xgo_body) StdoutLine: {'line': b'[ 64%] Built target xgo_body__rosidl_typesupport_introspection_c\n'}
+[2.310420] (xgo_body) StdoutLine: {'line': b'[ 75%] Built target xgo_body__rosidl_typesupport_c\n'}
+[2.312591] (xgo_body) StdoutLine: {'line': b'[ 78%] Built target xgo_body_node\n'}
+[2.313407] (xgo_body) StdoutLine: {'line': b'[ 78%] Built target xgo_body\n'}
+[2.314222] (xgo_body) StdoutLine: {'line': b'[ 80%] Built target xgo_body__py\n'}
+[2.315081] (xgo_body) StdoutLine: {'line': b'[ 89%] Built target xgo_body__rosidl_generator_py\n'}
+[2.315916] (xgo_body) StdoutLine: {'line': b'[ 92%] Built target xgo_body__rosidl_typesupport_fastrtps_c__pyext\n'}
+[2.316769] (xgo_body) StdoutLine: {'line': b'[ 96%] Built target xgo_body__rosidl_typesupport_introspection_c__pyext\n'}
+[2.317523] (xgo_body) StdoutLine: {'line': b'[100%] Built target xgo_body__rosidl_typesupport_c__pyext\n'}
+[2.355605] (-) TimerEvent: {}
+[2.456724] (-) TimerEvent: {}
+[2.535608] (xgo_body) StdoutLine: {'line': b'running egg_info\n'}
+[2.543568] (xgo_body) StdoutLine: {'line': b'writing xgo_body.egg-info/PKG-INFO\n'}
+[2.548152] (xgo_body) StdoutLine: {'line': b'writing dependency_links to xgo_body.egg-info/dependency_links.txt\n'}
+[2.551119] (xgo_body) StdoutLine: {'line': b'writing top-level names to xgo_body.egg-info/top_level.txt\n'}
+[2.556933] (-) TimerEvent: {}
+[2.561164] (xgo_body) StdoutLine: {'line': b"reading manifest file 'xgo_body.egg-info/SOURCES.txt'\n"}
+[2.569542] (xgo_body) StdoutLine: {'line': b"writing manifest file 'xgo_body.egg-info/SOURCES.txt'\n"}
+[2.598215] (xgo_head) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target xgo_head\x1b[0m\n'}
+[2.657149] (-) TimerEvent: {}
+[2.758333] (-) TimerEvent: {}
+[2.814027] (xgo_body) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_xgo_body_egg\n'}
+[2.859248] (-) TimerEvent: {}
+[2.863673] (xgo_body) CommandEnded: {'returncode': 0}
+[2.870992] (xgo_body) JobProgress: {'identifier': 'xgo_body', 'progress': 'install'}
+[2.895631] (xgo_head) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object CMakeFiles/xgo_head.dir/src/rclcomm.cpp.o\x1b[0m\n'}
+[2.937941] (xgo_body) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sunrise/xgo_demo/build/xgo_body'], 'cwd': '/home/sunrise/xgo_demo/build/xgo_body', 'env': OrderedDict([('LANGUAGE', 'en_US.UTF-8'), ('USER', 'sunrise'), ('SSH_CLIENT', '192.168.157.219 64140 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/sunrise/.vscode-server/cli/servers/Stable-488a1f239235055e34e673291fb8d8c810886f81/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sunrise/xgo_demo/install/xgo_body/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/sunrise/.vscode-server/cli/servers/Stable-488a1f239235055e34e673291fb8d8c810886f81/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/sunrise'), ('TERM_PROGRAM_VERSION', '1.102.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-584a8930-6615-43e2-9101-c8764aec9cd4.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/sunrise/.vscode-server/cli/servers/Stable-488a1f239235055e34e673291fb8d8c810886f81/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/sunrise/.vscode-server/cli/servers/Stable-488a1f239235055e34e673291fb8d8c810886f81/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/sunrise/xgo_demo/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunrise'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/sunrise/.vscode-server/cli/servers/Stable-488a1f239235055e34e673291fb8d8c810886f81/server/bin/remote-cli:/opt/tros/humble/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sunrise/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-06ac1395be.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_body_py:/home/sunrise/xgo_demo/install/xgo_body:/opt/tros/humble:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/sunrise/xgo_demo/build/xgo_body'), ('SSH_CONNECTION', '192.168.157.219 64140 192.168.157.118 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sunrise/xgo_demo/install/xgo_body_py/lib/python3.10/site-packages:/home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages:/opt/tros/humble/lib/python3.10/site-packages:/opt/tros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_body:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble')]), 'shell': False}
+[2.959481] (-) TimerEvent: {}
+[2.996285] (xgo_body) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.002024] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/ament_index/resource_index/rosidl_interfaces/xgo_body\n'}
+[3.006834] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body\n'}
+[3.011527] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg\n'}
+[3.015953] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail\n'}
+[3.020710] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/leg_pose__struct.h\n'}
+[3.024914] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/joint_angle__functions.c\n'}
+[3.028927] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/body_pose__functions.h\n'}
+[3.034810] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/joint_angle__functions.h\n'}
+[3.048201] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/leg_pose__functions.h\n'}
+[3.048965] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/joint_angle__struct.h\n'}
+[3.049703] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/leg_pose__functions.c\n'}
+[3.050289] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/leg_pose__type_support.h\n'}
+[3.050807] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/joint_angle__type_support.h\n'}
+[3.051768] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/body_pose__struct.h\n'}
+[3.052517] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/body_pose__type_support.h\n'}
+[3.053550] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/arm_pose__functions.c\n'}
+[3.054246] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/arm_pose__struct.h\n'}
+[3.055077] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/body_pose__functions.c\n'}
+[3.055830] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/arm_pose__functions.h\n'}
+[3.056447] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/arm_pose__type_support.h\n'}
+[3.057025] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/body_pose.h\n'}
+[3.057581] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/leg_pose.h\n'}
+[3.058134] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/arm_pose.h\n'}
+[3.058687] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.059434] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/joint_angle.h\n'}
+[3.060320] (-) TimerEvent: {}
+[3.061698] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/environment/library_path.sh\n'}
+[3.062599] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/environment/library_path.dsv\n'}
+[3.063507] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/lib/libxgo_body__rosidl_generator_c.so\n'}
+[3.064213] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body\n'}
+[3.065183] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg\n'}
+[3.067095] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail\n'}
+[3.068043] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/leg_pose__rosidl_typesupport_fastrtps_c.h\n'}
+[3.068809] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/body_pose__rosidl_typesupport_fastrtps_c.h\n'}
+[3.069612] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/arm_pose__rosidl_typesupport_fastrtps_c.h\n'}
+[3.070420] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/joint_angle__rosidl_typesupport_fastrtps_c.h\n'}
+[3.071251] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.071991] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/lib/libxgo_body__rosidl_typesupport_fastrtps_c.so\n'}
+[3.072936] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body\n'}
+[3.074193] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg\n'}
+[3.075015] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail\n'}
+[3.075915] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/arm_pose__type_support.c\n'}
+[3.078082] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/leg_pose__type_support.c\n'}
+[3.080820] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/body_pose__type_support.c\n'}
+[3.081835] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/arm_pose__rosidl_typesupport_introspection_c.h\n'}
+[3.082558] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/body_pose__rosidl_typesupport_introspection_c.h\n'}
+[3.083379] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/joint_angle__type_support.c\n'}
+[3.084068] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/leg_pose__rosidl_typesupport_introspection_c.h\n'}
+[3.084727] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/joint_angle__rosidl_typesupport_introspection_c.h\n'}
+[3.085342] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.086052] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/lib/libxgo_body__rosidl_typesupport_introspection_c.so\n'}
+[3.086933] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/lib/libxgo_body__rosidl_typesupport_c.so\n'}
+[3.087799] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body\n'}
+[3.088571] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg\n'}
+[3.089413] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail\n'}
+[3.090417] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/body_pose__type_support.hpp\n'}
+[3.092019] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/leg_pose__builder.hpp\n'}
+[3.092736] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/leg_pose__traits.hpp\n'}
+[3.093553] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/body_pose__struct.hpp\n'}
+[3.094293] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/joint_angle__builder.hpp\n'}
+[3.095164] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/arm_pose__builder.hpp\n'}
+[3.096150] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/body_pose__traits.hpp\n'}
+[3.096908] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/joint_angle__type_support.hpp\n'}
+[3.097689] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/arm_pose__traits.hpp\n'}
+[3.098806] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/arm_pose__type_support.hpp\n'}
+[3.100434] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/joint_angle__struct.hpp\n'}
+[3.101701] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/leg_pose__struct.hpp\n'}
+[3.102898] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/joint_angle__traits.hpp\n'}
+[3.103906] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/arm_pose__struct.hpp\n'}
+[3.104602] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/leg_pose__type_support.hpp\n'}
+[3.105257] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/body_pose__builder.hpp\n'}
+[3.105930] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/joint_angle.hpp\n'}
+[3.106578] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/body_pose.hpp\n'}
+[3.107774] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/leg_pose.hpp\n'}
+[3.109333] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/arm_pose.hpp\n'}
+[3.110092] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[3.110766] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body\n'}
+[3.111577] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg\n'}
+[3.112237] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.112878] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail\n'}
+[3.113515] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/body_pose__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.114176] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/joint_angle__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.114884] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/dds_fastrtps\n'}
+[3.115657] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/leg_pose__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.116343] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/arm_pose__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.117033] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/lib/libxgo_body__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.117614] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body\n'}
+[3.118201] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg\n'}
+[3.118717] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail\n'}
+[3.123647] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/arm_pose__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.124267] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/body_pose__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.124838] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/leg_pose__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.125408] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/body_pose__type_support.cpp\n'}
+[3.125936] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/arm_pose__type_support.cpp\n'}
+[3.126487] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/joint_angle__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.131268] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/joint_angle__type_support.cpp\n'}
+[3.131975] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/include/xgo_body/xgo_body/msg/detail/leg_pose__type_support.cpp\n'}
+[3.132564] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/lib/libxgo_body__rosidl_typesupport_introspection_cpp.so\n'}
+[3.133099] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/lib/libxgo_body__rosidl_typesupport_cpp.so\n'}
+[3.133679] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/environment/pythonpath.sh\n'}
+[3.134290] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/environment/pythonpath.dsv\n'}
+[3.139066] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages/xgo_body-0.0.0-py3.10.egg-info\n'}
+[3.139927] (xgo_body) StdoutLine: {'line': b'-- Installing: /home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages/xgo_body-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[3.140673] (xgo_body) StdoutLine: {'line': b'-- Installing: /home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages/xgo_body-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[3.141319] (xgo_body) StdoutLine: {'line': b'-- Installing: /home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages/xgo_body-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[3.141982] (xgo_body) StdoutLine: {'line': b'-- Installing: /home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages/xgo_body-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[3.142553] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages/xgo_body\n'}
+[3.147494] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages/xgo_body/xgo_body_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.148112] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages/xgo_body/__init__.py\n'}
+[3.148762] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages/xgo_body/_xgo_body_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[3.149452] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages/xgo_body/_xgo_body_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[3.150193] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages/xgo_body/libxgo_body__rosidl_generator_py.so\n'}
+[3.155065] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages/xgo_body/xgo_body_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.155901] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages/xgo_body/xgo_body_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.156655] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages/xgo_body/msg\n'}
+[3.157574] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages/xgo_body/msg/_body_pose_s.c\n'}
+[3.158283] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages/xgo_body/msg/_leg_pose_s.c\n'}
+[3.167045] (-) TimerEvent: {}
+[3.167841] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages/xgo_body/msg/_body_pose.py\n'}
+[3.168702] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages/xgo_body/msg/_arm_pose.py\n'}
+[3.169523] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages/xgo_body/msg/__init__.py\n'}
+[3.170927] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages/xgo_body/msg/_arm_pose_s.c\n'}
+[3.171732] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages/xgo_body/msg/_joint_angle_s.c\n'}
+[3.172504] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages/xgo_body/msg/_joint_angle.py\n'}
+[3.173216] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages/xgo_body/msg/_leg_pose.py\n'}
+[3.174073] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages/xgo_body/_xgo_body_s.ep.rosidl_typesupport_c.c\n'}
+[3.267262] (-) TimerEvent: {}
+[3.368349] (-) TimerEvent: {}
+[3.402045] (xgo_body) StdoutLine: {'line': b"Listing '/home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages/xgo_body'...\n"}
+[3.403346] (xgo_body) StdoutLine: {'line': b"Listing '/home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages/xgo_body/msg'...\n"}
+[3.455197] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages/xgo_body/xgo_body_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.463700] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages/xgo_body/xgo_body_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.468501] (-) TimerEvent: {}
+[3.469750] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages/xgo_body/xgo_body_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.477221] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/lib/libxgo_body__rosidl_generator_py.so\n'}
+[3.478193] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/msg/ArmPose.idl\n'}
+[3.479303] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/msg/BodyPose.idl\n'}
+[3.480213] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/msg/JointAngle.idl\n'}
+[3.480923] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/msg/LegPose.idl\n'}
+[3.481697] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/msg/ArmPose.msg\n'}
+[3.482393] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/msg/BodyPose.msg\n'}
+[3.491540] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/msg/JointAngle.msg\n'}
+[3.492466] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/msg/LegPose.msg\n'}
+[3.493196] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/lib/xgo_body/xgo_body_node\n'}
+[3.493912] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/ament_index/resource_index/package_run_dependencies/xgo_body\n'}
+[3.494620] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/ament_index/resource_index/parent_prefix_path/xgo_body\n'}
+[3.504510] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/environment/ament_prefix_path.sh\n'}
+[3.505229] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/environment/ament_prefix_path.dsv\n'}
+[3.505927] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/environment/path.sh\n'}
+[3.506625] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/environment/path.dsv\n'}
+[3.516336] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/local_setup.bash\n'}
+[3.520109] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/local_setup.sh\n'}
+[3.521010] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/local_setup.zsh\n'}
+[3.521746] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/local_setup.dsv\n'}
+[3.522452] (xgo_body) StdoutLine: {'line': b'-- Installing: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/package.dsv\n'}
+[3.523351] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/ament_index/resource_index/packages/xgo_body\n'}
+[3.524107] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/cmake/export_xgo_body__rosidl_generator_cExport.cmake\n'}
+[3.527677] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/cmake/export_xgo_body__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.531300] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/cmake/export_xgo_body__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[3.532478] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/cmake/export_xgo_body__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[3.539770] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/cmake/xgo_body__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.542146] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/cmake/xgo_body__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.547219] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/cmake/xgo_body__rosidl_typesupport_cExport.cmake\n'}
+[3.552456] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/cmake/xgo_body__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.559255] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/cmake/export_xgo_body__rosidl_generator_cppExport.cmake\n'}
+[3.564032] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/cmake/export_xgo_body__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[3.568663] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/cmake/export_xgo_body__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[3.573540] (-) TimerEvent: {}
+[3.580548] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/cmake/xgo_body__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.581575] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/cmake/xgo_body__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.582475] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/cmake/xgo_body__rosidl_typesupport_cppExport.cmake\n'}
+[3.586288] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/cmake/xgo_body__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.589134] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/cmake/export_xgo_body__rosidl_generator_pyExport.cmake\n'}
+[3.590090] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/cmake/export_xgo_body__rosidl_generator_pyExport-noconfig.cmake\n'}
+[3.599997] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/cmake/rosidl_cmake-extras.cmake\n'}
+[3.603613] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.604490] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.605339] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.606193] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.607224] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.611948] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.612899] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/cmake/xgo_bodyConfig.cmake\n'}
+[3.613839] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/cmake/xgo_bodyConfig-version.cmake\n'}
+[3.614785] (xgo_body) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_body/share/xgo_body/package.xml\n'}
+[3.619905] (xgo_body) CommandEnded: {'returncode': 0}
+[3.674637] (-) TimerEvent: {}
+[3.778873] (-) TimerEvent: {}
+[3.787842] (xgo_body) JobEnded: {'identifier': 'xgo_body', 'rc': 0}
+[3.879128] (-) TimerEvent: {}
+[3.980106] (-) TimerEvent: {}
+[4.081128] (-) TimerEvent: {}
+[4.183320] (-) TimerEvent: {}
+[4.284270] (-) TimerEvent: {}
+[4.385227] (-) TimerEvent: {}
+[4.486181] (-) TimerEvent: {}
+[4.587239] (-) TimerEvent: {}
+[4.688334] (-) TimerEvent: {}
+[4.789415] (-) TimerEvent: {}
+[4.890697] (-) TimerEvent: {}
+[4.993302] (-) TimerEvent: {}
+[5.096576] (-) TimerEvent: {}
+[5.197789] (-) TimerEvent: {}
+[5.233305] (xgo_body_py) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/xgo_body_py', 'build', '--build-base', '/home/sunrise/xgo_demo/build/xgo_body_py/build', 'install', '--record', '/home/sunrise/xgo_demo/build/xgo_body_py/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/sunrise/xgo_demo/src/xgo_body_py', 'env': {'LANGUAGE': 'en_US.UTF-8', 'USER': 'sunrise', 'SSH_CLIENT': '192.168.157.219 64140 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/sunrise/.vscode-server/cli/servers/Stable-488a1f239235055e34e673291fb8d8c810886f81/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/sunrise/xgo_demo/install/xgo_body/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/sunrise/.vscode-server/cli/servers/Stable-488a1f239235055e34e673291fb8d8c810886f81/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/sunrise', 'TERM_PROGRAM_VERSION': '1.102.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-584a8930-6615-43e2-9101-c8764aec9cd4.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/sunrise/.vscode-server/cli/servers/Stable-488a1f239235055e34e673291fb8d8c810886f81/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/sunrise/.vscode-server/cli/servers/Stable-488a1f239235055e34e673291fb8d8c810886f81/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TROS_DISTRO': 'humble', 'COLCON_PREFIX_PATH': '/home/sunrise/xgo_demo/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'sunrise', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/sunrise/.vscode-server/cli/servers/Stable-488a1f239235055e34e673291fb8d8c810886f81/server/bin/remote-cli:/opt/tros/humble/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sunrise/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-06ac1395be.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_body_py:/home/sunrise/xgo_demo/install/xgo_body:/opt/tros/humble:/opt/ros/humble', 'SHELL': '/bin/bash', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/sunrise/xgo_demo/build/xgo_body_py', 'SSH_CONNECTION': '192.168.157.219 64140 192.168.157.118 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/sunrise/xgo_demo/build/xgo_body_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunrise/xgo_demo/install/xgo_body_py/lib/python3.10/site-packages:/home/sunrise/xgo_demo/install/xgo_body_py/lib/python3.10/site-packages:/home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages:/opt/tros/humble/lib/python3.10/site-packages:/opt/tros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_body'}, 'shell': False}
+[5.297981] (-) TimerEvent: {}
+[5.399058] (-) TimerEvent: {}
+[5.500045] (-) TimerEvent: {}
+[5.601719] (-) TimerEvent: {}
+[5.702798] (-) TimerEvent: {}
+[5.803936] (-) TimerEvent: {}
+[5.904962] (-) TimerEvent: {}
+[6.006004] (-) TimerEvent: {}
+[6.107041] (-) TimerEvent: {}
+[6.208072] (-) TimerEvent: {}
+[6.309123] (-) TimerEvent: {}
+[6.410209] (-) TimerEvent: {}
+[6.511289] (-) TimerEvent: {}
+[6.612368] (-) TimerEvent: {}
+[6.713562] (-) TimerEvent: {}
+[6.814641] (-) TimerEvent: {}
+[6.915767] (-) TimerEvent: {}
+[7.016813] (-) TimerEvent: {}
+[7.117932] (-) TimerEvent: {}
+[7.159088] (xgo_body_py) StdoutLine: {'line': b'running egg_info\n'}
+[7.165126] (xgo_body_py) StdoutLine: {'line': b'writing ../../build/xgo_body_py/xgo_body_py.egg-info/PKG-INFO\n'}
+[7.167803] (xgo_body_py) StdoutLine: {'line': b'writing dependency_links to ../../build/xgo_body_py/xgo_body_py.egg-info/dependency_links.txt\n'}
+[7.176726] (xgo_body_py) StdoutLine: {'line': b'writing entry points to ../../build/xgo_body_py/xgo_body_py.egg-info/entry_points.txt\n'}
+[7.177766] (xgo_body_py) StdoutLine: {'line': b'writing requirements to ../../build/xgo_body_py/xgo_body_py.egg-info/requires.txt\n'}
+[7.178604] (xgo_body_py) StdoutLine: {'line': b'writing top-level names to ../../build/xgo_body_py/xgo_body_py.egg-info/top_level.txt\n'}
+[7.181949] (xgo_body_py) StdoutLine: {'line': b"reading manifest file '../../build/xgo_body_py/xgo_body_py.egg-info/SOURCES.txt'\n"}
+[7.189515] (xgo_body_py) StdoutLine: {'line': b"writing manifest file '../../build/xgo_body_py/xgo_body_py.egg-info/SOURCES.txt'\n"}
+[7.191893] (xgo_body_py) StdoutLine: {'line': b'running build\n'}
+[7.192825] (xgo_body_py) StdoutLine: {'line': b'running build_py\n'}
+[7.193612] (xgo_body_py) StdoutLine: {'line': b'running install\n'}
+[7.194796] (xgo_body_py) StdoutLine: {'line': b'running install_lib\n'}
+[7.202924] (xgo_body_py) StdoutLine: {'line': b'running install_data\n'}
+[7.204239] (xgo_body_py) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.215241] (xgo_body_py) StdoutLine: {'line': b"removing '/home/sunrise/xgo_demo/install/xgo_body_py/lib/python3.10/site-packages/xgo_body_py-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[7.217152] (xgo_body_py) StdoutLine: {'line': b'Copying ../../build/xgo_body_py/xgo_body_py.egg-info to /home/sunrise/xgo_demo/install/xgo_body_py/lib/python3.10/site-packages/xgo_body_py-0.0.0-py3.10.egg-info\n'}
+[7.218097] (-) TimerEvent: {}
+[7.225557] (xgo_body_py) StdoutLine: {'line': b'running install_scripts\n'}
+[7.318333] (-) TimerEvent: {}
+[7.373170] (xgo_body_py) StdoutLine: {'line': b"writing list of installed files to '/home/sunrise/xgo_demo/build/xgo_body_py/install.log'\n"}
+[7.418610] (-) TimerEvent: {}
+[7.520311] (-) TimerEvent: {}
+[7.604247] (xgo_body_py) CommandEnded: {'returncode': 0}
+[7.620496] (-) TimerEvent: {}
+[7.652844] (xgo_body_py) JobEnded: {'identifier': 'xgo_body_py', 'rc': 0}
+[7.720748] (-) TimerEvent: {}
+[7.821723] (-) TimerEvent: {}
+[7.922790] (-) TimerEvent: {}
+[8.023805] (-) TimerEvent: {}
+[8.124810] (-) TimerEvent: {}
+[8.225798] (-) TimerEvent: {}
+[8.326795] (-) TimerEvent: {}
+[8.427816] (-) TimerEvent: {}
+[8.528800] (-) TimerEvent: {}
+[8.629805] (-) TimerEvent: {}
+[8.730770] (-) TimerEvent: {}
+[8.831805] (-) TimerEvent: {}
+[8.932744] (-) TimerEvent: {}
+[9.033743] (-) TimerEvent: {}
+[9.134735] (-) TimerEvent: {}
+[9.235778] (-) TimerEvent: {}
+[9.336768] (-) TimerEvent: {}
+[9.437712] (-) TimerEvent: {}
+[9.538690] (-) TimerEvent: {}
+[9.640351] (-) TimerEvent: {}
+[9.741321] (-) TimerEvent: {}
+[9.842272] (-) TimerEvent: {}
+[9.943327] (-) TimerEvent: {}
+[10.044309] (-) TimerEvent: {}
+[10.145268] (-) TimerEvent: {}
+[10.246223] (-) TimerEvent: {}
+[10.347220] (-) TimerEvent: {}
+[10.448199] (-) TimerEvent: {}
+[10.549194] (-) TimerEvent: {}
+[10.650183] (-) TimerEvent: {}
+[10.751196] (-) TimerEvent: {}
+[10.852152] (-) TimerEvent: {}
+[10.953150] (-) TimerEvent: {}
+[11.054139] (-) TimerEvent: {}
+[11.155112] (-) TimerEvent: {}
+[11.256070] (-) TimerEvent: {}
+[11.357066] (-) TimerEvent: {}
+[11.458055] (-) TimerEvent: {}
+[11.559059] (-) TimerEvent: {}
+[11.660068] (-) TimerEvent: {}
+[11.761157] (-) TimerEvent: {}
+[11.862160] (-) TimerEvent: {}
+[11.963308] (-) TimerEvent: {}
+[12.064276] (-) TimerEvent: {}
+[12.165260] (-) TimerEvent: {}
+[12.266242] (-) TimerEvent: {}
+[12.367322] (-) TimerEvent: {}
+[12.468925] (-) TimerEvent: {}
+[12.569973] (-) TimerEvent: {}
+[12.671021] (-) TimerEvent: {}
+[12.771979] (-) TimerEvent: {}
+[12.872922] (-) TimerEvent: {}
+[12.973859] (-) TimerEvent: {}
+[13.075152] (-) TimerEvent: {}
+[13.176129] (-) TimerEvent: {}
+[13.277093] (-) TimerEvent: {}
+[13.378048] (-) TimerEvent: {}
+[13.479019] (-) TimerEvent: {}
+[13.579919] (-) TimerEvent: {}
+[13.680788] (-) TimerEvent: {}
+[13.781668] (-) TimerEvent: {}
+[13.882561] (-) TimerEvent: {}
+[13.983522] (-) TimerEvent: {}
+[14.084435] (-) TimerEvent: {}
+[14.185368] (-) TimerEvent: {}
+[14.286345] (-) TimerEvent: {}
+[14.387382] (-) TimerEvent: {}
+[14.488490] (-) TimerEvent: {}
+[14.589518] (-) TimerEvent: {}
+[14.690522] (-) TimerEvent: {}
+[14.791544] (-) TimerEvent: {}
+[14.892529] (-) TimerEvent: {}
+[14.993522] (-) TimerEvent: {}
+[15.094495] (-) TimerEvent: {}
+[15.195531] (-) TimerEvent: {}
+[15.296526] (-) TimerEvent: {}
+[15.397479] (-) TimerEvent: {}
+[15.498466] (-) TimerEvent: {}
+[15.599492] (-) TimerEvent: {}
+[15.700586] (-) TimerEvent: {}
+[15.801527] (-) TimerEvent: {}
+[15.902491] (-) TimerEvent: {}
+[16.003534] (-) TimerEvent: {}
+[16.104522] (-) TimerEvent: {}
+[16.205503] (-) TimerEvent: {}
+[16.306470] (-) TimerEvent: {}
+[16.407508] (-) TimerEvent: {}
+[16.508491] (-) TimerEvent: {}
+[16.609477] (-) TimerEvent: {}
+[16.710426] (-) TimerEvent: {}
+[16.811465] (-) TimerEvent: {}
+[16.912442] (-) TimerEvent: {}
+[17.013364] (-) TimerEvent: {}
+[17.114348] (-) TimerEvent: {}
+[17.215508] (-) TimerEvent: {}
+[17.316460] (-) TimerEvent: {}
+[17.417399] (-) TimerEvent: {}
+[17.518377] (-) TimerEvent: {}
+[17.619366] (-) TimerEvent: {}
+[17.720323] (-) TimerEvent: {}
+[17.821321] (-) TimerEvent: {}
+[17.922311] (-) TimerEvent: {}
+[18.023330] (-) TimerEvent: {}
+[18.124283] (-) TimerEvent: {}
+[18.225251] (-) TimerEvent: {}
+[18.326228] (-) TimerEvent: {}
+[18.427194] (-) TimerEvent: {}
+[18.528154] (-) TimerEvent: {}
+[18.629131] (-) TimerEvent: {}
+[18.730144] (-) TimerEvent: {}
+[18.831180] (-) TimerEvent: {}
+[18.932133] (-) TimerEvent: {}
+[19.033116] (-) TimerEvent: {}
+[19.134102] (-) TimerEvent: {}
+[19.235191] (-) TimerEvent: {}
+[19.336166] (-) TimerEvent: {}
+[19.437128] (-) TimerEvent: {}
+[19.538131] (-) TimerEvent: {}
+[19.639152] (-) TimerEvent: {}
+[19.740096] (-) TimerEvent: {}
+[19.841079] (-) TimerEvent: {}
+[19.942053] (-) TimerEvent: {}
+[20.043031] (-) TimerEvent: {}
+[20.143950] (-) TimerEvent: {}
+[20.244909] (-) TimerEvent: {}
+[20.345914] (-) TimerEvent: {}
+[20.446944] (-) TimerEvent: {}
+[20.547958] (-) TimerEvent: {}
+[20.648934] (-) TimerEvent: {}
+[20.749835] (-) TimerEvent: {}
+[20.850725] (-) TimerEvent: {}
+[20.951630] (-) TimerEvent: {}
+[21.052510] (-) TimerEvent: {}
+[21.153416] (-) TimerEvent: {}
+[21.254412] (-) TimerEvent: {}
+[21.355399] (-) TimerEvent: {}
+[21.456344] (-) TimerEvent: {}
+[21.557244] (-) TimerEvent: {}
+[21.658178] (-) TimerEvent: {}
+[21.759269] (-) TimerEvent: {}
+[21.860184] (-) TimerEvent: {}
+[21.961109] (-) TimerEvent: {}
+[22.062022] (-) TimerEvent: {}
+[22.162983] (-) TimerEvent: {}
+[22.263921] (-) TimerEvent: {}
+[22.364914] (-) TimerEvent: {}
+[22.465868] (-) TimerEvent: {}
+[22.566889] (-) TimerEvent: {}
+[22.667847] (-) TimerEvent: {}
+[22.768798] (-) TimerEvent: {}
+[22.869793] (-) TimerEvent: {}
+[22.970809] (-) TimerEvent: {}
+[23.071842] (-) TimerEvent: {}
+[23.172837] (-) TimerEvent: {}
+[23.273816] (-) TimerEvent: {}
+[23.374781] (-) TimerEvent: {}
+[23.475797] (-) TimerEvent: {}
+[23.576788] (-) TimerEvent: {}
+[23.677762] (-) TimerEvent: {}
+[23.778746] (-) TimerEvent: {}
+[23.879777] (-) TimerEvent: {}
+[23.980787] (-) TimerEvent: {}
+[24.081793] (-) TimerEvent: {}
+[24.182746] (-) TimerEvent: {}
+[24.284198] (-) TimerEvent: {}
+[24.385195] (-) TimerEvent: {}
+[24.486175] (-) TimerEvent: {}
+[24.587169] (-) TimerEvent: {}
+[24.688164] (-) TimerEvent: {}
+[24.789142] (-) TimerEvent: {}
+[24.890127] (-) TimerEvent: {}
+[24.991158] (-) TimerEvent: {}
+[25.092104] (-) TimerEvent: {}
+[25.193074] (-) TimerEvent: {}
+[25.294027] (-) TimerEvent: {}
+[25.395020] (-) TimerEvent: {}
+[25.495975] (-) TimerEvent: {}
+[25.596952] (-) TimerEvent: {}
+[25.697917] (-) TimerEvent: {}
+[25.798819] (-) TimerEvent: {}
+[25.899827] (-) TimerEvent: {}
+[26.000813] (-) TimerEvent: {}
+[26.102128] (-) TimerEvent: {}
+[26.203144] (-) TimerEvent: {}
+[26.304066] (-) TimerEvent: {}
+[26.404979] (-) TimerEvent: {}
+[26.505951] (-) TimerEvent: {}
+[26.606976] (-) TimerEvent: {}
+[26.707933] (-) TimerEvent: {}
+[26.808911] (-) TimerEvent: {}
+[26.909886] (-) TimerEvent: {}
+[27.010927] (-) TimerEvent: {}
+[27.111879] (-) TimerEvent: {}
+[27.212866] (-) TimerEvent: {}
+[27.313852] (-) TimerEvent: {}
+[27.414806] (-) TimerEvent: {}
+[27.515765] (-) TimerEvent: {}
+[27.616674] (-) TimerEvent: {}
+[27.717636] (-) TimerEvent: {}
+[27.818628] (-) TimerEvent: {}
+[27.919636] (-) TimerEvent: {}
+[28.020623] (-) TimerEvent: {}
+[28.121595] (-) TimerEvent: {}
+[28.222776] (-) TimerEvent: {}
+[28.323747] (-) TimerEvent: {}
+[28.424732] (-) TimerEvent: {}
+[28.525724] (-) TimerEvent: {}
+[28.626689] (-) TimerEvent: {}
+[28.727734] (-) TimerEvent: {}
+[28.828714] (-) TimerEvent: {}
+[28.929683] (-) TimerEvent: {}
+[29.030604] (-) TimerEvent: {}
+[29.131594] (-) TimerEvent: {}
+[29.232575] (-) TimerEvent: {}
+[29.333541] (-) TimerEvent: {}
+[29.434500] (-) TimerEvent: {}
+[29.535560] (-) TimerEvent: {}
+[29.636554] (-) TimerEvent: {}
+[29.737435] (-) TimerEvent: {}
+[29.838407] (-) TimerEvent: {}
+[29.939413] (-) TimerEvent: {}
+[30.040417] (-) TimerEvent: {}
+[30.141398] (-) TimerEvent: {}
+[30.242378] (-) TimerEvent: {}
+[30.343410] (-) TimerEvent: {}
+[30.444309] (-) TimerEvent: {}
+[30.545279] (-) TimerEvent: {}
+[30.646218] (-) TimerEvent: {}
+[30.747308] (-) TimerEvent: {}
+[30.848218] (-) TimerEvent: {}
+[30.949188] (-) TimerEvent: {}
+[31.050177] (-) TimerEvent: {}
+[31.151171] (-) TimerEvent: {}
+[31.252140] (-) TimerEvent: {}
+[31.353148] (-) TimerEvent: {}
+[31.454127] (-) TimerEvent: {}
+[31.555213] (-) TimerEvent: {}
+[31.656356] (-) TimerEvent: {}
+[31.757343] (-) TimerEvent: {}
+[31.858342] (-) TimerEvent: {}
+[31.959329] (-) TimerEvent: {}
+[32.060315] (-) TimerEvent: {}
+[32.161260] (-) TimerEvent: {}
+[32.262256] (-) TimerEvent: {}
+[32.363248] (-) TimerEvent: {}
+[32.464239] (-) TimerEvent: {}
+[32.565233] (-) TimerEvent: {}
+[32.666168] (-) TimerEvent: {}
+[32.767173] (-) TimerEvent: {}
+[32.868151] (-) TimerEvent: {}
+[32.969130] (-) TimerEvent: {}
+[33.070123] (-) TimerEvent: {}
+[33.171126] (-) TimerEvent: {}
+[33.272100] (-) TimerEvent: {}
+[33.373090] (-) TimerEvent: {}
+[33.474098] (-) TimerEvent: {}
+[33.575133] (-) TimerEvent: {}
+[33.676087] (-) TimerEvent: {}
+[33.777032] (-) TimerEvent: {}
+[33.877957] (-) TimerEvent: {}
+[33.978958] (-) TimerEvent: {}
+[34.079922] (-) TimerEvent: {}
+[34.180918] (-) TimerEvent: {}
+[34.281998] (-) TimerEvent: {}
+[34.383095] (-) TimerEvent: {}
+[34.484051] (-) TimerEvent: {}
+[34.585032] (-) TimerEvent: {}
+[34.686000] (-) TimerEvent: {}
+[34.786999] (-) TimerEvent: {}
+[34.887976] (-) TimerEvent: {}
+[34.988977] (-) TimerEvent: {}
+[35.089971] (-) TimerEvent: {}
+[35.190975] (-) TimerEvent: {}
+[35.292051] (-) TimerEvent: {}
+[35.393045] (-) TimerEvent: {}
+[35.494001] (-) TimerEvent: {}
+[35.595017] (-) TimerEvent: {}
+[35.696051] (-) TimerEvent: {}
+[35.797018] (-) TimerEvent: {}
+[35.897989] (-) TimerEvent: {}
+[35.999001] (-) TimerEvent: {}
+[36.099963] (-) TimerEvent: {}
+[36.200965] (-) TimerEvent: {}
+[36.301956] (-) TimerEvent: {}
+[36.402929] (-) TimerEvent: {}
+[36.503903] (-) TimerEvent: {}
+[36.604899] (-) TimerEvent: {}
+[36.705875] (-) TimerEvent: {}
+[36.806791] (-) TimerEvent: {}
+[36.907845] (-) TimerEvent: {}
+[37.008836] (-) TimerEvent: {}
+[37.109739] (-) TimerEvent: {}
+[37.210634] (-) TimerEvent: {}
+[37.311558] (-) TimerEvent: {}
+[37.412448] (-) TimerEvent: {}
+[37.513342] (-) TimerEvent: {}
+[37.614237] (-) TimerEvent: {}
+[37.715141] (-) TimerEvent: {}
+[37.816002] (-) TimerEvent: {}
+[37.916876] (-) TimerEvent: {}
+[38.017779] (-) TimerEvent: {}
+[38.118686] (-) TimerEvent: {}
+[38.219603] (-) TimerEvent: {}
+[38.320483] (-) TimerEvent: {}
+[38.421375] (-) TimerEvent: {}
+[38.522273] (-) TimerEvent: {}
+[38.623208] (-) TimerEvent: {}
+[38.724076] (-) TimerEvent: {}
+[38.824985] (-) TimerEvent: {}
+[38.925858] (-) TimerEvent: {}
+[39.026761] (-) TimerEvent: {}
+[39.127706] (-) TimerEvent: {}
+[39.228595] (-) TimerEvent: {}
+[39.329511] (-) TimerEvent: {}
+[39.430441] (-) TimerEvent: {}
+[39.531406] (-) TimerEvent: {}
+[39.632333] (-) TimerEvent: {}
+[39.733257] (-) TimerEvent: {}
+[39.834195] (-) TimerEvent: {}
+[39.935156] (-) TimerEvent: {}
+[40.036116] (-) TimerEvent: {}
+[40.137038] (-) TimerEvent: {}
+[40.238037] (-) TimerEvent: {}
+[40.339061] (-) TimerEvent: {}
+[40.440050] (-) TimerEvent: {}
+[40.541022] (-) TimerEvent: {}
+[40.642026] (-) TimerEvent: {}
+[40.743133] (-) TimerEvent: {}
+[40.844113] (-) TimerEvent: {}
+[40.945105] (-) TimerEvent: {}
+[41.046062] (-) TimerEvent: {}
+[41.147081] (-) TimerEvent: {}
+[41.248044] (-) TimerEvent: {}
+[41.349039] (-) TimerEvent: {}
+[41.450040] (-) TimerEvent: {}
+[41.551045] (-) TimerEvent: {}
+[41.652075] (-) TimerEvent: {}
+[41.753147] (-) TimerEvent: {}
+[41.854138] (-) TimerEvent: {}
+[41.955107] (-) TimerEvent: {}
+[42.056139] (-) TimerEvent: {}
+[42.157127] (-) TimerEvent: {}
+[42.258070] (-) TimerEvent: {}
+[42.359042] (-) TimerEvent: {}
+[42.460021] (-) TimerEvent: {}
+[42.560983] (-) TimerEvent: {}
+[42.661964] (-) TimerEvent: {}
+[42.763096] (-) TimerEvent: {}
+[42.864056] (-) TimerEvent: {}
+[42.964949] (-) TimerEvent: {}
+[43.065940] (-) TimerEvent: {}
+[43.166967] (-) TimerEvent: {}
+[43.267938] (-) TimerEvent: {}
+[43.368928] (-) TimerEvent: {}
+[43.469900] (-) TimerEvent: {}
+[43.570920] (-) TimerEvent: {}
+[43.671875] (-) TimerEvent: {}
+[43.772910] (-) TimerEvent: {}
+[43.873911] (-) TimerEvent: {}
+[43.974940] (-) TimerEvent: {}
+[44.075913] (-) TimerEvent: {}
+[44.176888] (-) TimerEvent: {}
+[44.277886] (-) TimerEvent: {}
+[44.378922] (-) TimerEvent: {}
+[44.479901] (-) TimerEvent: {}
+[44.580893] (-) TimerEvent: {}
+[44.681891] (-) TimerEvent: {}
+[44.782936] (-) TimerEvent: {}
+[44.883904] (-) TimerEvent: {}
+[44.984819] (-) TimerEvent: {}
+[45.085798] (-) TimerEvent: {}
+[45.186882] (-) TimerEvent: {}
+[45.287866] (-) TimerEvent: {}
+[45.388829] (-) TimerEvent: {}
+[45.489797] (-) TimerEvent: {}
+[45.590778] (-) TimerEvent: {}
+[45.691953] (-) TimerEvent: {}
+[45.792899] (-) TimerEvent: {}
+[45.893875] (-) TimerEvent: {}
+[45.994798] (-) TimerEvent: {}
+[46.095815] (-) TimerEvent: {}
+[46.196810] (-) TimerEvent: {}
+[46.297787] (-) TimerEvent: {}
+[46.398780] (-) TimerEvent: {}
+[46.499784] (-) TimerEvent: {}
+[46.600744] (-) TimerEvent: {}
+[46.701741] (-) TimerEvent: {}
+[46.802662] (-) TimerEvent: {}
+[46.903645] (-) TimerEvent: {}
+[47.004621] (-) TimerEvent: {}
+[47.105611] (-) TimerEvent: {}
+[47.206588] (-) TimerEvent: {}
+[47.307552] (-) TimerEvent: {}
+[47.408478] (-) TimerEvent: {}
+[47.509442] (-) TimerEvent: {}
+[47.610439] (-) TimerEvent: {}
+[47.711455] (-) TimerEvent: {}
+[47.812426] (-) TimerEvent: {}
+[47.913426] (-) TimerEvent: {}
+[48.014430] (-) TimerEvent: {}
+[48.115456] (-) TimerEvent: {}
+[48.216429] (-) TimerEvent: {}
+[48.317424] (-) TimerEvent: {}
+[48.418418] (-) TimerEvent: {}
+[48.519414] (-) TimerEvent: {}
+[48.620389] (-) TimerEvent: {}
+[48.721417] (-) TimerEvent: {}
+[48.822395] (-) TimerEvent: {}
+[48.923432] (-) TimerEvent: {}
+[49.024419] (-) TimerEvent: {}
+[49.125356] (-) TimerEvent: {}
+[49.226336] (-) TimerEvent: {}
+[49.327350] (-) TimerEvent: {}
+[49.428335] (-) TimerEvent: {}
+[49.529298] (-) TimerEvent: {}
+[49.630272] (-) TimerEvent: {}
+[49.731259] (-) TimerEvent: {}
+[49.832226] (-) TimerEvent: {}
+[49.933199] (-) TimerEvent: {}
+[50.034131] (-) TimerEvent: {}
+[50.135132] (-) TimerEvent: {}
+[50.236885] (-) TimerEvent: {}
+[50.337853] (-) TimerEvent: {}
+[50.438880] (-) TimerEvent: {}
+[50.539849] (-) TimerEvent: {}
+[50.640839] (-) TimerEvent: {}
+[50.741887] (-) TimerEvent: {}
+[50.842899] (-) TimerEvent: {}
+[50.943807] (-) TimerEvent: {}
+[51.044740] (-) TimerEvent: {}
+[51.145737] (-) TimerEvent: {}
+[51.246728] (-) TimerEvent: {}
+[51.347777] (-) TimerEvent: {}
+[51.448766] (-) TimerEvent: {}
+[51.549737] (-) TimerEvent: {}
+[51.650708] (-) TimerEvent: {}
+[51.751875] (-) TimerEvent: {}
+[51.852838] (-) TimerEvent: {}
+[51.953742] (-) TimerEvent: {}
+[52.054671] (-) TimerEvent: {}
+[52.155599] (-) TimerEvent: {}
+[52.256499] (-) TimerEvent: {}
+[52.357418] (-) TimerEvent: {}
+[52.458403] (-) TimerEvent: {}
+[52.559433] (-) TimerEvent: {}
+[52.660398] (-) TimerEvent: {}
+[52.761392] (-) TimerEvent: {}
+[52.862386] (-) TimerEvent: {}
+[52.963398] (-) TimerEvent: {}
+[53.064353] (-) TimerEvent: {}
+[53.165328] (-) TimerEvent: {}
+[53.266336] (-) TimerEvent: {}
+[53.367346] (-) TimerEvent: {}
+[53.468259] (-) TimerEvent: {}
+[53.569233] (-) TimerEvent: {}
+[53.670216] (-) TimerEvent: {}
+[53.771229] (-) TimerEvent: {}
+[53.872196] (-) TimerEvent: {}
+[53.973179] (-) TimerEvent: {}
+[54.074136] (-) TimerEvent: {}
+[54.175124] (-) TimerEvent: {}
+[54.276081] (-) TimerEvent: {}
+[54.377057] (-) TimerEvent: {}
+[54.478052] (-) TimerEvent: {}
+[54.579055] (-) TimerEvent: {}
+[54.679985] (-) TimerEvent: {}
+[54.780949] (-) TimerEvent: {}
+[54.881933] (-) TimerEvent: {}
+[54.983027] (-) TimerEvent: {}
+[55.083998] (-) TimerEvent: {}
+[55.184962] (-) TimerEvent: {}
+[55.285934] (-) TimerEvent: {}
+[55.386954] (-) TimerEvent: {}
+[55.487928] (-) TimerEvent: {}
+[55.588905] (-) TimerEvent: {}
+[55.689927] (-) TimerEvent: {}
+[55.790929] (-) TimerEvent: {}
+[55.892150] (-) TimerEvent: {}
+[55.993562] (-) TimerEvent: {}
+[56.094535] (-) TimerEvent: {}
+[56.195557] (-) TimerEvent: {}
+[56.296524] (-) TimerEvent: {}
+[56.397521] (-) TimerEvent: {}
+[56.498612] (-) TimerEvent: {}
+[56.599664] (-) TimerEvent: {}
+[56.700665] (-) TimerEvent: {}
+[56.801673] (-) TimerEvent: {}
+[56.902670] (-) TimerEvent: {}
+[57.003680] (-) TimerEvent: {}
+[57.104680] (-) TimerEvent: {}
+[57.205657] (-) TimerEvent: {}
+[57.306653] (-) TimerEvent: {}
+[57.407659] (-) TimerEvent: {}
+[57.508619] (-) TimerEvent: {}
+[57.609603] (-) TimerEvent: {}
+[57.710581] (-) TimerEvent: {}
+[57.811579] (-) TimerEvent: {}
+[57.912539] (-) TimerEvent: {}
+[58.013516] (-) TimerEvent: {}
+[58.114508] (-) TimerEvent: {}
+[58.215606] (-) TimerEvent: {}
+[58.316597] (-) TimerEvent: {}
+[58.417587] (-) TimerEvent: {}
+[58.518608] (-) TimerEvent: {}
+[58.619640] (-) TimerEvent: {}
+[58.720641] (-) TimerEvent: {}
+[58.821626] (-) TimerEvent: {}
+[58.922613] (-) TimerEvent: {}
+[59.023673] (-) TimerEvent: {}
+[59.124604] (-) TimerEvent: {}
+[59.225559] (-) TimerEvent: {}
+[59.326422] (-) TimerEvent: {}
+[59.427330] (-) TimerEvent: {}
+[59.528183] (-) TimerEvent: {}
+[59.629047] (-) TimerEvent: {}
+[59.729909] (-) TimerEvent: {}
+[59.830793] (-) TimerEvent: {}
+[59.931723] (-) TimerEvent: {}
+[60.032598] (-) TimerEvent: {}
+[60.133461] (-) TimerEvent: {}
+[60.234314] (-) TimerEvent: {}
+[60.335227] (-) TimerEvent: {}
+[60.436118] (-) TimerEvent: {}
+[60.536997] (-) TimerEvent: {}
+[60.637903] (-) TimerEvent: {}
+[60.738890] (-) TimerEvent: {}
+[60.839883] (-) TimerEvent: {}
+[60.940768] (-) TimerEvent: {}
+[61.041655] (-) TimerEvent: {}
+[61.142541] (-) TimerEvent: {}
+[61.243456] (-) TimerEvent: {}
+[61.344335] (-) TimerEvent: {}
+[61.445230] (-) TimerEvent: {}
+[61.546119] (-) TimerEvent: {}
+[61.647052] (-) TimerEvent: {}
+[61.747989] (-) TimerEvent: {}
+[61.848868] (-) TimerEvent: {}
+[61.949756] (-) TimerEvent: {}
+[62.050710] (-) TimerEvent: {}
+[62.151656] (-) TimerEvent: {}
+[62.252575] (-) TimerEvent: {}
+[62.353507] (-) TimerEvent: {}
+[62.454536] (-) TimerEvent: {}
+[62.555634] (-) TimerEvent: {}
+[62.656629] (-) TimerEvent: {}
+[62.757660] (-) TimerEvent: {}
+[62.858686] (-) TimerEvent: {}
+[62.959724] (-) TimerEvent: {}
+[63.060726] (-) TimerEvent: {}
+[63.161728] (-) TimerEvent: {}
+[63.262667] (-) TimerEvent: {}
+[63.363629] (-) TimerEvent: {}
+[63.464554] (-) TimerEvent: {}
+[63.565459] (-) TimerEvent: {}
+[63.666380] (-) TimerEvent: {}
+[63.767297] (-) TimerEvent: {}
+[63.868410] (-) TimerEvent: {}
+[63.969517] (-) TimerEvent: {}
+[64.070428] (-) TimerEvent: {}
+[64.171378] (-) TimerEvent: {}
+[64.272297] (-) TimerEvent: {}
+[64.373225] (-) TimerEvent: {}
+[64.474163] (-) TimerEvent: {}
+[64.575087] (-) TimerEvent: {}
+[64.675983] (-) TimerEvent: {}
+[64.776897] (-) TimerEvent: {}
+[64.877818] (-) TimerEvent: {}
+[64.978718] (-) TimerEvent: {}
+[65.079644] (-) TimerEvent: {}
+[65.180531] (-) TimerEvent: {}
+[65.281436] (-) TimerEvent: {}
+[65.382357] (-) TimerEvent: {}
+[65.483318] (-) TimerEvent: {}
+[65.584226] (-) TimerEvent: {}
+[65.685141] (-) TimerEvent: {}
+[65.786042] (-) TimerEvent: {}
+[65.886934] (-) TimerEvent: {}
+[65.987935] (-) TimerEvent: {}
+[66.088869] (-) TimerEvent: {}
+[66.189776] (-) TimerEvent: {}
+[66.290686] (-) TimerEvent: {}
+[66.391658] (-) TimerEvent: {}
+[66.492581] (-) TimerEvent: {}
+[66.593505] (-) TimerEvent: {}
+[66.694428] (-) TimerEvent: {}
+[66.795443] (-) TimerEvent: {}
+[66.896341] (-) TimerEvent: {}
+[66.997273] (-) TimerEvent: {}
+[67.098206] (-) TimerEvent: {}
+[67.199182] (-) TimerEvent: {}
+[67.300129] (-) TimerEvent: {}
+[67.401116] (-) TimerEvent: {}
+[67.502048] (-) TimerEvent: {}
+[67.603192] (-) TimerEvent: {}
+[67.704119] (-) TimerEvent: {}
+[67.805055] (-) TimerEvent: {}
+[67.905989] (-) TimerEvent: {}
+[68.007005] (-) TimerEvent: {}
+[68.107986] (-) TimerEvent: {}
+[68.208990] (-) TimerEvent: {}
+[68.310008] (-) TimerEvent: {}
+[68.411091] (-) TimerEvent: {}
+[68.512103] (-) TimerEvent: {}
+[68.613115] (-) TimerEvent: {}
+[68.714130] (-) TimerEvent: {}
+[68.815175] (-) TimerEvent: {}
+[68.916180] (-) TimerEvent: {}
+[69.017197] (-) TimerEvent: {}
+[69.118218] (-) TimerEvent: {}
+[69.219255] (-) TimerEvent: {}
+[69.320301] (-) TimerEvent: {}
+[69.421420] (-) TimerEvent: {}
+[69.522449] (-) TimerEvent: {}
+[69.623538] (-) TimerEvent: {}
+[69.724535] (-) TimerEvent: {}
+[69.825465] (-) TimerEvent: {}
+[69.926402] (-) TimerEvent: {}
+[70.027424] (-) TimerEvent: {}
+[70.128315] (-) TimerEvent: {}
+[70.229287] (-) TimerEvent: {}
+[70.330220] (-) TimerEvent: {}
+[70.431204] (-) TimerEvent: {}
+[70.532198] (-) TimerEvent: {}
+[70.633250] (-) TimerEvent: {}
+[70.734398] (-) TimerEvent: {}
+[70.835441] (-) TimerEvent: {}
+[70.936396] (-) TimerEvent: {}
+[71.037470] (-) TimerEvent: {}
+[71.138453] (-) TimerEvent: {}
+[71.239502] (-) TimerEvent: {}
+[71.340487] (-) TimerEvent: {}
+[71.441488] (-) TimerEvent: {}
+[71.542490] (-) TimerEvent: {}
+[71.643469] (-) TimerEvent: {}
+[71.744446] (-) TimerEvent: {}
+[71.845401] (-) TimerEvent: {}
+[71.946357] (-) TimerEvent: {}
+[72.047345] (-) TimerEvent: {}
+[72.148304] (-) TimerEvent: {}
+[72.249264] (-) TimerEvent: {}
+[72.350215] (-) TimerEvent: {}
+[72.451170] (-) TimerEvent: {}
+[72.552186] (-) TimerEvent: {}
+[72.653151] (-) TimerEvent: {}
+[72.754094] (-) TimerEvent: {}
+[72.855759] (-) TimerEvent: {}
+[72.956696] (-) TimerEvent: {}
+[73.057651] (-) TimerEvent: {}
+[73.158589] (-) TimerEvent: {}
+[73.259607] (-) TimerEvent: {}
+[73.360570] (-) TimerEvent: {}
+[73.461505] (-) TimerEvent: {}
+[73.562424] (-) TimerEvent: {}
+[73.663439] (-) TimerEvent: {}
+[73.764475] (-) TimerEvent: {}
+[73.865420] (-) TimerEvent: {}
+[73.966417] (-) TimerEvent: {}
+[74.067430] (-) TimerEvent: {}
+[74.168429] (-) TimerEvent: {}
+[74.269441] (-) TimerEvent: {}
+[74.370427] (-) TimerEvent: {}
+[74.471470] (-) TimerEvent: {}
+[74.572445] (-) TimerEvent: {}
+[74.673459] (-) TimerEvent: {}
+[74.774450] (-) TimerEvent: {}
+[74.875460] (-) TimerEvent: {}
+[74.976395] (-) TimerEvent: {}
+[75.077345] (-) TimerEvent: {}
+[75.178337] (-) TimerEvent: {}
+[75.279424] (-) TimerEvent: {}
+[75.380458] (-) TimerEvent: {}
+[75.481480] (-) TimerEvent: {}
+[75.582536] (-) TimerEvent: {}
+[75.683578] (-) TimerEvent: {}
+[75.784578] (-) TimerEvent: {}
+[75.885574] (-) TimerEvent: {}
+[75.986564] (-) TimerEvent: {}
+[76.087589] (-) TimerEvent: {}
+[76.188551] (-) TimerEvent: {}
+[76.289550] (-) TimerEvent: {}
+[76.390567] (-) TimerEvent: {}
+[76.491609] (-) TimerEvent: {}
+[76.592615] (-) TimerEvent: {}
+[76.693683] (-) TimerEvent: {}
+[76.794970] (-) TimerEvent: {}
+[76.895968] (-) TimerEvent: {}
+[76.996966] (-) TimerEvent: {}
+[77.097970] (-) TimerEvent: {}
+[77.199010] (-) TimerEvent: {}
+[77.299981] (-) TimerEvent: {}
+[77.400977] (-) TimerEvent: {}
+[77.501917] (-) TimerEvent: {}
+[77.602957] (-) TimerEvent: {}
+[77.703895] (-) TimerEvent: {}
+[77.804864] (-) TimerEvent: {}
+[77.905821] (-) TimerEvent: {}
+[78.006802] (-) TimerEvent: {}
+[78.107837] (-) TimerEvent: {}
+[78.208840] (-) TimerEvent: {}
+[78.309790] (-) TimerEvent: {}
+[78.410764] (-) TimerEvent: {}
+[78.511837] (-) TimerEvent: {}
+[78.612850] (-) TimerEvent: {}
+[78.713838] (-) TimerEvent: {}
+[78.814907] (-) TimerEvent: {}
+[78.915877] (-) TimerEvent: {}
+[79.016925] (-) TimerEvent: {}
+[79.117864] (-) TimerEvent: {}
+[79.218891] (-) TimerEvent: {}
+[79.319849] (-) TimerEvent: {}
+[79.420808] (-) TimerEvent: {}
+[79.521745] (-) TimerEvent: {}
+[79.622720] (-) TimerEvent: {}
+[79.723727] (-) TimerEvent: {}
+[79.824672] (-) TimerEvent: {}
+[79.925650] (-) TimerEvent: {}
+[80.026601] (-) TimerEvent: {}
+[80.127622] (-) TimerEvent: {}
+[80.228600] (-) TimerEvent: {}
+[80.329547] (-) TimerEvent: {}
+[80.430500] (-) TimerEvent: {}
+[80.531499] (-) TimerEvent: {}
+[80.632441] (-) TimerEvent: {}
+[80.733493] (-) TimerEvent: {}
+[80.834450] (-) TimerEvent: {}
+[80.935454] (-) TimerEvent: {}
+[81.036421] (-) TimerEvent: {}
+[81.137396] (-) TimerEvent: {}
+[81.238358] (-) TimerEvent: {}
+[81.339355] (-) TimerEvent: {}
+[81.440308] (-) TimerEvent: {}
+[81.541259] (-) TimerEvent: {}
+[81.642209] (-) TimerEvent: {}
+[81.743203] (-) TimerEvent: {}
+[81.844153] (-) TimerEvent: {}
+[81.945112] (-) TimerEvent: {}
+[82.046077] (-) TimerEvent: {}
+[82.147050] (-) TimerEvent: {}
+[82.247999] (-) TimerEvent: {}
+[82.348952] (-) TimerEvent: {}
+[82.449918] (-) TimerEvent: {}
+[82.550956] (-) TimerEvent: {}
+[82.651906] (-) TimerEvent: {}
+[82.752878] (-) TimerEvent: {}
+[82.853829] (-) TimerEvent: {}
+[82.954769] (-) TimerEvent: {}
+[83.055756] (-) TimerEvent: {}
+[83.156716] (-) TimerEvent: {}
+[83.257682] (-) TimerEvent: {}
+[83.358653] (-) TimerEvent: {}
+[83.459661] (-) TimerEvent: {}
+[83.560629] (-) TimerEvent: {}
+[83.661597] (-) TimerEvent: {}
+[83.762573] (-) TimerEvent: {}
+[83.863546] (-) TimerEvent: {}
+[83.964512] (-) TimerEvent: {}
+[84.065488] (-) TimerEvent: {}
+[84.166423] (-) TimerEvent: {}
+[84.267434] (-) TimerEvent: {}
+[84.368402] (-) TimerEvent: {}
+[84.469360] (-) TimerEvent: {}
+[84.570335] (-) TimerEvent: {}
+[84.671348] (-) TimerEvent: {}
+[84.772314] (-) TimerEvent: {}
+[84.873288] (-) TimerEvent: {}
+[84.974242] (-) TimerEvent: {}
+[85.075261] (-) TimerEvent: {}
+[85.176284] (-) TimerEvent: {}
+[85.277275] (-) TimerEvent: {}
+[85.378256] (-) TimerEvent: {}
+[85.479282] (-) TimerEvent: {}
+[85.580318] (-) TimerEvent: {}
+[85.681437] (-) TimerEvent: {}
+[85.782403] (-) TimerEvent: {}
+[85.883452] (-) TimerEvent: {}
+[85.984392] (-) TimerEvent: {}
+[86.085381] (-) TimerEvent: {}
+[86.186332] (-) TimerEvent: {}
+[86.287380] (-) TimerEvent: {}
+[86.388366] (-) TimerEvent: {}
+[86.489355] (-) TimerEvent: {}
+[86.590318] (-) TimerEvent: {}
+[86.691360] (-) TimerEvent: {}
+[86.792549] (-) TimerEvent: {}
+[86.893529] (-) TimerEvent: {}
+[86.994486] (-) TimerEvent: {}
+[87.095502] (-) TimerEvent: {}
+[87.196414] (-) TimerEvent: {}
+[87.297380] (-) TimerEvent: {}
+[87.398370] (-) TimerEvent: {}
+[87.499444] (-) TimerEvent: {}
+[87.600379] (-) TimerEvent: {}
+[87.701305] (-) TimerEvent: {}
+[87.802258] (-) TimerEvent: {}
+[87.903224] (-) TimerEvent: {}
+[88.004186] (-) TimerEvent: {}
+[88.105170] (-) TimerEvent: {}
+[88.206125] (-) TimerEvent: {}
+[88.307060] (-) TimerEvent: {}
+[88.408009] (-) TimerEvent: {}
+[88.508954] (-) TimerEvent: {}
+[88.609892] (-) TimerEvent: {}
+[88.710942] (-) TimerEvent: {}
+[88.811903] (-) TimerEvent: {}
+[88.912871] (-) TimerEvent: {}
+[89.013868] (-) TimerEvent: {}
+[89.114831] (-) TimerEvent: {}
+[89.215955] (-) TimerEvent: {}
+[89.316939] (-) TimerEvent: {}
+[89.417866] (-) TimerEvent: {}
+[89.518873] (-) TimerEvent: {}
+[89.619826] (-) TimerEvent: {}
+[89.720769] (-) TimerEvent: {}
+[89.821804] (-) TimerEvent: {}
+[89.922775] (-) TimerEvent: {}
+[90.023825] (-) TimerEvent: {}
+[90.124789] (-) TimerEvent: {}
+[90.225765] (-) TimerEvent: {}
+[90.326747] (-) TimerEvent: {}
+[90.427779] (-) TimerEvent: {}
+[90.528748] (-) TimerEvent: {}
+[90.629756] (-) TimerEvent: {}
+[90.730820] (-) TimerEvent: {}
+[90.831808] (-) TimerEvent: {}
+[90.932767] (-) TimerEvent: {}
+[91.033718] (-) TimerEvent: {}
+[91.134701] (-) TimerEvent: {}
+[91.235712] (-) TimerEvent: {}
+[91.336662] (-) TimerEvent: {}
+[91.437620] (-) TimerEvent: {}
+[91.538579] (-) TimerEvent: {}
+[91.639580] (-) TimerEvent: {}
+[91.740516] (-) TimerEvent: {}
+[91.841476] (-) TimerEvent: {}
+[91.942409] (-) TimerEvent: {}
+[92.043374] (-) TimerEvent: {}
+[92.144295] (-) TimerEvent: {}
+[92.245272] (-) TimerEvent: {}
+[92.346245] (-) TimerEvent: {}
+[92.447234] (-) TimerEvent: {}
+[92.548169] (-) TimerEvent: {}
+[92.649137] (-) TimerEvent: {}
+[92.750097] (-) TimerEvent: {}
+[92.851061] (-) TimerEvent: {}
+[92.951977] (-) TimerEvent: {}
+[93.052927] (-) TimerEvent: {}
+[93.153902] (-) TimerEvent: {}
+[93.254919] (-) TimerEvent: {}
+[93.355907] (-) TimerEvent: {}
+[93.456867] (-) TimerEvent: {}
+[93.557793] (-) TimerEvent: {}
+[93.658744] (-) TimerEvent: {}
+[93.759746] (-) TimerEvent: {}
+[93.860727] (-) TimerEvent: {}
+[93.961667] (-) TimerEvent: {}
+[94.062639] (-) TimerEvent: {}
+[94.163628] (-) TimerEvent: {}
+[94.264697] (-) TimerEvent: {}
+[94.365658] (-) TimerEvent: {}
+[94.466664] (-) TimerEvent: {}
+[94.567671] (-) TimerEvent: {}
+[94.668609] (-) TimerEvent: {}
+[94.769677] (-) TimerEvent: {}
+[94.870631] (-) TimerEvent: {}
+[94.971597] (-) TimerEvent: {}
+[95.072591] (-) TimerEvent: {}
+[95.173579] (-) TimerEvent: {}
+[95.274545] (-) TimerEvent: {}
+[95.375542] (-) TimerEvent: {}
+[95.476521] (-) TimerEvent: {}
+[95.577557] (-) TimerEvent: {}
+[95.678616] (-) TimerEvent: {}
+[95.779601] (-) TimerEvent: {}
+[95.880582] (-) TimerEvent: {}
+[95.981582] (-) TimerEvent: {}
+[96.082521] (-) TimerEvent: {}
+[96.183491] (-) TimerEvent: {}
+[96.284411] (-) TimerEvent: {}
+[96.385372] (-) TimerEvent: {}
+[96.486306] (-) TimerEvent: {}
+[96.587297] (-) TimerEvent: {}
+[96.688267] (-) TimerEvent: {}
+[96.789364] (-) TimerEvent: {}
+[96.890317] (-) TimerEvent: {}
+[96.991308] (-) TimerEvent: {}
+[97.092263] (-) TimerEvent: {}
+[97.193227] (-) TimerEvent: {}
+[97.294155] (-) TimerEvent: {}
+[97.395170] (-) TimerEvent: {}
+[97.496159] (-) TimerEvent: {}
+[97.597115] (-) TimerEvent: {}
+[97.698063] (-) TimerEvent: {}
+[97.799031] (-) TimerEvent: {}
+[97.899967] (-) TimerEvent: {}
+[98.000924] (-) TimerEvent: {}
+[98.101897] (-) TimerEvent: {}
+[98.202831] (-) TimerEvent: {}
+[98.303825] (-) TimerEvent: {}
+[98.404774] (-) TimerEvent: {}
+[98.505763] (-) TimerEvent: {}
+[98.606723] (-) TimerEvent: {}
+[98.707744] (-) TimerEvent: {}
+[98.808700] (-) TimerEvent: {}
+[98.909618] (-) TimerEvent: {}
+[99.010594] (-) TimerEvent: {}
+[99.111638] (-) TimerEvent: {}
+[99.212590] (-) TimerEvent: {}
+[99.313571] (-) TimerEvent: {}
+[99.414566] (-) TimerEvent: {}
+[99.515535] (-) TimerEvent: {}
+[99.616549] (-) TimerEvent: {}
+[99.717496] (-) TimerEvent: {}
+[99.818454] (-) TimerEvent: {}
+[99.919475] (-) TimerEvent: {}
+[100.020431] (-) TimerEvent: {}
+[100.121385] (-) TimerEvent: {}
+[100.222365] (-) TimerEvent: {}
+[100.323375] (-) TimerEvent: {}
+[100.424356] (-) TimerEvent: {}
+[100.525316] (-) TimerEvent: {}
+[100.626358] (-) TimerEvent: {}
+[100.727364] (-) TimerEvent: {}
+[100.828329] (-) TimerEvent: {}
+[100.929341] (-) TimerEvent: {}
+[101.030360] (-) TimerEvent: {}
+[101.131337] (-) TimerEvent: {}
+[101.232322] (-) TimerEvent: {}
+[101.333316] (-) TimerEvent: {}
+[101.434286] (-) TimerEvent: {}
+[101.535310] (-) TimerEvent: {}
+[101.636203] (-) TimerEvent: {}
+[101.737171] (-) TimerEvent: {}
+[101.838159] (-) TimerEvent: {}
+[101.939210] (-) TimerEvent: {}
+[102.040146] (-) TimerEvent: {}
+[102.141111] (-) TimerEvent: {}
+[102.242113] (-) TimerEvent: {}
+[102.343159] (-) TimerEvent: {}
+[102.444194] (-) TimerEvent: {}
+[102.545120] (-) TimerEvent: {}
+[102.646074] (-) TimerEvent: {}
+[102.747074] (-) TimerEvent: {}
+[102.848016] (-) TimerEvent: {}
+[102.948944] (-) TimerEvent: {}
+[103.049938] (-) TimerEvent: {}
+[103.150911] (-) TimerEvent: {}
+[103.251837] (-) TimerEvent: {}
+[103.352798] (-) TimerEvent: {}
+[103.453741] (-) TimerEvent: {}
+[103.554686] (-) TimerEvent: {}
+[103.655669] (-) TimerEvent: {}
+[103.756629] (-) TimerEvent: {}
+[103.857559] (-) TimerEvent: {}
+[103.958550] (-) TimerEvent: {}
+[104.059648] (-) TimerEvent: {}
+[104.160702] (-) TimerEvent: {}
+[104.261700] (-) TimerEvent: {}
+[104.362675] (-) TimerEvent: {}
+[104.463724] (-) TimerEvent: {}
+[104.564710] (-) TimerEvent: {}
+[104.665728] (-) TimerEvent: {}
+[104.766758] (-) TimerEvent: {}
+[104.867767] (-) TimerEvent: {}
+[104.968733] (-) TimerEvent: {}
+[105.069714] (-) TimerEvent: {}
+[105.170693] (-) TimerEvent: {}
+[105.271671] (-) TimerEvent: {}
+[105.372623] (-) TimerEvent: {}
+[105.473594] (-) TimerEvent: {}
+[105.574616] (-) TimerEvent: {}
+[105.675756] (-) TimerEvent: {}
+[105.776701] (-) TimerEvent: {}
+[105.877654] (-) TimerEvent: {}
+[105.978548] (-) TimerEvent: {}
+[106.090667] (-) TimerEvent: {}
+[106.191667] (-) TimerEvent: {}
+[106.292693] (-) TimerEvent: {}
+[106.393635] (-) TimerEvent: {}
+[106.494633] (-) TimerEvent: {}
+[106.595642] (-) TimerEvent: {}
+[106.696606] (-) TimerEvent: {}
+[106.797746] (-) TimerEvent: {}
+[106.898733] (-) TimerEvent: {}
+[106.999748] (-) TimerEvent: {}
+[107.100737] (-) TimerEvent: {}
+[107.201690] (-) TimerEvent: {}
+[107.302663] (-) TimerEvent: {}
+[107.403639] (-) TimerEvent: {}
+[107.504598] (-) TimerEvent: {}
+[107.605580] (-) TimerEvent: {}
+[107.706556] (-) TimerEvent: {}
+[107.807561] (-) TimerEvent: {}
+[107.908525] (-) TimerEvent: {}
+[108.009504] (-) TimerEvent: {}
+[108.110512] (-) TimerEvent: {}
+[108.211553] (-) TimerEvent: {}
+[108.312511] (-) TimerEvent: {}
+[108.413518] (-) TimerEvent: {}
+[108.514473] (-) TimerEvent: {}
+[108.615488] (-) TimerEvent: {}
+[108.716455] (-) TimerEvent: {}
+[108.817402] (-) TimerEvent: {}
+[108.918335] (-) TimerEvent: {}
+[109.019314] (-) TimerEvent: {}
+[109.120261] (-) TimerEvent: {}
+[109.221210] (-) TimerEvent: {}
+[109.322172] (-) TimerEvent: {}
+[109.423177] (-) TimerEvent: {}
+[109.524151] (-) TimerEvent: {}
+[109.625105] (-) TimerEvent: {}
+[109.726087] (-) TimerEvent: {}
+[109.827132] (-) TimerEvent: {}
+[109.928075] (-) TimerEvent: {}
+[110.029060] (-) TimerEvent: {}
+[110.130023] (-) TimerEvent: {}
+[110.231019] (-) TimerEvent: {}
+[110.331961] (-) TimerEvent: {}
+[110.432912] (-) TimerEvent: {}
+[110.533888] (-) TimerEvent: {}
+[110.634927] (-) TimerEvent: {}
+[110.735948] (-) TimerEvent: {}
+[110.836903] (-) TimerEvent: {}
+[110.937892] (-) TimerEvent: {}
+[111.038832] (-) TimerEvent: {}
+[111.139857] (-) TimerEvent: {}
+[111.240823] (-) TimerEvent: {}
+[111.341796] (-) TimerEvent: {}
+[111.442780] (-) TimerEvent: {}
+[111.543784] (-) TimerEvent: {}
+[111.644723] (-) TimerEvent: {}
+[111.745706] (-) TimerEvent: {}
+[111.846669] (-) TimerEvent: {}
+[111.947637] (-) TimerEvent: {}
+[112.048594] (-) TimerEvent: {}
+[112.149559] (-) TimerEvent: {}
+[112.250491] (-) TimerEvent: {}
+[112.351487] (-) TimerEvent: {}
+[112.452457] (-) TimerEvent: {}
+[112.553402] (-) TimerEvent: {}
+[112.654382] (-) TimerEvent: {}
+[112.755389] (-) TimerEvent: {}
+[112.856332] (-) TimerEvent: {}
+[112.957313] (-) TimerEvent: {}
+[113.058270] (-) TimerEvent: {}
+[113.159251] (-) TimerEvent: {}
+[113.260193] (-) TimerEvent: {}
+[113.361153] (-) TimerEvent: {}
+[113.462115] (-) TimerEvent: {}
+[113.563136] (-) TimerEvent: {}
+[113.664116] (-) TimerEvent: {}
+[113.765098] (-) TimerEvent: {}
+[113.866045] (-) TimerEvent: {}
+[113.967026] (-) TimerEvent: {}
+[114.067981] (-) TimerEvent: {}
+[114.169003] (-) TimerEvent: {}
+[114.269987] (-) TimerEvent: {}
+[114.371002] (-) TimerEvent: {}
+[114.471977] (-) TimerEvent: {}
+[114.572942] (-) TimerEvent: {}
+[114.673877] (-) TimerEvent: {}
+[114.774893] (-) TimerEvent: {}
+[114.875914] (-) TimerEvent: {}
+[114.976842] (-) TimerEvent: {}
+[115.077671] (-) TimerEvent: {}
+[115.178550] (-) TimerEvent: {}
+[115.279588] (-) TimerEvent: {}
+[115.380587] (-) TimerEvent: {}
+[115.481738] (-) TimerEvent: {}
+[115.582775] (-) TimerEvent: {}
+[115.683868] (-) TimerEvent: {}
+[115.784822] (-) TimerEvent: {}
+[115.885771] (-) TimerEvent: {}
+[115.986701] (-) TimerEvent: {}
+[116.087737] (-) TimerEvent: {}
+[116.188653] (-) TimerEvent: {}
+[116.289580] (-) TimerEvent: {}
+[116.390512] (-) TimerEvent: {}
+[116.491513] (-) TimerEvent: {}
+[116.592460] (-) TimerEvent: {}
+[116.693404] (-) TimerEvent: {}
+[116.794343] (-) TimerEvent: {}
+[116.895315] (-) TimerEvent: {}
+[116.996270] (-) TimerEvent: {}
+[117.097239] (-) TimerEvent: {}
+[117.198212] (-) TimerEvent: {}
+[117.299219] (-) TimerEvent: {}
+[117.400163] (-) TimerEvent: {}
+[117.501099] (-) TimerEvent: {}
+[117.602067] (-) TimerEvent: {}
+[117.703028] (-) TimerEvent: {}
+[117.803973] (-) TimerEvent: {}
+[117.904924] (-) TimerEvent: {}
+[118.005878] (-) TimerEvent: {}
+[118.106888] (-) TimerEvent: {}
+[118.209676] (-) TimerEvent: {}
+[118.310618] (-) TimerEvent: {}
+[118.411613] (-) TimerEvent: {}
+[118.512551] (-) TimerEvent: {}
+[118.613499] (-) TimerEvent: {}
+[118.714458] (-) TimerEvent: {}
+[118.815447] (-) TimerEvent: {}
+[118.916392] (-) TimerEvent: {}
+[119.017321] (-) TimerEvent: {}
+[119.118287] (-) TimerEvent: {}
+[119.219275] (-) TimerEvent: {}
+[119.320222] (-) TimerEvent: {}
+[119.421182] (-) TimerEvent: {}
+[119.522110] (-) TimerEvent: {}
+[119.623059] (-) TimerEvent: {}
+[119.724015] (-) TimerEvent: {}
+[119.824948] (-) TimerEvent: {}
+[119.925867] (-) TimerEvent: {}
+[120.026780] (-) TimerEvent: {}
+[120.127737] (-) TimerEvent: {}
+[120.228674] (-) TimerEvent: {}
+[120.329615] (-) TimerEvent: {}
+[120.430565] (-) TimerEvent: {}
+[120.531563] (-) TimerEvent: {}
+[120.632540] (-) TimerEvent: {}
+[120.733543] (-) TimerEvent: {}
+[120.834488] (-) TimerEvent: {}
+[120.935516] (-) TimerEvent: {}
+[121.036427] (-) TimerEvent: {}
+[121.137328] (-) TimerEvent: {}
+[121.241514] (-) TimerEvent: {}
+[121.342438] (-) TimerEvent: {}
+[121.443429] (-) TimerEvent: {}
+[121.544353] (-) TimerEvent: {}
+[121.645288] (-) TimerEvent: {}
+[121.746309] (-) TimerEvent: {}
+[121.847264] (-) TimerEvent: {}
+[121.948201] (-) TimerEvent: {}
+[122.049151] (-) TimerEvent: {}
+[122.150103] (-) TimerEvent: {}
+[122.251063] (-) TimerEvent: {}
+[122.351988] (-) TimerEvent: {}
+[122.452889] (-) TimerEvent: {}
+[122.553827] (-) TimerEvent: {}
+[122.654754] (-) TimerEvent: {}
+[122.755717] (-) TimerEvent: {}
+[122.856656] (-) TimerEvent: {}
+[122.957577] (-) TimerEvent: {}
+[123.058535] (-) TimerEvent: {}
+[123.159505] (-) TimerEvent: {}
+[123.260446] (-) TimerEvent: {}
+[123.361350] (-) TimerEvent: {}
+[123.462300] (-) TimerEvent: {}
+[123.563274] (-) TimerEvent: {}
+[123.664226] (-) TimerEvent: {}
+[123.765159] (-) TimerEvent: {}
+[123.866097] (-) TimerEvent: {}
+[123.967106] (-) TimerEvent: {}
+[124.068051] (-) TimerEvent: {}
+[124.169028] (-) TimerEvent: {}
+[124.270048] (-) TimerEvent: {}
+[124.371115] (-) TimerEvent: {}
+[124.472195] (-) TimerEvent: {}
+[124.573222] (-) TimerEvent: {}
+[124.674321] (-) TimerEvent: {}
+[124.775493] (-) TimerEvent: {}
+[124.876437] (-) TimerEvent: {}
+[124.977410] (-) TimerEvent: {}
+[125.078411] (-) TimerEvent: {}
+[125.179450] (-) TimerEvent: {}
+[125.280327] (-) TimerEvent: {}
+[125.381210] (-) TimerEvent: {}
+[125.482112] (-) TimerEvent: {}
+[125.583070] (-) TimerEvent: {}
+[125.684010] (-) TimerEvent: {}
+[125.784900] (-) TimerEvent: {}
+[125.885902] (-) TimerEvent: {}
+[125.987048] (-) TimerEvent: {}
+[126.088045] (-) TimerEvent: {}
+[126.188892] (-) TimerEvent: {}
+[126.289804] (-) TimerEvent: {}
+[126.390775] (-) TimerEvent: {}
+[126.491720] (-) TimerEvent: {}
+[126.592607] (-) TimerEvent: {}
+[126.693521] (-) TimerEvent: {}
+[126.794438] (-) TimerEvent: {}
+[126.895409] (-) TimerEvent: {}
+[126.996269] (-) TimerEvent: {}
+[127.097148] (-) TimerEvent: {}
+[127.198087] (-) TimerEvent: {}
+[127.299127] (-) TimerEvent: {}
+[127.400148] (-) TimerEvent: {}
+[127.501116] (-) TimerEvent: {}
+[127.537485] (xgo_head) StdoutLine: {'line': b'[  5%] \x1b[32m\x1b[1mLinking CXX executable xgo_head\x1b[0m\n'}
+[127.601330] (-) TimerEvent: {}
+[127.702338] (-) TimerEvent: {}
+[127.803532] (-) TimerEvent: {}
+[127.904508] (-) TimerEvent: {}
+[128.005470] (-) TimerEvent: {}
+[128.106400] (-) TimerEvent: {}
+[128.207410] (-) TimerEvent: {}
+[128.308496] (-) TimerEvent: {}
+[128.409652] (-) TimerEvent: {}
+[128.510868] (-) TimerEvent: {}
+[128.611830] (-) TimerEvent: {}
+[128.712973] (-) TimerEvent: {}
+[128.814186] (-) TimerEvent: {}
+[128.915295] (-) TimerEvent: {}
+[129.016544] (-) TimerEvent: {}
+[129.117672] (-) TimerEvent: {}
+[129.218831] (-) TimerEvent: {}
+[129.319800] (-) TimerEvent: {}
+[129.420950] (-) TimerEvent: {}
+[129.522162] (-) TimerEvent: {}
+[129.623285] (-) TimerEvent: {}
+[129.724404] (-) TimerEvent: {}
+[129.825608] (-) TimerEvent: {}
+[129.926701] (-) TimerEvent: {}
+[130.027914] (-) TimerEvent: {}
+[130.128904] (-) TimerEvent: {}
+[130.230055] (-) TimerEvent: {}
+[130.331267] (-) TimerEvent: {}
+[130.432193] (-) TimerEvent: {}
+[130.533355] (-) TimerEvent: {}
+[130.634548] (-) TimerEvent: {}
+[130.735676] (-) TimerEvent: {}
+[130.836763] (-) TimerEvent: {}
+[130.937896] (-) TimerEvent: {}
+[131.039101] (-) TimerEvent: {}
+[131.140169] (-) TimerEvent: {}
+[131.254047] (-) TimerEvent: {}
+[131.355007] (-) TimerEvent: {}
+[131.456142] (-) TimerEvent: {}
+[131.557280] (-) TimerEvent: {}
+[131.658215] (-) TimerEvent: {}
+[131.759340] (-) TimerEvent: {}
+[131.860481] (-) TimerEvent: {}
+[131.961619] (-) TimerEvent: {}
+[132.062552] (-) TimerEvent: {}
+[132.163732] (-) TimerEvent: {}
+[132.264839] (-) TimerEvent: {}
+[132.365759] (-) TimerEvent: {}
+[132.466962] (-) TimerEvent: {}
+[132.568067] (-) TimerEvent: {}
+[132.668999] (-) TimerEvent: {}
+[132.770137] (-) TimerEvent: {}
+[132.871322] (-) TimerEvent: {}
+[132.972255] (-) TimerEvent: {}
+[133.073402] (-) TimerEvent: {}
+[133.174587] (-) TimerEvent: {}
+[133.275706] (-) TimerEvent: {}
+[133.376843] (-) TimerEvent: {}
+[133.478062] (-) TimerEvent: {}
+[133.579187] (-) TimerEvent: {}
+[133.680316] (-) TimerEvent: {}
+[133.781296] (-) TimerEvent: {}
+[133.882452] (-) TimerEvent: {}
+[133.983378] (-) TimerEvent: {}
+[134.084381] (-) TimerEvent: {}
+[134.185306] (-) TimerEvent: {}
+[134.286449] (-) TimerEvent: {}
+[134.387659] (-) TimerEvent: {}
+[134.488586] (-) TimerEvent: {}
+[134.589734] (-) TimerEvent: {}
+[134.690924] (-) TimerEvent: {}
+[134.791836] (-) TimerEvent: {}
+[134.892986] (-) TimerEvent: {}
+[134.994140] (-) TimerEvent: {}
+[135.095078] (-) TimerEvent: {}
+[135.196079] (-) TimerEvent: {}
+[135.297065] (-) TimerEvent: {}
+[135.398253] (-) TimerEvent: {}
+[135.499356] (-) TimerEvent: {}
+[135.600478] (-) TimerEvent: {}
+[135.701629] (-) TimerEvent: {}
+[135.802548] (-) TimerEvent: {}
+[135.903736] (-) TimerEvent: {}
+[136.004890] (-) TimerEvent: {}
+[136.105809] (-) TimerEvent: {}
+[136.207072] (-) TimerEvent: {}
+[136.309974] (-) TimerEvent: {}
+[136.411016] (-) TimerEvent: {}
+[136.512162] (-) TimerEvent: {}
+[136.613310] (-) TimerEvent: {}
+[136.714512] (-) TimerEvent: {}
+[136.815690] (-) TimerEvent: {}
+[136.916824] (-) TimerEvent: {}
+[137.017744] (-) TimerEvent: {}
+[137.118917] (-) TimerEvent: {}
+[137.220062] (-) TimerEvent: {}
+[137.320991] (-) TimerEvent: {}
+[137.422130] (-) TimerEvent: {}
+[137.523376] (-) TimerEvent: {}
+[137.624445] (-) TimerEvent: {}
+[137.725475] (-) TimerEvent: {}
+[137.826413] (-) TimerEvent: {}
+[137.927513] (-) TimerEvent: {}
+[138.028537] (-) TimerEvent: {}
+[138.129598] (-) TimerEvent: {}
+[138.230718] (-) TimerEvent: {}
+[138.331812] (-) TimerEvent: {}
+[138.432786] (-) TimerEvent: {}
+[138.533992] (-) TimerEvent: {}
+[138.635167] (-) TimerEvent: {}
+[138.736398] (-) TimerEvent: {}
+[138.837632] (-) TimerEvent: {}
+[138.938823] (-) TimerEvent: {}
+[139.039917] (-) TimerEvent: {}
+[139.140954] (-) TimerEvent: {}
+[139.242021] (-) TimerEvent: {}
+[139.344025] (-) TimerEvent: {}
+[139.445107] (-) TimerEvent: {}
+[139.546151] (-) TimerEvent: {}
+[139.647115] (-) TimerEvent: {}
+[139.748303] (-) TimerEvent: {}
+[139.849378] (-) TimerEvent: {}
+[139.950406] (-) TimerEvent: {}
+[140.051421] (-) TimerEvent: {}
+[140.152576] (-) TimerEvent: {}
+[140.253720] (-) TimerEvent: {}
+[140.354804] (-) TimerEvent: {}
+[140.456051] (-) TimerEvent: {}
+[140.557173] (-) TimerEvent: {}
+[140.658362] (-) TimerEvent: {}
+[140.759475] (-) TimerEvent: {}
+[140.860457] (-) TimerEvent: {}
+[140.961531] (-) TimerEvent: {}
+[141.062571] (-) TimerEvent: {}
+[141.163539] (-) TimerEvent: {}
+[141.264534] (-) TimerEvent: {}
+[141.365584] (-) TimerEvent: {}
+[141.466570] (-) TimerEvent: {}
+[141.567558] (-) TimerEvent: {}
+[141.668469] (-) TimerEvent: {}
+[141.769321] (-) TimerEvent: {}
+[141.870127] (-) TimerEvent: {}
+[141.970941] (-) TimerEvent: {}
+[142.071743] (-) TimerEvent: {}
+[142.172549] (-) TimerEvent: {}
+[142.273393] (-) TimerEvent: {}
+[142.374191] (-) TimerEvent: {}
+[142.475023] (-) TimerEvent: {}
+[142.575826] (-) TimerEvent: {}
+[142.676625] (-) TimerEvent: {}
+[142.777433] (-) TimerEvent: {}
+[142.878234] (-) TimerEvent: {}
+[142.979042] (-) TimerEvent: {}
+[143.079859] (-) TimerEvent: {}
+[143.180666] (-) TimerEvent: {}
+[143.281542] (-) TimerEvent: {}
+[143.382384] (-) TimerEvent: {}
+[143.483225] (-) TimerEvent: {}
+[143.584017] (-) TimerEvent: {}
+[143.684812] (-) TimerEvent: {}
+[143.785638] (-) TimerEvent: {}
+[143.886492] (-) TimerEvent: {}
+[143.987321] (-) TimerEvent: {}
+[144.088133] (-) TimerEvent: {}
+[144.188930] (-) TimerEvent: {}
+[144.289737] (-) TimerEvent: {}
+[144.390540] (-) TimerEvent: {}
+[144.491387] (-) TimerEvent: {}
+[144.592183] (-) TimerEvent: {}
+[144.692993] (-) TimerEvent: {}
+[144.793792] (-) TimerEvent: {}
+[144.894614] (-) TimerEvent: {}
+[144.995541] (-) TimerEvent: {}
+[145.096479] (-) TimerEvent: {}
+[145.197437] (-) TimerEvent: {}
+[145.298315] (-) TimerEvent: {}
+[145.399213] (-) TimerEvent: {}
+[145.500101] (-) TimerEvent: {}
+[145.600983] (-) TimerEvent: {}
+[145.701906] (-) TimerEvent: {}
+[145.802782] (-) TimerEvent: {}
+[145.903698] (-) TimerEvent: {}
+[146.004636] (-) TimerEvent: {}
+[146.105424] (-) TimerEvent: {}
+[146.206218] (-) TimerEvent: {}
+[146.307060] (-) TimerEvent: {}
+[146.466696] (-) TimerEvent: {}
+[146.567518] (-) TimerEvent: {}
+[146.668355] (-) TimerEvent: {}
+[146.769304] (-) TimerEvent: {}
+[146.870275] (-) TimerEvent: {}
+[146.971367] (-) TimerEvent: {}
+[147.072272] (-) TimerEvent: {}
+[147.173196] (-) TimerEvent: {}
+[147.274112] (-) TimerEvent: {}
+[147.337218] (xgo_head) StdoutLine: {'line': b'[100%] Built target xgo_head\n'}
+[147.374349] (-) TimerEvent: {}
+[147.382976] (xgo_head) CommandEnded: {'returncode': 0}
+[147.393015] (xgo_head) JobProgress: {'identifier': 'xgo_head', 'progress': 'install'}
+[147.394702] (xgo_head) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sunrise/xgo_demo/build/xgo_head'], 'cwd': '/home/sunrise/xgo_demo/build/xgo_head', 'env': OrderedDict([('LANGUAGE', 'en_US.UTF-8'), ('USER', 'sunrise'), ('SSH_CLIENT', '192.168.157.219 64140 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/sunrise/.vscode-server/cli/servers/Stable-488a1f239235055e34e673291fb8d8c810886f81/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sunrise/xgo_demo/install/xgo_body/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/sunrise/.vscode-server/cli/servers/Stable-488a1f239235055e34e673291fb8d8c810886f81/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/sunrise'), ('TERM_PROGRAM_VERSION', '1.102.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-584a8930-6615-43e2-9101-c8764aec9cd4.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/sunrise/.vscode-server/cli/servers/Stable-488a1f239235055e34e673291fb8d8c810886f81/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/sunrise/.vscode-server/cli/servers/Stable-488a1f239235055e34e673291fb8d8c810886f81/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/sunrise/xgo_demo/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunrise'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/sunrise/.vscode-server/cli/servers/Stable-488a1f239235055e34e673291fb8d8c810886f81/server/bin/remote-cli:/opt/tros/humble/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sunrise/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-06ac1395be.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_body_py:/home/sunrise/xgo_demo/install/xgo_body:/opt/tros/humble:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/sunrise/xgo_demo/build/xgo_head'), ('SSH_CONNECTION', '192.168.157.219 64140 192.168.157.118 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sunrise/xgo_demo/install/xgo_body_py/lib/python3.10/site-packages:/home/sunrise/xgo_demo/install/xgo_body/local/lib/python3.10/dist-packages:/opt/tros/humble/lib/python3.10/site-packages:/opt/tros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_body:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble')]), 'shell': False}
+[147.424996] (xgo_head) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[147.429787] (xgo_head) StdoutLine: {'line': b'-- Installing: /home/sunrise/xgo_demo/install/xgo_head/lib/xgo_head/xgo_head\n'}
+[147.474611] (-) TimerEvent: {}
+[147.488907] (xgo_head) StdoutLine: {'line': b'-- Set runtime path of "/home/sunrise/xgo_demo/install/xgo_head/lib/xgo_head/xgo_head" to ""\n'}
+[147.492396] (xgo_head) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_head/share/ament_index/resource_index/package_run_dependencies/xgo_head\n'}
+[147.493449] (xgo_head) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_head/share/ament_index/resource_index/parent_prefix_path/xgo_head\n'}
+[147.500033] (xgo_head) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_head/share/xgo_head/environment/ament_prefix_path.sh\n'}
+[147.503714] (xgo_head) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_head/share/xgo_head/environment/ament_prefix_path.dsv\n'}
+[147.504884] (xgo_head) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_head/share/xgo_head/environment/path.sh\n'}
+[147.505869] (xgo_head) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_head/share/xgo_head/environment/path.dsv\n'}
+[147.506502] (xgo_head) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_head/share/xgo_head/local_setup.bash\n'}
+[147.507183] (xgo_head) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_head/share/xgo_head/local_setup.sh\n'}
+[147.507803] (xgo_head) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_head/share/xgo_head/local_setup.zsh\n'}
+[147.508621] (xgo_head) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_head/share/xgo_head/local_setup.dsv\n'}
+[147.509446] (xgo_head) StdoutLine: {'line': b'-- Installing: /home/sunrise/xgo_demo/install/xgo_head/share/xgo_head/package.dsv\n'}
+[147.510314] (xgo_head) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_head/share/ament_index/resource_index/packages/xgo_head\n'}
+[147.511635] (xgo_head) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_head/share/xgo_head/cmake/xgo_headConfig.cmake\n'}
+[147.512434] (xgo_head) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_head/share/xgo_head/cmake/xgo_headConfig-version.cmake\n'}
+[147.513309] (xgo_head) StdoutLine: {'line': b'-- Up-to-date: /home/sunrise/xgo_demo/install/xgo_head/share/xgo_head/package.xml\n'}
+[147.518000] (xgo_head) CommandEnded: {'returncode': 0}
+[147.574734] (-) TimerEvent: {}
+[147.632508] (xgo_head) JobEnded: {'identifier': 'xgo_head', 'rc': 0}
+[147.638185] (-) EventReactorShutdown: {}

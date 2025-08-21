@@ -1,0 +1,23 @@
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:[m[K In member function ‘[01m[Kvoid rclcomm::recvHandFollowCallback(ai_msgs::msg::PerceptionTargets_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:504:21:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[KQPointF[m[K’ and ‘[01m[Kstd::optional<QPointF>[m[K’)
+  504 |             p.pos = [01;31m[KindexTip[m[K;
+      |                     [01;31m[K^~~~~~~~[m[K
+In file included from [01m[K/usr/include/aarch64-linux-gnu/qt5/QtCore/qrect.h:45[m[K,
+                 from [01m[K/usr/include/aarch64-linux-gnu/qt5/QtGui/qpaintdevice.h:45[m[K,
+                 from [01m[K/usr/include/aarch64-linux-gnu/qt5/QtGui/qimage.h:46[m[K,
+                 from [01m[K/usr/include/aarch64-linux-gnu/qt5/QtGui/QImage:1[m[K,
+                 from [01m[K/home/sunrise/xgo_demo/src/xgo_head/include/rclcomm.h:5[m[K,
+                 from [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:1[m[K:
+[01m[K/usr/include/aarch64-linux-gnu/qt5/QtCore/qpoint.h:221:21:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr QPointF& QPointF::operator=(const QPointF&)[m[K’
+  221 | class Q_CORE_EXPORT [01;36m[KQPointF[m[K
+      |                     [01;36m[K^~~~~~~[m[K
+[01m[K/usr/include/aarch64-linux-gnu/qt5/QtCore/qpoint.h:221:21:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::optional<QPointF>[m[K’ to ‘[01m[Kconst QPointF&[m[K’
+[01m[K/usr/include/aarch64-linux-gnu/qt5/QtCore/qpoint.h:221:21:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr QPointF& QPointF::operator=(QPointF&&)[m[K’
+[01m[K/usr/include/aarch64-linux-gnu/qt5/QtCore/qpoint.h:221:21:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::optional<QPointF>[m[K’ to ‘[01m[KQPointF&&[m[K’
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:[m[K In member function ‘[01m[Kstd::optional<QPointF> rclcomm::extractIndexFingerTip(ai_msgs::msg::Target)[m[K’:
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:528:19:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ai_msgs::msg::Point_<std::allocator<void> >, std::allocator<ai_msgs::msg::Point_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  528 |   for (int i = 0;[01;35m[Ki<pointList.size()[m[K; i++) {
+      |                  [01;35m[K~^~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/xgo_head.dir/build.make:290: CMakeFiles/xgo_head.dir/src/rclcomm.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/xgo_head.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

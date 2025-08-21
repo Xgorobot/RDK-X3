@@ -1,0 +1,26 @@
+[0.061s] Invoking command in '/home/sunrise/xgo_demo/build/xgo_head': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/xgo_demo/build/xgo_head -- -j4 -l4
+[0.615s] [35m[1mConsolidate compiler generated dependencies of target xgo_head[0m
+[1.096s] [  2%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/rclcomm.cpp.o[0m
+[26.922s] In file included from [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:1[m[K:
+[26.922s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/include/rclcomm.h:58:55:[m[K [01;35m[Kwarning: [m[Kuse of ‘[01m[Kauto[m[K’ in parameter declaration only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-fconcepts[m[K’
+[26.923s]    58 |     std::optional<QPoint> extractIndexFingerTip(const [01;35m[Kauto[m[K& target);
+[26.924s]       |                                                       [01;35m[K^~~~[m[K
+[28.408s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:[m[K In member function ‘[01m[Kvoid rclcomm::recvCompressedImageCallback(sensor_msgs::msg::CompressedImage_<std::allocator<void> >::SharedPtr)[m[K’:
+[28.408s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:381:5:[m[K [01;31m[Kerror: [m[Kjump to case label
+[28.409s]   381 |     [01;31m[Kdefault[m[K:
+[28.409s]       |     [01;31m[K^~~~~~~[m[K
+[28.410s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:358:12:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[KQPen pen[m[K’
+[28.411s]   358 |       QPen [01;36m[Kpen[m[K;
+[28.411s]       |            [01;36m[K^~~[m[K
+[28.472s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:[m[K In member function ‘[01m[Kvoid rclcomm::recvHandFollowCallback(ai_msgs::msg::PerceptionTargets_<std::allocator<void> >::SharedPtr)[m[K’:
+[28.473s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:471:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KtargetNum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[28.474s]   471 |   auto [01;35m[KtargetNum[m[K = targetList.size();
+[28.474s]       |        [01;35m[K^~~~~~~~~[m[K
+[28.475s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:[m[K At global scope:
+[28.476s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:505:60:[m[K [01;35m[Kwarning: [m[Kuse of ‘[01m[Kauto[m[K’ in parameter declaration only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-fconcepts[m[K’
+[28.476s]   505 | std::optional<QPoint> rclcomm::extractIndexFingerTip(const [01;35m[Kauto[m[K& target) {
+[28.477s]       |                                                            [01;35m[K^~~~[m[K
+[67.684s] gmake[2]: *** [CMakeFiles/xgo_head.dir/build.make:290: CMakeFiles/xgo_head.dir/src/rclcomm.cpp.o] Error 1
+[67.685s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/xgo_head.dir/all] Error 2
+[67.686s] gmake: *** [Makefile:146: all] Error 2
+[67.695s] Invoked command in '/home/sunrise/xgo_demo/build/xgo_head' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/xgo_demo/build/xgo_head -- -j4 -l4

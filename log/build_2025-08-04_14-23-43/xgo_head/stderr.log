@@ -1,0 +1,15 @@
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::updateTopicInfo(QString)[m[K’:
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:69:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   69 | void MainWindow::updateTopicInfo([01;35m[KQString data[m[K){
+      |                                  [01;35m[K~~~~~~~~^~~~[m[K
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::onGpioData(int, int, int)[m[K’:
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:129:27:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KpauseScreen[m[K’ in ‘[01m[K((MainWindow*)this)->MainWindow::mScreenThread[m[K’, which is of pointer type ‘[01m[KScreenThread*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+  129 |       this->mScreenThread.[01;31m[KpauseScreen[m[K(false);
+      |                           [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:158:78:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KpauseScreen[m[K’ in ‘[01m[K((MainWindow*)this)->MainWindow::mScreenThread[m[K’, which is of pointer type ‘[01m[KScreenThread*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+  158 |       if(m_labels[currentlabel]->is_hide_window == true) this->mScreenThread.[01;31m[KpauseScreen[m[K(true);
+      |                                                                              [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/xgo_head.dir/build.make:276: CMakeFiles/xgo_head.dir/src/mainwindow.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/xgo_head.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
