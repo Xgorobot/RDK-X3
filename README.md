@@ -6,3 +6,5 @@ RDK X3  Robot
 ```
 ros2 run xgo_head xgo_head
 ```
+# 编译脚本
+由于当前版本中，xgo_head功能包的体量较大，编译速度较慢，可以使用quickbuild.sh加快编译
