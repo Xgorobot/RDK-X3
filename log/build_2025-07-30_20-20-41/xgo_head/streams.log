@@ -1,0 +1,20 @@
+[1.994s] Invoking command in '/home/sunrise/xgo_demo/build/xgo_head': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/xgo_demo/build/xgo_head -- -j4 -l4
+[2.188s] [  2%] [34m[1mGenerating include/moc_rclcomm.cpp[0m
+[2.698s] [35m[1mConsolidate compiler generated dependencies of target xgo_head[0m
+[3.026s] [  5%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/main.cpp.o[0m
+[37.892s] [  8%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/include/moc_mainwindow.cpp.o[0m
+[71.147s] [ 14%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/rclcomm.cpp.o[0m
+[71.148s] [ 14%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/include/moc_rclcomm.cpp.o[0m
+[101.123s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:[m[K In member function ‘[01m[Kvoid rclcomm::recvFaceAgeCallback(ai_msgs::msg::PerceptionTargets_<std::allocator<void> >::SharedPtr)[m[K’:
+[101.124s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:552:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kj[m[K’ was not declared in this scope; did you mean ‘[01m[Kjn[m[K’?
+[101.125s]   552 |     auto faceAge = targetList[[01;31m[Kj[m[K].attributes;
+[101.126s]       |                               [01;31m[K^[m[K
+[101.127s]       |                               [32m[Kjn[m[K
+[101.236s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:565:7:[m[K [01;31m[Kerror: [m[K‘[01m[KmFaceAgeType[m[K’ was not declared in this scope; did you mean ‘[01m[KmFaceAge[m[K’?
+[101.237s]   565 |       [01;31m[KmFaceAgeType[m[K.append(text);
+[101.238s]       |       [01;31m[K^~~~~~~~~~~~[m[K
+[101.239s]       |       [32m[KmFaceAge[m[K
+[141.661s] gmake[2]: *** [CMakeFiles/xgo_head.dir/build.make:290: CMakeFiles/xgo_head.dir/src/rclcomm.cpp.o] Error 1
+[141.662s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/xgo_head.dir/all] Error 2
+[141.663s] gmake: *** [Makefile:146: all] Error 2
+[141.671s] Invoked command in '/home/sunrise/xgo_demo/build/xgo_head' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/xgo_demo/build/xgo_head -- -j4 -l4

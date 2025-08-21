@@ -1,0 +1,36 @@
+[0.071s] Invoking command in '/home/sunrise/xgo_demo/build/xgo_head': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/xgo_demo/build/xgo_head -- -j4 -l4
+[0.338s] [  2%] [34m[1mGenerating include/moc_rclcomm.cpp[0m
+[0.792s] [35m[1mConsolidate compiler generated dependencies of target xgo_head[0m
+[1.096s] [  5%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/main.cpp.o[0m
+[43.496s] [  8%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/include/moc_mainwindow.cpp.o[0m
+[85.346s] [ 11%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/include/moc_rclcomm.cpp.o[0m
+[125.788s] [ 14%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/rclcomm.cpp.o[0m
+[159.566s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:[m[K In member function ‘[01m[Kvoid rclcomm::recvHandFollowCallback(ai_msgs::msg::PerceptionTargets_<std::allocator<void> >::SharedPtr)[m[K’:
+[159.570s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:492:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KtargetNum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[159.572s]   492 |   auto [01;35m[KtargetNum[m[K = targetList.size();
+[159.573s]       |        [01;35m[K^~~~~~~~~[m[K
+[159.574s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:[m[K In member function ‘[01m[Kstd::optional<QPointF> rclcomm::extractIndexFingerTip(ai_msgs::msg::Target)[m[K’:
+[159.575s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:528:19:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ai_msgs::msg::Point_<std::allocator<void> >, std::allocator<ai_msgs::msg::Point_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[159.579s]   528 |   for (int i = 0;[01;35m[Ki<pointList.size()[m[K; i++) {
+[159.581s]       |                  [01;35m[K~^~~~~~~~~~~~~~~~~[m[K
+[159.582s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:529:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::vector<ai_msgs::msg::Point_<std::allocator<void> >, std::allocator<ai_msgs::msg::Point_<std::allocator<void> > > >[m[K’ has no member named ‘[01m[Ktype[m[K’
+[159.583s]   529 |     if (pointList.[01;31m[Ktype[m[K == "hand_kps") {
+[159.583s]       |                   [01;31m[K^~~~[m[K
+[159.584s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:530:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::vector<ai_msgs::msg::Point_<std::allocator<void> >, std::allocator<ai_msgs::msg::Point_<std::allocator<void> > > >[m[K’ has no member named ‘[01m[Kpoint[m[K’; did you mean ‘[01m[Kpointer[m[K’?
+[159.585s]   530 |       if (pointList.[01;31m[Kpoint[m[K.size() > 8) {
+[159.585s]       |                     [01;31m[K^~~~~[m[K
+[159.586s]       |                     [32m[Kpointer[m[K
+[159.587s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:531:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::vector<ai_msgs::msg::Point_<std::allocator<void> >, std::allocator<ai_msgs::msg::Point_<std::allocator<void> > > >[m[K’ has no member named ‘[01m[Kpoint[m[K’; did you mean ‘[01m[Kpointer[m[K’?
+[159.588s]   531 |         auto pt = pointList.[01;31m[Kpoint[m[K[8]; // 食指指尖
+[159.588s]       |                             [01;31m[K^~~~~[m[K
+[159.589s]       |                             [32m[Kpointer[m[K
+[159.590s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:532:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::vector<ai_msgs::msg::Point_<std::allocator<void> >, std::allocator<ai_msgs::msg::Point_<std::allocator<void> > > >[m[K’ has no member named ‘[01m[Kconfidence[m[K’
+[159.591s]   532 |           if (pointList.[01;31m[Kconfidence[m[K[8] > 0.5) { // 置信度过滤
+[159.592s]       |                         [01;31m[K^~~~~~~~~~[m[K
+[159.646s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:535:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kpf[m[K’ was not declared in this scope
+[159.647s]   535 |             return QPointF([01;31m[Kpf[m[K.x(), pt.y());
+[159.648s]       |                            [01;31m[K^~[m[K
+[209.332s] gmake[2]: *** [CMakeFiles/xgo_head.dir/build.make:290: CMakeFiles/xgo_head.dir/src/rclcomm.cpp.o] Error 1
+[209.334s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/xgo_head.dir/all] Error 2
+[209.336s] gmake: *** [Makefile:146: all] Error 2
+[209.345s] Invoked command in '/home/sunrise/xgo_demo/build/xgo_head' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/xgo_demo/build/xgo_head -- -j4 -l4

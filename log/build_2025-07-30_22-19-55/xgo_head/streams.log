@@ -1,0 +1,15 @@
+[3.178s] Invoking command in '/home/sunrise/xgo_demo/build/xgo_head': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/xgo_demo/build/xgo_head -- -j4 -l4
+[3.674s] [35m[1mConsolidate compiler generated dependencies of target xgo_head[0m
+[4.247s] [  2%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/rclcomm.cpp.o[0m
+[46.816s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:21:19:[m[K [01;31m[Kerror: [m[Kdefinition of implicitly-declared ‘[01m[Kvirtual rclcomm::~rclcomm()[m[K’
+[46.816s]    21 | rclcomm::~rclcomm([01;31m[K)[m[K
+[46.817s]       |                   [01;31m[K^[m[K
+[47.076s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:[m[K In member function ‘[01m[Kvoid rclcomm::recvCompressedImageCallback(sensor_msgs::msg::CompressedImage_<std::allocator<void> >::SharedPtr)[m[K’:
+[47.077s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:305:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kwidth[m[K’ was not declared in this scope; did you mean ‘[01m[Kwcwidth[m[K’?
+[47.078s]   305 |           painter.translate([01;31m[Kwidth[m[K(), 0);
+[47.079s]       |                             [01;31m[K^~~~~[m[K
+[47.081s]       |                             [32m[Kwcwidth[m[K
+[104.547s] gmake[2]: *** [CMakeFiles/xgo_head.dir/build.make:290: CMakeFiles/xgo_head.dir/src/rclcomm.cpp.o] Error 1
+[104.550s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/xgo_head.dir/all] Error 2
+[104.551s] gmake: *** [Makefile:146: all] Error 2
+[104.567s] Invoked command in '/home/sunrise/xgo_demo/build/xgo_head' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/xgo_demo/build/xgo_head -- -j4 -l4

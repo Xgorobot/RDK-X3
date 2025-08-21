@@ -1,0 +1,13 @@
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:[m[K In member function ‘[01m[Kvoid rclcomm::recvCompressedImageCallback(sensor_msgs::msg::CompressedImage_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:442:18:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTLog::d(const char [34], double&, double&, double&, double&)[m[K’
+  442 |           [01;31m[KTLog::d("draw line from (%f,%f) to (%f,%f)", prevX, prevY, currX, currY)[m[K;
+      |           [01;31m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/sunrise/xgo_demo/src/xgo_head/include/rclcomm.h:30[m[K,
+                 from [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:1[m[K:
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/include/TLog.h:27:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstatic void TLog::d(QString)[m[K’
+   27 |     static void [01;36m[Kd[m[K(QString txt);
+      |                 [01;36m[K^[m[K
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/include/TLog.h:27:17:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 5 provided
+gmake[2]: *** [CMakeFiles/xgo_head.dir/build.make:290: CMakeFiles/xgo_head.dir/src/rclcomm.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/xgo_head.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

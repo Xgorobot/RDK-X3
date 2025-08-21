@@ -1,0 +1,72 @@
+[4.097s] Invoking command in '/home/sunrise/xgo_demo/build/xgo_head': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/xgo_demo/build/xgo_head -- -j4 -l4
+[4.432s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[6.311s] -- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)
+[6.593s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[6.623s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[6.695s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[6.794s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.921s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.213s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[7.532s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[7.557s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[8.378s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[8.804s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[9.114s] -- Found ai_msgs: 2.0.1 (/opt/tros/humble/share/ai_msgs/cmake)
+[9.295s] -- Found hbm_img_msgs: 2.0.0 (/opt/tros/humble/share/hbm_img_msgs/cmake)
+[9.422s] -- Found audio_msg: 2.0.0 (/opt/tros/humble/share/audio_msg/cmake)
+[10.905s] -- Configuring done
+[11.129s] -- Generating done
+[11.167s] -- Build files have been written to: /home/sunrise/xgo_demo/build/xgo_head
+[11.353s] [35m[1mConsolidate compiler generated dependencies of target xgo_head[0m
+[11.654s] [  2%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/GpioReader.cpp.o[0m
+[11.662s] [  5%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/MatrixLabel.cpp.o[0m
+[11.680s] [  8%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/SpiScreen2Inch.cpp.o[0m
+[11.697s] [ 11%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/TGpioUtil.cpp.o[0m
+[15.761s] [ 14%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/TLog.cpp.o[0m
+[21.775s] [ 17%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/TSpiUtil.cpp.o[0m
+[22.122s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/SpiScreen2Inch.cpp:[m[K In constructor ‘[01m[KSpiScreen2Inch::SpiScreen2Inch(int, int, int, int, int, int)[m[K’:
+[22.126s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/SpiScreen2Inch.cpp:6:92:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KgpioCS[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[22.130s]     6 | SpiScreen2Inch::SpiScreen2Inch(int controllerIndex, int deviceIndex, int spiFrequency, [01;35m[Kint gpioCS[m[K, int gpioRest, int gpioDC)
+[22.137s]       |                                                                                        [01;35m[K~~~~^~~~~~[m[K
+[22.148s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/SpiScreen2Inch.cpp:[m[K In member function ‘[01m[Kvoid SpiScreen2Inch::showImg(QImage*)[m[K’:
+[22.152s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/SpiScreen2Inch.cpp:159:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kresult[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[22.156s]   159 |   int [01;35m[Kresult[m[K = TGpioUtil::writeGpioValue(QString::number(this->mGpioDC).toStdString().c_str(), "1");
+[22.160s]       |       [01;35m[K^~~~~~[m[K
+[22.164s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/SpiScreen2Inch.cpp:[m[K In member function ‘[01m[Kvoid SpiScreen2Inch::spiCommand(uint8_t)[m[K’:
+[22.169s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/SpiScreen2Inch.cpp:199:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KresultGpio[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[22.181s]   199 |   int [01;35m[KresultGpio[m[K = TGpioUtil::writeGpioValue(QString::number(this->mGpioDC).toStdString().c_str(), "0");
+[22.184s]       |       [01;35m[K^~~~~~~~~~[m[K
+[22.188s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/SpiScreen2Inch.cpp:204:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KresultSpi[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[22.192s]   204 |   bool [01;35m[KresultSpi[m[K = TSpiUtil::spiWrite(this->mSpi, (const uint8_t*)spi_tx_buffer, 1);
+[22.203s]       |        [01;35m[K^~~~~~~~~[m[K
+[22.207s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/SpiScreen2Inch.cpp:[m[K In member function ‘[01m[Kvoid SpiScreen2Inch::spiData(uint8_t)[m[K’:
+[22.216s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/SpiScreen2Inch.cpp:217:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kresult[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[22.219s]   217 |   bool [01;35m[Kresult[m[K = TSpiUtil::spiWrite(this->mSpi, (const uint8_t*)&oxValue, 1);
+[22.223s]       |        [01;35m[K^~~~~~[m[K
+[22.705s] [ 20%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/TUtil.cpp.o[0m
+[24.048s] [ 22%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/XgoSpeaker.cpp.o[0m
+[29.409s] [ 25%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/main.cpp.o[0m
+[30.647s] [ 28%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/mainwindow.cpp.o[0m
+[31.025s] [ 31%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/rclcomm.cpp.o[0m
+[32.705s] [ 34%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/qrc_images.cpp.o[0m
+[69.391s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::updateTopicInfo(QString)[m[K’:
+[69.398s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:69:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[69.402s]    69 | void MainWindow::updateTopicInfo([01;35m[KQString data[m[K){
+[69.406s]       |                                  [01;35m[K~~~~~~~~^~~~[m[K
+[95.622s] [ 37%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/include/moc_SpiScreen2Inch.cpp.o[0m
+[96.690s] [ 40%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/include/moc_MatrixLabel.cpp.o[0m
+[98.754s] [ 42%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/include/moc_GpioReader.cpp.o[0m
+[134.906s] [ 45%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/include/moc_TSpiUtil.cpp.o[0m
+[135.001s] [ 48%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/include/moc_TLog.cpp.o[0m
+[135.096s] [ 51%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/include/moc_TUtil.cpp.o[0m
+[135.194s] [ 54%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/include/moc_XgoSpeaker.cpp.o[0m
+[137.237s] [ 57%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/include/moc_mainwindow.cpp.o[0m
+[139.279s] [ 60%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/include/moc_TGpioUtil.cpp.o[0m
+[139.394s] [ 62%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/include/moc_rclcomm.cpp.o[0m
+[278.221s] [01m[Kc++:[m[K [01;31m[Kfatal error: [m[KKilled signal terminated program cc1plus
+[278.226s] compilation terminated.
+[278.321s] gmake[2]: *** [CMakeFiles/xgo_head.dir/build.make:290: CMakeFiles/xgo_head.dir/src/rclcomm.cpp.o] Error 1
+[278.342s] gmake[2]: *** Waiting for unfinished jobs....
+[299.745s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/xgo_head.dir/all] Error 2
+[299.745s] gmake: *** [Makefile:146: all] Error 2
+[299.899s] Invoked command in '/home/sunrise/xgo_demo/build/xgo_head' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/xgo_demo/build/xgo_head -- -j4 -l4

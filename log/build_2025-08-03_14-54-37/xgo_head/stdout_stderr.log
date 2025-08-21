@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target xgo_head[0m
+[  2%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/rclcomm.cpp.o[0m
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:[m[K In member function ‘[01m[Kstd::optional<QPointF> rclcomm::extractIndexFingerTip(ai_msgs::msg::Target)[m[K’:
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:531:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::vector<geometry_msgs::msg::Point32_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point32_<std::allocator<void> > > >[m[K’ has no member named ‘[01m[Ktype[m[K’
+  531 |     if (handPoint.[01;31m[Ktype[m[K == "hand_kps") {
+      |                   [01;31m[K^~~~[m[K
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:532:57:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTLog::TLog(QString)[m[K’
+  532 |       TLog(QString("pointlist:%1").arg(handPoint.size())[01;31m[K)[m[K;
+      |                                                         [01;31m[K^[m[K
+In file included from [01m[K/home/sunrise/xgo_demo/src/xgo_head/include/rclcomm.h:29[m[K,
+                 from [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:1[m[K:
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/include/TLog.h:14:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr TLog::TLog()[m[K’
+   14 | class [01;36m[KTLog[m[K
+      |       [01;36m[K^~~~[m[K
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/include/TLog.h:14:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/include/TLog.h:14:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr TLog::TLog(const TLog&)[m[K’
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/include/TLog.h:14:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KQString[m[K’ to ‘[01m[Kconst TLog&[m[K’
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/include/TLog.h:14:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr TLog::TLog(TLog&&)[m[K’
+[01m[K/home/sunrise/xgo_demo/src/xgo_head/include/TLog.h:14:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KQString[m[K’ to ‘[01m[KTLog&&[m[K’
+gmake[2]: *** [CMakeFiles/xgo_head.dir/build.make:290: CMakeFiles/xgo_head.dir/src/rclcomm.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/xgo_head.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

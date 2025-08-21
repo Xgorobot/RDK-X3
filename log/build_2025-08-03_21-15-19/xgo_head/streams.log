@@ -1,0 +1,21 @@
+[2.337s] Invoking command in '/home/sunrise/xgo_demo/build/xgo_head': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/xgo_demo/build/xgo_head -- -j4 -l4
+[2.852s] [  2%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/main.cpp.o[0m
+[2.891s] [  5%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/include/moc_mainwindow.cpp.o[0m
+[2.898s] [  8%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/mainwindow.cpp.o[0m
+[2.908s] [ 11%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/rclcomm.cpp.o[0m
+[45.201s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:[m[K In member function ‘[01m[Kvoid rclcomm::recvCompressedImageCallback(sensor_msgs::msg::CompressedImage_<std::allocator<void> >::SharedPtr)[m[K’:
+[45.207s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:427:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass QList<TrackedPoint>::const_iterator[m[K’ has no member named ‘[01m[Kpos[m[K’
+[45.211s]   427 |         QPointF prev_pos = it_point.[01;31m[Kpos[m[K;
+[45.215s]       |                                     [01;31m[K^~~[m[K
+[45.218s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:437:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass QList<TrackedPoint>::const_iterator[m[K’ has no member named ‘[01m[Kpos[m[K’
+[45.222s]   437 |           const QPointF& curr_pos = it_point.[01;31m[Kpos[m[K;
+[45.226s]       |                                              [01;31m[K^~~[m[K
+[45.230s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:442:18:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTLog::d(const char [34], double&, double&, double&, double&)[m[K’
+[45.234s]   442 |           [01;31m[KTLog::d("draw line from (%f,%f) to (%f,%f)", prevX, prevY, currX, currY)[m[K;
+[45.237s]       |           [01;31m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[45.241s] In file included from [01m[K/home/sunrise/xgo_demo/src/xgo_head/include/rclcomm.h:30[m[K,
+[45.247s]                  from [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/rclcomm.cpp:1[m[K:
+[45.253s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/include/TLog.h:27:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstatic void TLog::d(QString)[m[K’
+[45.257s]    27 |     static void [01;36m[Kd[m[K(QString txt);
+[45.260s]       |                 [01;36m[K^[m[K
+[45.268s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/include/TLog.h:27:17:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 5 provided

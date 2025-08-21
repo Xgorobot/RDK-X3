@@ -1,0 +1,31 @@
+[4.464s] Invoking command in '/home/sunrise/xgo_demo/build/xgo_head': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/xgo_demo/build/xgo_head -- -j4 -l4
+[4.911s] [  2%] [34m[1mGenerating include/moc_GpioReader.cpp[0m
+[5.052s] [35m[1mConsolidate compiler generated dependencies of target xgo_head[0m
+[5.652s] [  5%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/GpioReader.cpp.o[0m
+[5.668s] [  8%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/main.cpp.o[0m
+[5.745s] [ 11%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/src/mainwindow.cpp.o[0m
+[5.756s] [ 14%] [32mBuilding CXX object CMakeFiles/xgo_head.dir/include/moc_GpioReader.cpp.o[0m
+[21.353s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/GpioReader.cpp:[m[K In member function ‘[01m[Kvoid GpioReader::pauseRead()[m[K’:
+[21.356s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/GpioReader.cpp:62:5:[m[K [01;31m[Kerror: [m[K‘[01m[KmPaused[m[K’ was not declared in this scope; did you mean ‘[01m[Kpause[m[K’?
+[21.360s]    62 |     [01;31m[KmPaused[m[K = true;
+[21.363s]       |     [01;31m[K^~~~~~~[m[K
+[21.367s]       |     [32m[Kpause[m[K
+[21.388s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/GpioReader.cpp:[m[K In member function ‘[01m[Kvoid GpioReader::resumeRead()[m[K’:
+[21.392s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/GpioReader.cpp:67:5:[m[K [01;31m[Kerror: [m[K‘[01m[KmPaused[m[K’ was not declared in this scope; did you mean ‘[01m[Kpause[m[K’?
+[21.395s]    67 |     [01;31m[KmPaused[m[K = false;
+[21.399s]       |     [01;31m[K^~~~~~~[m[K
+[21.404s]       |     [32m[Kpause[m[K
+[21.432s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/GpioReader.cpp:[m[K In member function ‘[01m[Kvirtual void GpioReader::run()[m[K’:
+[21.435s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/GpioReader.cpp:83:13:[m[K [01;31m[Kerror: [m[K‘[01m[KmPaused[m[K’ was not declared in this scope; did you mean ‘[01m[Kpause[m[K’?
+[21.439s]    83 |         if ([01;31m[KmPaused[m[K) {
+[21.443s]       |             [01;31m[K^~~~~~~[m[K
+[21.449s]       |             [32m[Kpause[m[K
+[22.981s] gmake[2]: *** [CMakeFiles/xgo_head.dir/build.make:150: CMakeFiles/xgo_head.dir/src/GpioReader.cpp.o] Error 1
+[22.982s] gmake[2]: *** Waiting for unfinished jobs....
+[50.098s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::updateTopicInfo(QString)[m[K’:
+[50.100s] [01m[K/home/sunrise/xgo_demo/src/xgo_head/src/mainwindow.cpp:68:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[50.101s]    68 | void MainWindow::updateTopicInfo([01;35m[KQString data[m[K){
+[50.102s]       |                                  [01;35m[K~~~~~~~~^~~~[m[K
+[57.824s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/xgo_head.dir/all] Error 2
+[57.827s] gmake: *** [Makefile:146: all] Error 2
+[57.835s] Invoked command in '/home/sunrise/xgo_demo/build/xgo_head' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgo_body_py:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/xgo_demo/build/xgo_head -- -j4 -l4
