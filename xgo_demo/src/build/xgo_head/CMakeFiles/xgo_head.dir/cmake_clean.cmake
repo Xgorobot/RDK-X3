@@ -1,0 +1,40 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/xgo_head.dir/include/moc_GpioReader.cpp.o"
+  "CMakeFiles/xgo_head.dir/include/moc_GpioReader.cpp.o.d"
+  "CMakeFiles/xgo_head.dir/include/moc_MatrixLabel.cpp.o"
+  "CMakeFiles/xgo_head.dir/include/moc_MatrixLabel.cpp.o.d"
+  "CMakeFiles/xgo_head.dir/include/moc_XgoSpeaker.cpp.o"
+  "CMakeFiles/xgo_head.dir/include/moc_XgoSpeaker.cpp.o.d"
+  "CMakeFiles/xgo_head.dir/include/moc_mainwindow.cpp.o"
+  "CMakeFiles/xgo_head.dir/include/moc_mainwindow.cpp.o.d"
+  "CMakeFiles/xgo_head.dir/include/moc_rclcomm.cpp.o"
+  "CMakeFiles/xgo_head.dir/include/moc_rclcomm.cpp.o.d"
+  "CMakeFiles/xgo_head.dir/qrc_images.cpp.o"
+  "CMakeFiles/xgo_head.dir/qrc_images.cpp.o.d"
+  "CMakeFiles/xgo_head.dir/src/GpioReader.cpp.o"
+  "CMakeFiles/xgo_head.dir/src/GpioReader.cpp.o.d"
+  "CMakeFiles/xgo_head.dir/src/MatrixLabel.cpp.o"
+  "CMakeFiles/xgo_head.dir/src/MatrixLabel.cpp.o.d"
+  "CMakeFiles/xgo_head.dir/src/XgoSpeaker.cpp.o"
+  "CMakeFiles/xgo_head.dir/src/XgoSpeaker.cpp.o.d"
+  "CMakeFiles/xgo_head.dir/src/main.cpp.o"
+  "CMakeFiles/xgo_head.dir/src/main.cpp.o.d"
+  "CMakeFiles/xgo_head.dir/src/mainwindow.cpp.o"
+  "CMakeFiles/xgo_head.dir/src/mainwindow.cpp.o.d"
+  "CMakeFiles/xgo_head.dir/src/rclcomm.cpp.o"
+  "CMakeFiles/xgo_head.dir/src/rclcomm.cpp.o.d"
+  "include/moc_GpioReader.cpp"
+  "include/moc_MatrixLabel.cpp"
+  "include/moc_XgoSpeaker.cpp"
+  "include/moc_mainwindow.cpp"
+  "include/moc_rclcomm.cpp"
+  "qrc_images.cpp"
+  "ui_mainwindow.h"
+  "xgo_head"
+  "xgo_head.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/xgo_head.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

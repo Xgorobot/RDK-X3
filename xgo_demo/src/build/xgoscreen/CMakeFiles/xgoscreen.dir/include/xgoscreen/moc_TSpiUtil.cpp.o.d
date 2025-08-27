@@ -1,0 +1,3 @@
+CMakeFiles/xgoscreen.dir/include/xgoscreen/moc_TSpiUtil.cpp.o: \
+ /home/sunrise/xgo_demo/src/build/xgoscreen/include/xgoscreen/moc_TSpiUtil.cpp \
+ /usr/include/stdc-predef.h

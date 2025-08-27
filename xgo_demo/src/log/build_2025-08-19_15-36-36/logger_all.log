@@ -1,0 +1,617 @@
+[0.837s] DEBUG:colcon:Command line arguments: ['/home/sunrise/.local/bin/colcon', 'build']
+[0.838s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7faa49ac80>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7faa49a6e0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7faa49a6e0>>)
+[1.698s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.699s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.699s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.699s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.699s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.700s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.700s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/sunrise/xgo_demo/src'
+[1.700s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.701s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.701s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.702s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.702s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.702s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.702s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.702s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.703s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.779s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.779s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.780s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.780s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.780s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.781s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.781s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.782s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.782s] Level 1:colcon.colcon_core.package_identification:_identify(hobot_audio) by extensions ['ignore', 'ignore_ament_install']
+[1.783s] Level 1:colcon.colcon_core.package_identification:_identify(hobot_audio) by extension 'ignore'
+[1.783s] Level 1:colcon.colcon_core.package_identification:_identify(hobot_audio) by extension 'ignore_ament_install'
+[1.784s] Level 1:colcon.colcon_core.package_identification:_identify(hobot_audio) by extensions ['colcon_pkg']
+[1.784s] Level 1:colcon.colcon_core.package_identification:_identify(hobot_audio) by extension 'colcon_pkg'
+[1.784s] Level 1:colcon.colcon_core.package_identification:_identify(hobot_audio) by extensions ['colcon_meta']
+[1.785s] Level 1:colcon.colcon_core.package_identification:_identify(hobot_audio) by extension 'colcon_meta'
+[1.785s] Level 1:colcon.colcon_core.package_identification:_identify(hobot_audio) by extensions ['ros']
+[1.785s] Level 1:colcon.colcon_core.package_identification:_identify(hobot_audio) by extension 'ros'
+[1.815s] DEBUG:colcon.colcon_core.package_identification:Package 'hobot_audio' with type 'ros.ament_cmake' and name 'hobot_audio'
+[1.816s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.816s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.817s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.817s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.818s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.818s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.819s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_device) by extensions ['ignore', 'ignore_ament_install']
+[1.819s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_device) by extension 'ignore'
+[1.819s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_device) by extension 'ignore_ament_install'
+[1.820s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_device) by extensions ['colcon_pkg']
+[1.820s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_device) by extension 'colcon_pkg'
+[1.820s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_device) by extensions ['colcon_meta']
+[1.820s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_device) by extension 'colcon_meta'
+[1.821s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_device) by extensions ['ros']
+[1.821s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_device) by extension 'ros'
+[1.827s] DEBUG:colcon.colcon_core.package_identification:Package 'xgo_device' with type 'ros.ament_cmake' and name 'xgo_device'
+[1.827s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_face_control) by extensions ['ignore', 'ignore_ament_install']
+[1.828s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_face_control) by extension 'ignore'
+[1.828s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_face_control) by extension 'ignore_ament_install'
+[1.829s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_face_control) by extensions ['colcon_pkg']
+[1.829s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_face_control) by extension 'colcon_pkg'
+[1.829s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_face_control) by extensions ['colcon_meta']
+[1.829s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_face_control) by extension 'colcon_meta'
+[1.830s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_face_control) by extensions ['ros']
+[1.830s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_face_control) by extension 'ros'
+[1.834s] DEBUG:colcon.colcon_core.package_identification:Package 'xgo_face_control' with type 'ros.ament_cmake' and name 'xgo_face_control'
+[1.835s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_gesture_control) by extensions ['ignore', 'ignore_ament_install']
+[1.835s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_gesture_control) by extension 'ignore'
+[1.836s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_gesture_control) by extension 'ignore_ament_install'
+[1.836s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_gesture_control) by extensions ['colcon_pkg']
+[1.836s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_gesture_control) by extension 'colcon_pkg'
+[1.837s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_gesture_control) by extensions ['colcon_meta']
+[1.837s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_gesture_control) by extension 'colcon_meta'
+[1.837s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_gesture_control) by extensions ['ros']
+[1.837s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_gesture_control) by extension 'ros'
+[1.842s] DEBUG:colcon.colcon_core.package_identification:Package 'xgo_gesture_control' with type 'ros.ament_cmake' and name 'xgo_gesture_control'
+[1.843s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_head) by extensions ['ignore', 'ignore_ament_install']
+[1.844s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_head) by extension 'ignore'
+[1.844s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_head) by extension 'ignore_ament_install'
+[1.845s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_head) by extensions ['colcon_pkg']
+[1.845s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_head) by extension 'colcon_pkg'
+[1.845s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_head) by extensions ['colcon_meta']
+[1.845s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_head) by extension 'colcon_meta'
+[1.845s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_head) by extensions ['ros']
+[1.846s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_head) by extension 'ros'
+[1.851s] DEBUG:colcon.colcon_core.package_identification:Package 'xgo_head' with type 'ros.ament_cmake' and name 'xgo_head'
+[1.852s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_motion) by extensions ['ignore', 'ignore_ament_install']
+[1.852s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_motion) by extension 'ignore'
+[1.852s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_motion) by extension 'ignore_ament_install'
+[1.853s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_motion) by extensions ['colcon_pkg']
+[1.853s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_motion) by extension 'colcon_pkg'
+[1.853s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_motion) by extensions ['colcon_meta']
+[1.853s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_motion) by extension 'colcon_meta'
+[1.854s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_motion) by extensions ['ros']
+[1.854s] Level 1:colcon.colcon_core.package_identification:_identify(xgo_motion) by extension 'ros'
+[1.860s] DEBUG:colcon.colcon_core.package_identification:Package 'xgo_motion' with type 'ros.ament_cmake' and name 'xgo_motion'
+[1.861s] Level 1:colcon.colcon_core.package_identification:_identify(xgolib) by extensions ['ignore', 'ignore_ament_install']
+[1.862s] Level 1:colcon.colcon_core.package_identification:_identify(xgolib) by extension 'ignore'
+[1.862s] Level 1:colcon.colcon_core.package_identification:_identify(xgolib) by extension 'ignore_ament_install'
+[1.862s] Level 1:colcon.colcon_core.package_identification:_identify(xgolib) by extensions ['colcon_pkg']
+[1.862s] Level 1:colcon.colcon_core.package_identification:_identify(xgolib) by extension 'colcon_pkg'
+[1.863s] Level 1:colcon.colcon_core.package_identification:_identify(xgolib) by extensions ['colcon_meta']
+[1.863s] Level 1:colcon.colcon_core.package_identification:_identify(xgolib) by extension 'colcon_meta'
+[1.863s] Level 1:colcon.colcon_core.package_identification:_identify(xgolib) by extensions ['ros']
+[1.863s] Level 1:colcon.colcon_core.package_identification:_identify(xgolib) by extension 'ros'
+[1.867s] DEBUG:colcon.colcon_core.package_identification:Package 'xgolib' with type 'ros.ament_cmake' and name 'xgolib'
+[1.868s] Level 1:colcon.colcon_core.package_identification:_identify(xgoscreen) by extensions ['ignore', 'ignore_ament_install']
+[1.868s] Level 1:colcon.colcon_core.package_identification:_identify(xgoscreen) by extension 'ignore'
+[1.869s] Level 1:colcon.colcon_core.package_identification:_identify(xgoscreen) by extension 'ignore_ament_install'
+[1.869s] Level 1:colcon.colcon_core.package_identification:_identify(xgoscreen) by extensions ['colcon_pkg']
+[1.869s] Level 1:colcon.colcon_core.package_identification:_identify(xgoscreen) by extension 'colcon_pkg'
+[1.869s] Level 1:colcon.colcon_core.package_identification:_identify(xgoscreen) by extensions ['colcon_meta']
+[1.870s] Level 1:colcon.colcon_core.package_identification:_identify(xgoscreen) by extension 'colcon_meta'
+[1.870s] Level 1:colcon.colcon_core.package_identification:_identify(xgoscreen) by extensions ['ros']
+[1.870s] Level 1:colcon.colcon_core.package_identification:_identify(xgoscreen) by extension 'ros'
+[1.875s] DEBUG:colcon.colcon_core.package_identification:Package 'xgoscreen' with type 'ros.ament_cmake' and name 'xgoscreen'
+[1.876s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.876s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.876s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.877s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.877s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.015s] Level 5:colcon.colcon_core.verb:set package 'xgolib' build argument 'cmake_args' from command line to 'None'
+[2.016s] Level 5:colcon.colcon_core.verb:set package 'xgolib' build argument 'cmake_target' from command line to 'None'
+[2.016s] Level 5:colcon.colcon_core.verb:set package 'xgolib' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.016s] Level 5:colcon.colcon_core.verb:set package 'xgolib' build argument 'cmake_clean_cache' from command line to 'False'
+[2.016s] Level 5:colcon.colcon_core.verb:set package 'xgolib' build argument 'cmake_clean_first' from command line to 'False'
+[2.016s] Level 5:colcon.colcon_core.verb:set package 'xgolib' build argument 'cmake_force_configure' from command line to 'False'
+[2.017s] Level 5:colcon.colcon_core.verb:set package 'xgolib' build argument 'ament_cmake_args' from command line to 'None'
+[2.017s] Level 5:colcon.colcon_core.verb:set package 'xgolib' build argument 'catkin_cmake_args' from command line to 'None'
+[2.017s] Level 5:colcon.colcon_core.verb:set package 'xgolib' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.017s] DEBUG:colcon.colcon_core.verb:Building package 'xgolib' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sunrise/xgo_demo/src/build/xgolib', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sunrise/xgo_demo/src/install/xgolib', 'merge_install': False, 'path': '/home/sunrise/xgo_demo/src/xgolib', 'symlink_install': False, 'test_result_base': None}
+[2.020s] Level 5:colcon.colcon_core.verb:set package 'xgoscreen' build argument 'cmake_args' from command line to 'None'
+[2.020s] Level 5:colcon.colcon_core.verb:set package 'xgoscreen' build argument 'cmake_target' from command line to 'None'
+[2.020s] Level 5:colcon.colcon_core.verb:set package 'xgoscreen' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.020s] Level 5:colcon.colcon_core.verb:set package 'xgoscreen' build argument 'cmake_clean_cache' from command line to 'False'
+[2.021s] Level 5:colcon.colcon_core.verb:set package 'xgoscreen' build argument 'cmake_clean_first' from command line to 'False'
+[2.021s] Level 5:colcon.colcon_core.verb:set package 'xgoscreen' build argument 'cmake_force_configure' from command line to 'False'
+[2.021s] Level 5:colcon.colcon_core.verb:set package 'xgoscreen' build argument 'ament_cmake_args' from command line to 'None'
+[2.021s] Level 5:colcon.colcon_core.verb:set package 'xgoscreen' build argument 'catkin_cmake_args' from command line to 'None'
+[2.021s] Level 5:colcon.colcon_core.verb:set package 'xgoscreen' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.022s] DEBUG:colcon.colcon_core.verb:Building package 'xgoscreen' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sunrise/xgo_demo/src/build/xgoscreen', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sunrise/xgo_demo/src/install/xgoscreen', 'merge_install': False, 'path': '/home/sunrise/xgo_demo/src/xgoscreen', 'symlink_install': False, 'test_result_base': None}
+[2.024s] Level 5:colcon.colcon_core.verb:set package 'hobot_audio' build argument 'cmake_args' from command line to 'None'
+[2.025s] Level 5:colcon.colcon_core.verb:set package 'hobot_audio' build argument 'cmake_target' from command line to 'None'
+[2.025s] Level 5:colcon.colcon_core.verb:set package 'hobot_audio' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.025s] Level 5:colcon.colcon_core.verb:set package 'hobot_audio' build argument 'cmake_clean_cache' from command line to 'False'
+[2.025s] Level 5:colcon.colcon_core.verb:set package 'hobot_audio' build argument 'cmake_clean_first' from command line to 'False'
+[2.025s] Level 5:colcon.colcon_core.verb:set package 'hobot_audio' build argument 'cmake_force_configure' from command line to 'False'
+[2.025s] Level 5:colcon.colcon_core.verb:set package 'hobot_audio' build argument 'ament_cmake_args' from command line to 'None'
+[2.026s] Level 5:colcon.colcon_core.verb:set package 'hobot_audio' build argument 'catkin_cmake_args' from command line to 'None'
+[2.026s] Level 5:colcon.colcon_core.verb:set package 'hobot_audio' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.026s] DEBUG:colcon.colcon_core.verb:Building package 'hobot_audio' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sunrise/xgo_demo/src/build/hobot_audio', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sunrise/xgo_demo/src/install/hobot_audio', 'merge_install': False, 'path': '/home/sunrise/xgo_demo/src/hobot_audio', 'symlink_install': False, 'test_result_base': None}
+[2.029s] Level 5:colcon.colcon_core.verb:set package 'xgo_device' build argument 'cmake_args' from command line to 'None'
+[2.029s] Level 5:colcon.colcon_core.verb:set package 'xgo_device' build argument 'cmake_target' from command line to 'None'
+[2.029s] Level 5:colcon.colcon_core.verb:set package 'xgo_device' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.029s] Level 5:colcon.colcon_core.verb:set package 'xgo_device' build argument 'cmake_clean_cache' from command line to 'False'
+[2.029s] Level 5:colcon.colcon_core.verb:set package 'xgo_device' build argument 'cmake_clean_first' from command line to 'False'
+[2.030s] Level 5:colcon.colcon_core.verb:set package 'xgo_device' build argument 'cmake_force_configure' from command line to 'False'
+[2.030s] Level 5:colcon.colcon_core.verb:set package 'xgo_device' build argument 'ament_cmake_args' from command line to 'None'
+[2.030s] Level 5:colcon.colcon_core.verb:set package 'xgo_device' build argument 'catkin_cmake_args' from command line to 'None'
+[2.030s] Level 5:colcon.colcon_core.verb:set package 'xgo_device' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.030s] DEBUG:colcon.colcon_core.verb:Building package 'xgo_device' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sunrise/xgo_demo/src/build/xgo_device', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sunrise/xgo_demo/src/install/xgo_device', 'merge_install': False, 'path': '/home/sunrise/xgo_demo/src/xgo_device', 'symlink_install': False, 'test_result_base': None}
+[2.033s] Level 5:colcon.colcon_core.verb:set package 'xgo_face_control' build argument 'cmake_args' from command line to 'None'
+[2.033s] Level 5:colcon.colcon_core.verb:set package 'xgo_face_control' build argument 'cmake_target' from command line to 'None'
+[2.033s] Level 5:colcon.colcon_core.verb:set package 'xgo_face_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.034s] Level 5:colcon.colcon_core.verb:set package 'xgo_face_control' build argument 'cmake_clean_cache' from command line to 'False'
+[2.034s] Level 5:colcon.colcon_core.verb:set package 'xgo_face_control' build argument 'cmake_clean_first' from command line to 'False'
+[2.034s] Level 5:colcon.colcon_core.verb:set package 'xgo_face_control' build argument 'cmake_force_configure' from command line to 'False'
+[2.034s] Level 5:colcon.colcon_core.verb:set package 'xgo_face_control' build argument 'ament_cmake_args' from command line to 'None'
+[2.034s] Level 5:colcon.colcon_core.verb:set package 'xgo_face_control' build argument 'catkin_cmake_args' from command line to 'None'
+[2.034s] Level 5:colcon.colcon_core.verb:set package 'xgo_face_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.035s] DEBUG:colcon.colcon_core.verb:Building package 'xgo_face_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sunrise/xgo_demo/src/build/xgo_face_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sunrise/xgo_demo/src/install/xgo_face_control', 'merge_install': False, 'path': '/home/sunrise/xgo_demo/src/xgo_face_control', 'symlink_install': False, 'test_result_base': None}
+[2.037s] Level 5:colcon.colcon_core.verb:set package 'xgo_gesture_control' build argument 'cmake_args' from command line to 'None'
+[2.038s] Level 5:colcon.colcon_core.verb:set package 'xgo_gesture_control' build argument 'cmake_target' from command line to 'None'
+[2.038s] Level 5:colcon.colcon_core.verb:set package 'xgo_gesture_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.038s] Level 5:colcon.colcon_core.verb:set package 'xgo_gesture_control' build argument 'cmake_clean_cache' from command line to 'False'
+[2.038s] Level 5:colcon.colcon_core.verb:set package 'xgo_gesture_control' build argument 'cmake_clean_first' from command line to 'False'
+[2.038s] Level 5:colcon.colcon_core.verb:set package 'xgo_gesture_control' build argument 'cmake_force_configure' from command line to 'False'
+[2.038s] Level 5:colcon.colcon_core.verb:set package 'xgo_gesture_control' build argument 'ament_cmake_args' from command line to 'None'
+[2.039s] Level 5:colcon.colcon_core.verb:set package 'xgo_gesture_control' build argument 'catkin_cmake_args' from command line to 'None'
+[2.039s] Level 5:colcon.colcon_core.verb:set package 'xgo_gesture_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.039s] DEBUG:colcon.colcon_core.verb:Building package 'xgo_gesture_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sunrise/xgo_demo/src/build/xgo_gesture_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sunrise/xgo_demo/src/install/xgo_gesture_control', 'merge_install': False, 'path': '/home/sunrise/xgo_demo/src/xgo_gesture_control', 'symlink_install': False, 'test_result_base': None}
+[2.042s] Level 5:colcon.colcon_core.verb:set package 'xgo_head' build argument 'cmake_args' from command line to 'None'
+[2.042s] Level 5:colcon.colcon_core.verb:set package 'xgo_head' build argument 'cmake_target' from command line to 'None'
+[2.042s] Level 5:colcon.colcon_core.verb:set package 'xgo_head' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.042s] Level 5:colcon.colcon_core.verb:set package 'xgo_head' build argument 'cmake_clean_cache' from command line to 'False'
+[2.043s] Level 5:colcon.colcon_core.verb:set package 'xgo_head' build argument 'cmake_clean_first' from command line to 'False'
+[2.043s] Level 5:colcon.colcon_core.verb:set package 'xgo_head' build argument 'cmake_force_configure' from command line to 'False'
+[2.043s] Level 5:colcon.colcon_core.verb:set package 'xgo_head' build argument 'ament_cmake_args' from command line to 'None'
+[2.043s] Level 5:colcon.colcon_core.verb:set package 'xgo_head' build argument 'catkin_cmake_args' from command line to 'None'
+[2.043s] Level 5:colcon.colcon_core.verb:set package 'xgo_head' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.043s] DEBUG:colcon.colcon_core.verb:Building package 'xgo_head' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sunrise/xgo_demo/src/build/xgo_head', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sunrise/xgo_demo/src/install/xgo_head', 'merge_install': False, 'path': '/home/sunrise/xgo_demo/src/xgo_head', 'symlink_install': False, 'test_result_base': None}
+[2.047s] Level 5:colcon.colcon_core.verb:set package 'xgo_motion' build argument 'cmake_args' from command line to 'None'
+[2.047s] Level 5:colcon.colcon_core.verb:set package 'xgo_motion' build argument 'cmake_target' from command line to 'None'
+[2.047s] Level 5:colcon.colcon_core.verb:set package 'xgo_motion' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.047s] Level 5:colcon.colcon_core.verb:set package 'xgo_motion' build argument 'cmake_clean_cache' from command line to 'False'
+[2.047s] Level 5:colcon.colcon_core.verb:set package 'xgo_motion' build argument 'cmake_clean_first' from command line to 'False'
+[2.048s] Level 5:colcon.colcon_core.verb:set package 'xgo_motion' build argument 'cmake_force_configure' from command line to 'False'
+[2.048s] Level 5:colcon.colcon_core.verb:set package 'xgo_motion' build argument 'ament_cmake_args' from command line to 'None'
+[2.048s] Level 5:colcon.colcon_core.verb:set package 'xgo_motion' build argument 'catkin_cmake_args' from command line to 'None'
+[2.048s] Level 5:colcon.colcon_core.verb:set package 'xgo_motion' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.048s] DEBUG:colcon.colcon_core.verb:Building package 'xgo_motion' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sunrise/xgo_demo/src/build/xgo_motion', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sunrise/xgo_demo/src/install/xgo_motion', 'merge_install': False, 'path': '/home/sunrise/xgo_demo/src/xgo_motion', 'symlink_install': False, 'test_result_base': None}
+[2.049s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.055s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.056s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sunrise/xgo_demo/src/xgolib' with build type 'ament_cmake'
+[2.057s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sunrise/xgo_demo/src/xgolib'
+[2.070s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.071s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.072s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.099s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sunrise/xgo_demo/src/xgoscreen' with build type 'ament_cmake'
+[2.100s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sunrise/xgo_demo/src/xgoscreen'
+[2.102s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.103s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.135s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/xgo_demo/src/build/xgolib': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake /home/sunrise/xgo_demo/src/xgolib -DCMAKE_INSTALL_PREFIX=/home/sunrise/xgo_demo/src/install/xgolib
+[2.152s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/xgo_demo/src/build/xgoscreen': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake /home/sunrise/xgo_demo/src/xgoscreen -DCMAKE_INSTALL_PREFIX=/home/sunrise/xgo_demo/src/install/xgoscreen
+[7.219s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/xgo_demo/src/build/xgolib' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake /home/sunrise/xgo_demo/src/xgolib -DCMAKE_INSTALL_PREFIX=/home/sunrise/xgo_demo/src/install/xgolib
+[7.228s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/xgo_demo/src/build/xgolib': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/xgo_demo/src/build/xgolib -- -j4 -l4
+[9.967s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/xgo_demo/src/build/xgoscreen' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake /home/sunrise/xgo_demo/src/xgoscreen -DCMAKE_INSTALL_PREFIX=/home/sunrise/xgo_demo/src/install/xgoscreen
+[9.974s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/xgo_demo/src/build/xgoscreen': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/xgo_demo/src/build/xgoscreen -- -j4 -l4
+[17.446s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/xgo_demo/src/build/xgolib' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/xgo_demo/src/build/xgolib -- -j4 -l4
+[17.546s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/xgo_demo/src/build/xgolib': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --install /home/sunrise/xgo_demo/src/build/xgolib
+[17.705s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(xgolib)
+[17.717s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/xgo_demo/src/build/xgolib' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --install /home/sunrise/xgo_demo/src/build/xgolib
+[17.767s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgolib' for CMake module files
+[17.772s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgolib' for CMake config files
+[17.773s] Level 1:colcon.colcon_core.shell:create_environment_hook('xgolib', 'cmake_prefix_path')
+[17.784s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgolib/share/xgolib/hook/cmake_prefix_path.ps1'
+[17.800s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/xgo_demo/src/install/xgolib/share/xgolib/hook/cmake_prefix_path.dsv'
+[17.807s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgolib/share/xgolib/hook/cmake_prefix_path.sh'
+[17.823s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgolib/lib'
+[17.833s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgolib/bin'
+[17.834s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgolib/lib/pkgconfig/xgolib.pc'
+[17.860s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgolib/lib/python3.10/site-packages'
+[17.862s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgolib/bin'
+[17.870s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgolib/share/xgolib/package.ps1'
+[17.879s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sunrise/xgo_demo/src/install/xgolib/share/xgolib/package.dsv'
+[17.885s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgolib/share/xgolib/package.sh'
+[17.899s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgolib/share/xgolib/package.bash'
+[17.907s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgolib/share/xgolib/package.zsh'
+[17.915s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sunrise/xgo_demo/src/install/xgolib/share/colcon-core/packages/xgolib)
+[17.922s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(xgolib)
+[17.933s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgolib' for CMake module files
+[17.937s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgolib' for CMake config files
+[17.939s] Level 1:colcon.colcon_core.shell:create_environment_hook('xgolib', 'cmake_prefix_path')
+[17.942s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgolib/share/xgolib/hook/cmake_prefix_path.ps1'
+[17.946s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/xgo_demo/src/install/xgolib/share/xgolib/hook/cmake_prefix_path.dsv'
+[17.950s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgolib/share/xgolib/hook/cmake_prefix_path.sh'
+[17.956s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgolib/lib'
+[17.957s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgolib/bin'
+[17.958s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgolib/lib/pkgconfig/xgolib.pc'
+[17.961s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgolib/lib/python3.10/site-packages'
+[17.964s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgolib/bin'
+[17.967s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgolib/share/xgolib/package.ps1'
+[17.973s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sunrise/xgo_demo/src/install/xgolib/share/xgolib/package.dsv'
+[17.980s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgolib/share/xgolib/package.sh'
+[17.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgolib/share/xgolib/package.bash'
+[17.994s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgolib/share/xgolib/package.zsh'
+[18.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sunrise/xgo_demo/src/install/xgolib/share/colcon-core/packages/xgolib)
+[18.009s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sunrise/xgo_demo/src/hobot_audio' with build type 'ament_cmake'
+[18.012s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sunrise/xgo_demo/src/hobot_audio'
+[18.015s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[18.015s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[18.076s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sunrise/xgo_demo/src/xgo_face_control' with build type 'ament_cmake'
+[18.077s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sunrise/xgo_demo/src/xgo_face_control'
+[18.080s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[18.082s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[18.136s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sunrise/xgo_demo/src/xgo_gesture_control' with build type 'ament_cmake'
+[18.137s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sunrise/xgo_demo/src/xgo_gesture_control'
+[18.140s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[18.141s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[18.261s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/xgo_demo/src/build/hobot_audio': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/sunrise/xgo_demo/src/hobot_audio -DCMAKE_INSTALL_PREFIX=/home/sunrise/xgo_demo/src/install/hobot_audio
+[18.296s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/xgo_demo/src/build/xgo_face_control': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/sunrise/xgo_demo/src/xgo_face_control -DCMAKE_INSTALL_PREFIX=/home/sunrise/xgo_demo/src/install/xgo_face_control
+[18.357s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/xgo_demo/src/build/xgo_gesture_control': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/sunrise/xgo_demo/src/xgo_gesture_control -DCMAKE_INSTALL_PREFIX=/home/sunrise/xgo_demo/src/install/xgo_gesture_control
+[34.395s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/xgo_demo/src/build/xgo_face_control' returned '0': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/sunrise/xgo_demo/src/xgo_face_control -DCMAKE_INSTALL_PREFIX=/home/sunrise/xgo_demo/src/install/xgo_face_control
+[34.419s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/xgo_demo/src/build/xgo_face_control': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/sunrise/xgo_demo/src/build/xgo_face_control -- -j4 -l4
+[34.447s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/xgo_demo/src/build/hobot_audio' returned '0': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/sunrise/xgo_demo/src/hobot_audio -DCMAKE_INSTALL_PREFIX=/home/sunrise/xgo_demo/src/install/hobot_audio
+[34.451s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/xgo_demo/src/build/hobot_audio': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/sunrise/xgo_demo/src/build/hobot_audio -- -j4 -l4
+[34.494s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/xgo_demo/src/build/xgo_gesture_control' returned '0': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/sunrise/xgo_demo/src/xgo_gesture_control -DCMAKE_INSTALL_PREFIX=/home/sunrise/xgo_demo/src/install/xgo_gesture_control
+[34.517s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/xgo_demo/src/build/xgo_gesture_control': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/sunrise/xgo_demo/src/build/xgo_gesture_control -- -j4 -l4
+[97.765s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/xgo_demo/src/build/xgoscreen' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/xgo_demo/src/build/xgoscreen -- -j4 -l4
+[101.292s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/xgo_demo/src/build/xgoscreen': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --install /home/sunrise/xgo_demo/src/build/xgoscreen
+[141.563s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(xgoscreen)
+[141.901s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgoscreen' for CMake module files
+[141.961s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgoscreen' for CMake config files
+[141.979s] Level 1:colcon.colcon_core.shell:create_environment_hook('xgoscreen', 'cmake_prefix_path')
+[142.125s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgoscreen/share/xgoscreen/hook/cmake_prefix_path.ps1'
+[142.420s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/xgo_demo/src/build/xgoscreen' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --install /home/sunrise/xgo_demo/src/build/xgoscreen
+[142.981s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/xgo_demo/src/install/xgoscreen/share/xgoscreen/hook/cmake_prefix_path.dsv'
+[143.052s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgoscreen/share/xgoscreen/hook/cmake_prefix_path.sh'
+[143.183s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgoscreen/lib'
+[143.197s] Level 1:colcon.colcon_core.shell:create_environment_hook('xgoscreen', 'ld_library_path_lib')
+[143.198s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgoscreen/share/xgoscreen/hook/ld_library_path_lib.ps1'
+[143.201s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/xgo_demo/src/install/xgoscreen/share/xgoscreen/hook/ld_library_path_lib.dsv'
+[143.246s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgoscreen/share/xgoscreen/hook/ld_library_path_lib.sh'
+[143.352s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgoscreen/bin'
+[143.468s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgoscreen/lib/pkgconfig/xgoscreen.pc'
+[143.635s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgoscreen/lib/python3.10/site-packages'
+[143.638s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgoscreen/bin'
+[143.643s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgoscreen/share/xgoscreen/package.ps1'
+[143.711s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sunrise/xgo_demo/src/install/xgoscreen/share/xgoscreen/package.dsv'
+[143.733s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgoscreen/share/xgoscreen/package.sh'
+[143.777s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgoscreen/share/xgoscreen/package.bash'
+[143.805s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgoscreen/share/xgoscreen/package.zsh'
+[143.856s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sunrise/xgo_demo/src/install/xgoscreen/share/colcon-core/packages/xgoscreen)
+[143.904s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(xgoscreen)
+[143.918s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgoscreen' for CMake module files
+[143.921s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgoscreen' for CMake config files
+[143.922s] Level 1:colcon.colcon_core.shell:create_environment_hook('xgoscreen', 'cmake_prefix_path')
+[143.924s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgoscreen/share/xgoscreen/hook/cmake_prefix_path.ps1'
+[143.938s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/xgo_demo/src/install/xgoscreen/share/xgoscreen/hook/cmake_prefix_path.dsv'
+[143.944s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgoscreen/share/xgoscreen/hook/cmake_prefix_path.sh'
+[143.976s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgoscreen/lib'
+[143.977s] Level 1:colcon.colcon_core.shell:create_environment_hook('xgoscreen', 'ld_library_path_lib')
+[143.982s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgoscreen/share/xgoscreen/hook/ld_library_path_lib.ps1'
+[144.022s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/xgo_demo/src/install/xgoscreen/share/xgoscreen/hook/ld_library_path_lib.dsv'
+[144.037s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgoscreen/share/xgoscreen/hook/ld_library_path_lib.sh'
+[144.040s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgoscreen/bin'
+[144.067s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgoscreen/lib/pkgconfig/xgoscreen.pc'
+[144.069s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgoscreen/lib/python3.10/site-packages'
+[144.071s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgoscreen/bin'
+[144.122s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgoscreen/share/xgoscreen/package.ps1'
+[144.126s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sunrise/xgo_demo/src/install/xgoscreen/share/xgoscreen/package.dsv'
+[156.508s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgoscreen/share/xgoscreen/package.sh'
+[156.681s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgoscreen/share/xgoscreen/package.bash'
+[156.736s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgoscreen/share/xgoscreen/package.zsh'
+[156.752s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sunrise/xgo_demo/src/install/xgoscreen/share/colcon-core/packages/xgoscreen)
+[156.839s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sunrise/xgo_demo/src/xgo_device' with build type 'ament_cmake'
+[156.856s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sunrise/xgo_demo/src/xgo_device'
+[156.871s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[156.871s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[189.972s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/xgo_demo/src/build/xgo_device': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen/lib:/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/sunrise/xgo_demo/src/build/xgo_device -- -j4 -l4
+[477.074s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/xgo_demo/src/build/xgo_device' returned '0': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen/lib:/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/sunrise/xgo_demo/src/build/xgo_device -- -j4 -l4
+[477.524s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/xgo_demo/src/build/xgo_device': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen/lib:/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/sunrise/xgo_demo/src/build/xgo_device
+[477.918s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(xgo_device)
+[477.923s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/xgo_demo/src/build/xgo_device' returned '0': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen/lib:/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/sunrise/xgo_demo/src/build/xgo_device
+[478.141s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_device' for CMake module files
+[478.178s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_device' for CMake config files
+[478.192s] Level 1:colcon.colcon_core.shell:create_environment_hook('xgo_device', 'cmake_prefix_path')
+[478.242s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgo_device/share/xgo_device/hook/cmake_prefix_path.ps1'
+[478.455s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/xgo_demo/src/install/xgo_device/share/xgo_device/hook/cmake_prefix_path.dsv'
+[478.501s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgo_device/share/xgo_device/hook/cmake_prefix_path.sh'
+[478.619s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_device/lib'
+[478.629s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_device/bin'
+[478.644s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_device/lib/pkgconfig/xgo_device.pc'
+[478.750s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_device/lib/python3.10/site-packages'
+[478.752s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_device/bin'
+[478.754s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_device/share/xgo_device/package.ps1'
+[478.786s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sunrise/xgo_demo/src/install/xgo_device/share/xgo_device/package.dsv'
+[478.803s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_device/share/xgo_device/package.sh'
+[478.818s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_device/share/xgo_device/package.bash'
+[478.840s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_device/share/xgo_device/package.zsh'
+[478.878s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sunrise/xgo_demo/src/install/xgo_device/share/colcon-core/packages/xgo_device)
+[478.898s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(xgo_device)
+[478.900s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_device' for CMake module files
+[478.904s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_device' for CMake config files
+[478.905s] Level 1:colcon.colcon_core.shell:create_environment_hook('xgo_device', 'cmake_prefix_path')
+[478.907s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgo_device/share/xgo_device/hook/cmake_prefix_path.ps1'
+[478.911s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/xgo_demo/src/install/xgo_device/share/xgo_device/hook/cmake_prefix_path.dsv'
+[478.916s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgo_device/share/xgo_device/hook/cmake_prefix_path.sh'
+[478.927s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_device/lib'
+[478.928s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_device/bin'
+[478.933s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_device/lib/pkgconfig/xgo_device.pc'
+[478.935s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_device/lib/python3.10/site-packages'
+[478.937s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_device/bin'
+[478.939s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_device/share/xgo_device/package.ps1'
+[479.038s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sunrise/xgo_demo/src/install/xgo_device/share/xgo_device/package.dsv'
+[479.059s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_device/share/xgo_device/package.sh'
+[479.063s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_device/share/xgo_device/package.bash'
+[479.070s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_device/share/xgo_device/package.zsh'
+[479.073s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sunrise/xgo_demo/src/install/xgo_device/share/colcon-core/packages/xgo_device)
+[479.160s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sunrise/xgo_demo/src/xgo_head' with build type 'ament_cmake'
+[479.168s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sunrise/xgo_demo/src/xgo_head'
+[479.176s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[479.180s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[479.513s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/xgo_demo/src/build/xgo_head': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen/lib:/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/sunrise/xgo_demo/src/xgo_head -DCMAKE_INSTALL_PREFIX=/home/sunrise/xgo_demo/src/install/xgo_head
+[500.662s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/xgo_demo/src/build/xgo_head' returned '0': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen/lib:/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/sunrise/xgo_demo/src/xgo_head -DCMAKE_INSTALL_PREFIX=/home/sunrise/xgo_demo/src/install/xgo_head
+[500.701s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/xgo_demo/src/build/xgo_head': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen/lib:/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/sunrise/xgo_demo/src/build/xgo_head -- -j4 -l4
+[1169.550s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/xgo_demo/src/build/hobot_audio' returned '0': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/sunrise/xgo_demo/src/build/hobot_audio -- -j4 -l4
+[1169.880s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/xgo_demo/src/build/hobot_audio': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/sunrise/xgo_demo/src/build/hobot_audio
+[1181.057s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/xgo_demo/src/build/xgo_gesture_control' returned '0': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/sunrise/xgo_demo/src/build/xgo_gesture_control -- -j4 -l4
+[1181.084s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hobot_audio)
+[1181.127s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/xgo_demo/src/build/xgo_gesture_control': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/sunrise/xgo_demo/src/build/xgo_gesture_control
+[1181.149s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/xgo_demo/src/build/hobot_audio' returned '0': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/sunrise/xgo_demo/src/build/hobot_audio
+[1181.243s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/hobot_audio' for CMake module files
+[1181.267s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/hobot_audio' for CMake config files
+[1181.282s] Level 1:colcon.colcon_core.shell:create_environment_hook('hobot_audio', 'cmake_prefix_path')
+[1181.314s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/hook/cmake_prefix_path.ps1'
+[1181.443s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/hook/cmake_prefix_path.dsv'
+[1181.461s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/hook/cmake_prefix_path.sh'
+[1181.511s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/hobot_audio/lib'
+[1181.513s] Level 1:colcon.colcon_core.shell:create_environment_hook('hobot_audio', 'ld_library_path_lib')
+[1181.515s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/hook/ld_library_path_lib.ps1'
+[1181.520s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/hook/ld_library_path_lib.dsv'
+[1181.530s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/hook/ld_library_path_lib.sh'
+[1181.534s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/hobot_audio/bin'
+[1181.534s] Level 1:colcon.colcon_core.shell:create_environment_hook('hobot_audio', 'path')
+[1181.537s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/hook/path.ps1'
+[1181.547s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/hook/path.dsv'
+[1181.550s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/hook/path.sh'
+[1181.557s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/hobot_audio/lib/pkgconfig/hobot_audio.pc'
+[1181.624s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/hobot_audio/lib/python3.10/site-packages'
+[1181.627s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/hobot_audio/bin'
+[1181.628s] Level 1:colcon.colcon_core.shell:create_environment_hook('hobot_audio', 'pythonscriptspath')
+[1181.631s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/hook/pythonscriptspath.ps1'
+[1181.634s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/hook/pythonscriptspath.dsv'
+[1181.638s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/hook/pythonscriptspath.sh'
+[1181.645s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/package.ps1'
+[1181.663s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/package.dsv'
+[1181.671s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/package.sh'
+[1181.684s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/package.bash'
+[1181.702s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/package.zsh'
+[1181.720s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sunrise/xgo_demo/src/install/hobot_audio/share/colcon-core/packages/hobot_audio)
+[1181.734s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hobot_audio)
+[1181.737s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/hobot_audio' for CMake module files
+[1181.741s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/hobot_audio' for CMake config files
+[1181.743s] Level 1:colcon.colcon_core.shell:create_environment_hook('hobot_audio', 'cmake_prefix_path')
+[1181.745s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/hook/cmake_prefix_path.ps1'
+[1181.750s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/hook/cmake_prefix_path.dsv'
+[1181.902s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/hook/cmake_prefix_path.sh'
+[1181.909s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/hobot_audio/lib'
+[1181.911s] Level 1:colcon.colcon_core.shell:create_environment_hook('hobot_audio', 'ld_library_path_lib')
+[1181.914s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/hook/ld_library_path_lib.ps1'
+[1181.921s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/hook/ld_library_path_lib.dsv'
+[1181.926s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/hook/ld_library_path_lib.sh'
+[1181.934s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/hobot_audio/bin'
+[1181.936s] Level 1:colcon.colcon_core.shell:create_environment_hook('hobot_audio', 'path')
+[1181.978s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/hook/path.ps1'
+[1181.988s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/hook/path.dsv'
+[1181.993s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/hook/path.sh'
+[1182.003s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/hobot_audio/lib/pkgconfig/hobot_audio.pc'
+[1182.007s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/hobot_audio/lib/python3.10/site-packages'
+[1182.009s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/hobot_audio/bin'
+[1182.010s] Level 1:colcon.colcon_core.shell:create_environment_hook('hobot_audio', 'pythonscriptspath')
+[1182.013s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/hook/pythonscriptspath.ps1'
+[1182.019s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/hook/pythonscriptspath.dsv'
+[1182.022s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/hook/pythonscriptspath.sh'
+[1182.030s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/package.ps1'
+[1182.037s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/package.dsv'
+[1182.114s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/package.sh'
+[1182.120s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/package.bash'
+[1182.173s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/hobot_audio/share/hobot_audio/package.zsh'
+[1182.228s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sunrise/xgo_demo/src/install/hobot_audio/share/colcon-core/packages/hobot_audio)
+[1182.325s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sunrise/xgo_demo/src/xgo_motion' with build type 'ament_cmake'
+[1182.335s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sunrise/xgo_demo/src/xgo_motion'
+[1182.346s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1182.346s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1182.474s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(xgo_gesture_control)
+[1182.478s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_gesture_control' for CMake module files
+[1182.480s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/xgo_demo/src/build/xgo_gesture_control' returned '0': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/sunrise/xgo_demo/src/build/xgo_gesture_control
+[1182.485s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_gesture_control' for CMake config files
+[1182.488s] Level 1:colcon.colcon_core.shell:create_environment_hook('xgo_gesture_control', 'cmake_prefix_path')
+[1182.490s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgo_gesture_control/share/xgo_gesture_control/hook/cmake_prefix_path.ps1'
+[1182.495s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/xgo_demo/src/install/xgo_gesture_control/share/xgo_gesture_control/hook/cmake_prefix_path.dsv'
+[1182.498s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgo_gesture_control/share/xgo_gesture_control/hook/cmake_prefix_path.sh'
+[1182.506s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_gesture_control/lib'
+[1182.507s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_gesture_control/bin'
+[1182.509s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_gesture_control/lib/pkgconfig/xgo_gesture_control.pc'
+[1182.511s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_gesture_control/lib/python3.10/site-packages'
+[1182.513s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_gesture_control/bin'
+[1182.517s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_gesture_control/share/xgo_gesture_control/package.ps1'
+[1182.521s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sunrise/xgo_demo/src/install/xgo_gesture_control/share/xgo_gesture_control/package.dsv'
+[1182.524s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_gesture_control/share/xgo_gesture_control/package.sh'
+[1182.527s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_gesture_control/share/xgo_gesture_control/package.bash'
+[1182.531s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_gesture_control/share/xgo_gesture_control/package.zsh'
+[1182.534s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sunrise/xgo_demo/src/install/xgo_gesture_control/share/colcon-core/packages/xgo_gesture_control)
+[1182.540s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(xgo_gesture_control)
+[1182.542s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_gesture_control' for CMake module files
+[1182.546s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_gesture_control' for CMake config files
+[1182.547s] Level 1:colcon.colcon_core.shell:create_environment_hook('xgo_gesture_control', 'cmake_prefix_path')
+[1182.549s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgo_gesture_control/share/xgo_gesture_control/hook/cmake_prefix_path.ps1'
+[1182.553s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/xgo_demo/src/install/xgo_gesture_control/share/xgo_gesture_control/hook/cmake_prefix_path.dsv'
+[1182.556s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgo_gesture_control/share/xgo_gesture_control/hook/cmake_prefix_path.sh'
+[1182.560s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_gesture_control/lib'
+[1182.561s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_gesture_control/bin'
+[1182.565s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_gesture_control/lib/pkgconfig/xgo_gesture_control.pc'
+[1182.570s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_gesture_control/lib/python3.10/site-packages'
+[1182.572s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_gesture_control/bin'
+[1182.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_gesture_control/share/xgo_gesture_control/package.ps1'
+[1182.579s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sunrise/xgo_demo/src/install/xgo_gesture_control/share/xgo_gesture_control/package.dsv'
+[1182.587s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_gesture_control/share/xgo_gesture_control/package.sh'
+[1182.592s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_gesture_control/share/xgo_gesture_control/package.bash'
+[1182.597s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_gesture_control/share/xgo_gesture_control/package.zsh'
+[1182.600s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sunrise/xgo_demo/src/install/xgo_gesture_control/share/colcon-core/packages/xgo_gesture_control)
+[1182.693s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/xgo_demo/src/build/xgo_motion': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen/lib:/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/sunrise/xgo_demo/src/xgo_motion -DCMAKE_INSTALL_PREFIX=/home/sunrise/xgo_demo/src/install/xgo_motion
+[1193.704s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/xgo_demo/src/build/xgo_motion' returned '0': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen/lib:/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/sunrise/xgo_demo/src/xgo_motion -DCMAKE_INSTALL_PREFIX=/home/sunrise/xgo_demo/src/install/xgo_motion
+[1193.730s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/xgo_demo/src/build/xgo_motion': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen/lib:/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/sunrise/xgo_demo/src/build/xgo_motion -- -j4 -l4
+[1393.203s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/xgo_demo/src/build/xgo_motion' returned '0': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen/lib:/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/sunrise/xgo_demo/src/build/xgo_motion -- -j4 -l4
+[1393.308s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/xgo_demo/src/build/xgo_motion': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen/lib:/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/sunrise/xgo_demo/src/build/xgo_motion
+[1400.201s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(xgo_motion)
+[1400.229s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_motion' for CMake module files
+[1400.232s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/xgo_demo/src/build/xgo_motion' returned '0': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen/lib:/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/sunrise/xgo_demo/src/build/xgo_motion
+[1400.237s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_motion' for CMake config files
+[1400.239s] Level 1:colcon.colcon_core.shell:create_environment_hook('xgo_motion', 'cmake_prefix_path')
+[1400.241s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgo_motion/share/xgo_motion/hook/cmake_prefix_path.ps1'
+[1400.260s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/xgo_demo/src/install/xgo_motion/share/xgo_motion/hook/cmake_prefix_path.dsv'
+[1400.267s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgo_motion/share/xgo_motion/hook/cmake_prefix_path.sh'
+[1400.275s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_motion/lib'
+[1400.276s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_motion/bin'
+[1400.278s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_motion/lib/pkgconfig/xgo_motion.pc'
+[1400.281s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_motion/lib/python3.10/site-packages'
+[1400.283s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_motion/bin'
+[1400.286s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_motion/share/xgo_motion/package.ps1'
+[1400.290s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sunrise/xgo_demo/src/install/xgo_motion/share/xgo_motion/package.dsv'
+[1400.295s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_motion/share/xgo_motion/package.sh'
+[1400.303s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_motion/share/xgo_motion/package.bash'
+[1400.315s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_motion/share/xgo_motion/package.zsh'
+[1400.326s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sunrise/xgo_demo/src/install/xgo_motion/share/colcon-core/packages/xgo_motion)
+[1400.334s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(xgo_motion)
+[1400.336s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_motion' for CMake module files
+[1400.339s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_motion' for CMake config files
+[1400.343s] Level 1:colcon.colcon_core.shell:create_environment_hook('xgo_motion', 'cmake_prefix_path')
+[1400.345s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgo_motion/share/xgo_motion/hook/cmake_prefix_path.ps1'
+[1400.348s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/xgo_demo/src/install/xgo_motion/share/xgo_motion/hook/cmake_prefix_path.dsv'
+[1400.350s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgo_motion/share/xgo_motion/hook/cmake_prefix_path.sh'
+[1400.359s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_motion/lib'
+[1400.360s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_motion/bin'
+[1400.362s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_motion/lib/pkgconfig/xgo_motion.pc'
+[1400.364s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_motion/lib/python3.10/site-packages'
+[1400.366s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_motion/bin'
+[1400.368s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_motion/share/xgo_motion/package.ps1'
+[1400.373s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sunrise/xgo_demo/src/install/xgo_motion/share/xgo_motion/package.dsv'
+[1400.379s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_motion/share/xgo_motion/package.sh'
+[1400.383s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_motion/share/xgo_motion/package.bash'
+[1400.388s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_motion/share/xgo_motion/package.zsh'
+[1400.391s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sunrise/xgo_demo/src/install/xgo_motion/share/colcon-core/packages/xgo_motion)
+[1421.751s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/xgo_demo/src/build/xgo_face_control' returned '0': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/sunrise/xgo_demo/src/build/xgo_face_control -- -j4 -l4
+[1421.763s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/xgo_demo/src/build/xgo_face_control': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/sunrise/xgo_demo/src/build/xgo_face_control
+[1421.851s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(xgo_face_control)
+[1421.854s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_face_control' for CMake module files
+[1421.857s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/xgo_demo/src/build/xgo_face_control' returned '0': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/sunrise/xgo_demo/src/build/xgo_face_control
+[1421.859s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_face_control' for CMake config files
+[1421.860s] Level 1:colcon.colcon_core.shell:create_environment_hook('xgo_face_control', 'cmake_prefix_path')
+[1421.863s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgo_face_control/share/xgo_face_control/hook/cmake_prefix_path.ps1'
+[1421.866s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/xgo_demo/src/install/xgo_face_control/share/xgo_face_control/hook/cmake_prefix_path.dsv'
+[1421.869s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgo_face_control/share/xgo_face_control/hook/cmake_prefix_path.sh'
+[1421.875s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_face_control/lib'
+[1421.876s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_face_control/bin'
+[1421.877s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_face_control/lib/pkgconfig/xgo_face_control.pc'
+[1421.879s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_face_control/lib/python3.10/site-packages'
+[1421.881s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_face_control/bin'
+[1421.884s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_face_control/share/xgo_face_control/package.ps1'
+[1421.888s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sunrise/xgo_demo/src/install/xgo_face_control/share/xgo_face_control/package.dsv'
+[1421.891s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_face_control/share/xgo_face_control/package.sh'
+[1421.894s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_face_control/share/xgo_face_control/package.bash'
+[1421.897s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_face_control/share/xgo_face_control/package.zsh'
+[1421.900s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sunrise/xgo_demo/src/install/xgo_face_control/share/colcon-core/packages/xgo_face_control)
+[1421.904s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(xgo_face_control)
+[1421.906s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_face_control' for CMake module files
+[1421.910s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_face_control' for CMake config files
+[1421.911s] Level 1:colcon.colcon_core.shell:create_environment_hook('xgo_face_control', 'cmake_prefix_path')
+[1421.913s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgo_face_control/share/xgo_face_control/hook/cmake_prefix_path.ps1'
+[1421.916s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/xgo_demo/src/install/xgo_face_control/share/xgo_face_control/hook/cmake_prefix_path.dsv'
+[1421.918s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgo_face_control/share/xgo_face_control/hook/cmake_prefix_path.sh'
+[1421.929s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_face_control/lib'
+[1421.930s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_face_control/bin'
+[1421.931s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_face_control/lib/pkgconfig/xgo_face_control.pc'
+[1421.934s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_face_control/lib/python3.10/site-packages'
+[1421.936s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_face_control/bin'
+[1421.938s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_face_control/share/xgo_face_control/package.ps1'
+[1421.942s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sunrise/xgo_demo/src/install/xgo_face_control/share/xgo_face_control/package.dsv'
+[1421.946s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_face_control/share/xgo_face_control/package.sh'
+[1421.955s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_face_control/share/xgo_face_control/package.bash'
+[1421.959s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_face_control/share/xgo_face_control/package.zsh'
+[1421.964s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sunrise/xgo_demo/src/install/xgo_face_control/share/colcon-core/packages/xgo_face_control)
+[1639.822s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/xgo_demo/src/build/xgo_head' returned '0': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen/lib:/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/sunrise/xgo_demo/src/build/xgo_head -- -j4 -l4
+[1639.938s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/xgo_demo/src/build/xgo_head': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen/lib:/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/sunrise/xgo_demo/src/build/xgo_head
+[1640.095s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(xgo_head)
+[1640.109s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/xgo_demo/src/build/xgo_head' returned '0': AMENT_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen:/home/sunrise/xgo_demo/src/install/xgolib:/home/sunrise/xgo_demo/install/xgo_gesture_control:/home/sunrise/xgo_demo/install/hobot_audio:/home/sunrise/xgo_demo/install/xgo_motion:/home/sunrise/xgo_demo/install/xgo_head:/home/sunrise/xgo_demo/install/xgo_device:/home/sunrise/xgo_demo/install/xgoscreen:/home/sunrise/xgo_demo/install/xgolib:/home/sunrise/xgo_demo/install/xgo_display:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/xgo_demo/src/install/xgoscreen/lib:/home/sunrise/xgo_demo/src/install/xgolib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/sunrise/xgo_demo/src/build/xgo_head
+[1640.136s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_head' for CMake module files
+[1640.142s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_head' for CMake config files
+[1640.146s] Level 1:colcon.colcon_core.shell:create_environment_hook('xgo_head', 'cmake_prefix_path')
+[1640.157s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgo_head/share/xgo_head/hook/cmake_prefix_path.ps1'
+[1640.203s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/xgo_demo/src/install/xgo_head/share/xgo_head/hook/cmake_prefix_path.dsv'
+[1640.212s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgo_head/share/xgo_head/hook/cmake_prefix_path.sh'
+[1640.234s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_head/lib'
+[1640.236s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_head/bin'
+[1640.238s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_head/lib/pkgconfig/xgo_head.pc'
+[1640.257s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_head/lib/python3.10/site-packages'
+[1640.260s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_head/bin'
+[1640.269s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_head/share/xgo_head/package.ps1'
+[1640.279s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sunrise/xgo_demo/src/install/xgo_head/share/xgo_head/package.dsv'
+[1640.284s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_head/share/xgo_head/package.sh'
+[1640.292s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_head/share/xgo_head/package.bash'
+[1640.303s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_head/share/xgo_head/package.zsh'
+[1640.311s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sunrise/xgo_demo/src/install/xgo_head/share/colcon-core/packages/xgo_head)
+[1640.318s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(xgo_head)
+[1640.320s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_head' for CMake module files
+[1640.323s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_head' for CMake config files
+[1640.324s] Level 1:colcon.colcon_core.shell:create_environment_hook('xgo_head', 'cmake_prefix_path')
+[1640.325s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgo_head/share/xgo_head/hook/cmake_prefix_path.ps1'
+[1640.328s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/xgo_demo/src/install/xgo_head/share/xgo_head/hook/cmake_prefix_path.dsv'
+[1640.330s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/xgo_demo/src/install/xgo_head/share/xgo_head/hook/cmake_prefix_path.sh'
+[1640.334s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_head/lib'
+[1640.334s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_head/bin'
+[1640.335s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_head/lib/pkgconfig/xgo_head.pc'
+[1640.337s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_head/lib/python3.10/site-packages'
+[1640.338s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/xgo_demo/src/install/xgo_head/bin'
+[1640.341s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_head/share/xgo_head/package.ps1'
+[1640.344s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sunrise/xgo_demo/src/install/xgo_head/share/xgo_head/package.dsv'
+[1640.347s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_head/share/xgo_head/package.sh'
+[1640.351s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_head/share/xgo_head/package.bash'
+[1640.354s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/xgo_demo/src/install/xgo_head/share/xgo_head/package.zsh'
+[1640.357s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sunrise/xgo_demo/src/install/xgo_head/share/colcon-core/packages/xgo_head)
+[1640.365s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1640.383s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1640.388s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1640.405s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1640.697s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[1640.699s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1640.699s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1640.700s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1641.387s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1641.413s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sunrise/xgo_demo/src/install/local_setup.ps1'
+[1641.442s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sunrise/xgo_demo/src/install/_local_setup_util_ps1.py'
+[1641.456s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sunrise/xgo_demo/src/install/setup.ps1'
+[1641.493s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sunrise/xgo_demo/src/install/local_setup.sh'
+[1641.505s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sunrise/xgo_demo/src/install/_local_setup_util_sh.py'
+[1641.510s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sunrise/xgo_demo/src/install/setup.sh'
+[1641.525s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sunrise/xgo_demo/src/install/local_setup.bash'
+[1641.532s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sunrise/xgo_demo/src/install/setup.bash'
+[1641.545s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sunrise/xgo_demo/src/install/local_setup.zsh'
+[1641.549s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sunrise/xgo_demo/src/install/setup.zsh'
