@@ -73,15 +73,6 @@ ui_mainwindow.h: /home/sunrise/xgo_demo/src/xgo_head/ui/mainwindow.ui
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sunrise/xgo_demo/build/xgo_head/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ui_mainwindow.h"
 	/usr/lib/qt5/bin/uic -o /home/sunrise/xgo_demo/build/xgo_head/ui_mainwindow.h /home/sunrise/xgo_demo/src/xgo_head/ui/mainwindow.ui
 
-qrc_images.cpp: /home/sunrise/xgo_demo/src/xgo_head/resource/images/ros-icon.png
-qrc_images.cpp: /home/sunrise/xgo_demo/src/xgo_head/resource/images/foxy.jpg
-qrc_images.cpp: /home/sunrise/xgo_demo/src/xgo_head/resource/images/erha.jpg
-qrc_images.cpp: /home/sunrise/xgo_demo/src/xgo_head/resource/images/erha1.jpg
-qrc_images.cpp: /home/sunrise/xgo_demo/src/xgo_head/resource/images/erha0.jpg
-qrc_images.cpp: /home/sunrise/xgo_demo/src/xgo_head/resource/images/erha2.jpg
-qrc_images.cpp: /home/sunrise/xgo_demo/src/xgo_head/resource/images/erha3.jpg
-qrc_images.cpp: /home/sunrise/xgo_demo/src/xgo_head/resource/images/erha4.jpg
-qrc_images.cpp: /home/sunrise/xgo_demo/src/xgo_head/resource/images/background.jpg
 qrc_images.cpp: /home/sunrise/xgo_demo/src/xgo_head/resource/images/表演模式.png
 qrc_images.cpp: /home/sunrise/xgo_demo/src/xgo_head/resource/images/隔空作画.png
 qrc_images.cpp: /home/sunrise/xgo_demo/src/xgo_head/resource/images/关于设备.png
@@ -92,6 +83,9 @@ qrc_images.cpp: /home/sunrise/xgo_demo/src/xgo_head/resource/images/人体识别
 qrc_images.cpp: /home/sunrise/xgo_demo/src/xgo_head/resource/images/手势识别.png
 qrc_images.cpp: /home/sunrise/xgo_demo/src/xgo_head/resource/images/图像分割.png
 qrc_images.cpp: /home/sunrise/xgo_demo/src/xgo_head/resource/images/语音识别.png
+qrc_images.cpp: /home/sunrise/xgo_demo/src/xgo_head/resource/images/雷达扫描.png
+qrc_images.cpp: /home/sunrise/xgo_demo/src/xgo_head/resource/images/上一页.png
+qrc_images.cpp: /home/sunrise/xgo_demo/src/xgo_head/resource/images/下一页.png
 qrc_images.cpp: /home/sunrise/xgo_demo/src/xgo_head/resource/audio/angry.mp3
 qrc_images.cpp: /home/sunrise/xgo_demo/src/xgo_head/resource/audio/bark.mp3
 qrc_images.cpp: /home/sunrise/xgo_demo/src/xgo_head/resource/audio/tired.mp3

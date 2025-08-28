@@ -46,7 +46,7 @@ void MatrixLabel::paintEvent(QPaintEvent *event)
     QPainter p(this);
     p.setRenderHint(QPainter::Antialiasing, true);
 
-    // 背景：纯黑
+    // 背景
     p.fillRect(rect(), QColor(0,0,0));
 
     // 圆环区域（内外半径）
@@ -79,12 +79,10 @@ void MatrixLabel::paintEvent(QPaintEvent *event)
         p.drawEllipse(outer.adjusted(ringThickness/2, ringThickness/2, -ringThickness/2, -ringThickness/2));
     }
 
-    // 居中绘制原有的 pix/icon，让图标填满整个圆环内部空间
     const int innerDiameter = size - 2*(margin + ringThickness);
     QRect innerRect((w-innerDiameter)/2, (h-innerDiameter)/2, innerDiameter, innerDiameter);
 
      if (!pixmap(Qt::ReturnByValue).isNull()) {
-        // 将图标缩放到接近圆环内径大小，让它看起来和圆圈差不多大
         QPixmap pm = pixmap(Qt::ReturnByValue).scaled(innerRect.size(), Qt::KeepAspectRatio, Qt::SmoothTransformation);
         QPoint pos(innerRect.x() + (innerRect.width()-pm.width())/2,
                    innerRect.y() + (innerRect.height()-pm.height())/2);

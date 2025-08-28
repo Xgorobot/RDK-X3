@@ -66,6 +66,8 @@ sudo apt install cmake build-essential
 sudo apt install qtbase5-dev
 sudo apt install python3-colcon-common-extensions
 ```
+其中关于请参考YDLIDAR官方ros2功能包进行设置，请选择humble版本得ros2功能包。
+> 目前默认雷达是Tmini Plus
 
 ### 2. 克隆项目
 
@@ -124,7 +126,8 @@ ros2 launch xgo_your_project xgo_your_project.launch.py
 ### v1.0.0 (2025-08-27)
 - 初始版本发布
 - 初始功能9个功能
-
+### v1.0.1 (2025-08-28)
+- 增加雷达扫描功能
 
 
 ## 许可证

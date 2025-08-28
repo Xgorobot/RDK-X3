@@ -8,11 +8,11 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    
+    // 初始化分页变量
+    current_page = 0;
+    currentlabel = 0;
 
-    // QImage img;
-    // img.load(":/icon/images/foxy.jpg");
-    // img.scaled(ui->label->width(),ui->label->height());
-    // ui->label->setPixmap(QPixmap::fromImage(img).scaled(ui->label->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
 
     // 初始化 ROS2
     int argc=0;
@@ -22,10 +22,7 @@ MainWindow::MainWindow(QWidget *parent)
     commNode = new rclcomm();
     this->mImageBackground = QImage(320, 240, QImage::Format_RGB32);
     this->mImageBackground.fill(Qt::black);
-    //std::system("tmux kill-server");
 
-    // Defer setWidget until screen manager is ready
-    // commNode->setWidget(ui->centralwidget, &(this->mImageBackground));
     connect(commNode, SIGNAL(emitTopicData(QString)), this, SLOT(updateTopicInfo(QString)));
     TLog::d("++++++++++ ROS2 Node init finished.");
     int interval = 100; //ms
@@ -44,17 +41,13 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->stackedWidget->setCurrentIndex(0);
 
-    // 设置纯黑背景
+    // 设置背景为纯黑
     ui->centralwidget->setStyleSheet("#centralwidget{background-color: #000000;}");
     
-    // 隐藏不需要显示的标签
-    ui->label_2->hide();        // ROS2 humble
-    ui->label_battery->hide();  // 电量显示
-    ui->label_3->hide();        // XGO20250327
     
     TLog::d("++++++++++ gpioKey init finished.");
 
-    // 使用屏幕管理器
+
     this->mScreenMgr = new XgoScreenManager(ui->centralwidget, this);
     this->mScreenMgr->setBackgroundColor(Qt::black);
     this->mScreenMgr->initialize(1, 0, 20000000, 5, 13, 29, 100);
@@ -64,25 +57,9 @@ MainWindow::MainWindow(QWidget *parent)
      TLog::d("++++++++++ 2 inch screen init finished.");
 
 
-    // QList<QLabel*> labels = findChildren<QLabel*>(
-    //   QRegularExpression("label_[0-2][0-2]")  // 匹配00-22的标签
-    // );
-    // const QString init_style = "background: white; border: 1px soild gray;";
-    // for(QLabel* label : labels)
-    // {
-    //     label->setAutoFillBackground(true);
-    //     label->setStyleSheet(init_style);
-    // }
-
-
 }
 void MainWindow::updateTopicInfo(QString data){
     Q_UNUSED(data);
-    // 不再显示电量文本
-    // ui->label_battery->setText("battary:"+QString("%1").arg(commNode->get_battery()));
-
-    // ui->label_txt->clear();
-    // ui->label_txt->setText(data);
     
 }
 MainWindow::~MainWindow()
@@ -122,13 +99,11 @@ void MainWindow::onGpioData(int port, int oldValue, int newValue)
     key = "左上键";
     if(newValue == 0)
     {
-      // changeBackgroundImg();
-      // ui->label
+    
       change_focus(false);
       TLog::d(QString("LEFTUP"));
 
-      // ui->label->clear();
-      // ui->label->setText("label"+QString("%1").arg(m_currentRow)+QString("%1").arg(m_currentCol));
+
 
     }
   }
@@ -137,8 +112,17 @@ void MainWindow::onGpioData(int port, int oldValue, int newValue)
     key = "左下键";
     if(newValue == 0)
     {
+
+      if(ui->stackedWidget->currentIndex() == 1) {
+        return;
+      }
+      
       ui->label->setText("退出");
-      ui->stackedWidget->setCurrentIndex(0);
+      if(currentlabel >= 0 && currentlabel <= 8) {
+        ui->stackedWidget->setCurrentIndex(0);  // 退出到第一页
+      } else if(currentlabel == 9) {
+        ui->stackedWidget->setCurrentIndex(1);  // 退出到第二页
+      }
       m_labels[currentlabel]->stop_function();
 
       commNode->change_running(-1);
@@ -179,12 +163,11 @@ void MainWindow::onGpioData(int port, int oldValue, int newValue)
     key = "右上键";
     if(newValue == 0)
     {
-      // xgoSpeak();
+
       TLog::d(QString("RIGHTUP"));
 
       change_focus(true);
-      // ui->label->clear();
-      // ui->label->setText("label"+QString("%1").arg(m_currentRow)+QString("%1").arg(m_currentCol));
+
     }
   }
   else if(port == 22)
@@ -208,28 +191,11 @@ void MainWindow::onGpioData(int port, int oldValue, int newValue)
       }
       ui->label_info->setText(m_labels[currentlabel]->getinfo());
       commNode->change_running(currentlabel);
-      //To do: jump in function
-      //m_labels[m_currentRow][m_currentCol]->function()
+
     }
     
   }
-  // ui->centralwidget->update();
 
-
-  // if(newValue == 0)
-  // {
-  //   stat = "  按下";
-  //   ui->label->clear();
-  //   ui->label->setText(key + stat);
-
-
-  // }
-  // else
-  // {
-  //   stat = "  恢复";
-  //   ui->label->clear();
-  //   ui->label->setText(key + stat);
-  // }
 
 }
 
@@ -266,15 +232,13 @@ void MainWindow::xgoSpeak()
   }
 
 
-  // QString file = QString("qrc:/audio/audio/%1").arg(this->mXgoAudioList[this->mXgoAudioIndex]);
   QString file = QString("file:///home/sunrise/xgo_demo/src/xgo_head/resource/audio/%1").arg(this->mXgoAudioList[this->mXgoAudioIndex]);
 
   TLog::d(QString("play the %1 th audio, file[%2].").arg(this->mXgoAudioIndex).arg(file));
   if (QFile::exists(QUrl(file).toLocalFile())) {
-    // player.setMedia(QUrl(path));
+
   } else {
     qDebug() << "文件不存在";
-    // return -1;
   }
   this->mXgoSpeaker.playAudio(QUrl(file));
 
@@ -343,6 +307,13 @@ void MainWindow::initLabels()
     m_labels[8]->setPixmap(QPixmap(":/icon/images/表演模式.png"));
     m_labels[8]->setText("");
 
+    m_labels[9] = qobject_cast<MatrixLabel*>(ui->label_09);
+    m_labels[9]->setinfo("雷达扫描");
+    m_labels[9]->setCommand("lidar_scan_session","ros2 launch ydlidar_ros2_driver ydlidar_launch.py & ros2 run xgo_lidar_display lidar_display_node");
+    m_labels[9]->is_hide_window = true;
+    m_labels[9]->setPixmap(QPixmap(":/icon/images/雷达扫描.png"));
+    m_labels[9]->setText("");
+
     updateSelection();
 }
 
@@ -352,16 +323,28 @@ void MainWindow::change_focus(bool direction)
   if(direction == false)currentlabel--;
   if(currentlabel>=LABEL_COUNT) {
     currentlabel = 0;
-    // ui->stackedWidget->setCurrentIndex(1);
-    // stackedWidget->setCurrentIndex(1); 
-    TLog::d(QString("change page"));
+    current_page = 0;
+    ui->stackedWidget->setCurrentIndex(0);
+    TLog::d(QString("change page to first"));
   }
   if(currentlabel<0) {
-    currentlabel = 8;
-    // ui->stackedWidget->setCurrentIndex(0);
-    // stackedWidget->setCurrentIndex(0); // 切换到页面 2
-    TLog::d(QString("change page"));
-
+    currentlabel = LABEL_COUNT - 1;
+    current_page = 1;
+    ui->stackedWidget->setCurrentIndex(1);
+    TLog::d(QString("change page to second"));
+  }
+  
+  // 根据当前标签切换页面
+  if(currentlabel >= 0 && currentlabel <= 8) {
+    if(current_page != 0) {
+      current_page = 0;
+      ui->stackedWidget->setCurrentIndex(0);
+    }
+  } else if(currentlabel == 9) {
+    if(current_page != 1) {
+      current_page = 1;
+      ui->stackedWidget->setCurrentIndex(1);
+    }
   }
 
   updateSelection();
@@ -369,12 +352,12 @@ void MainWindow::change_focus(bool direction)
 
 void MainWindow::updateSelection()
 {
-    // 清除所有高亮
-    for(int i=0; i<9; ++i){
+
+    for(int i=0; i<LABEL_COUNT; ++i){
       if(m_labels[i]) m_labels[i]->setHighlight(false);  
     }
 
-    // 设置当前高亮
+
     if(MatrixLabel* current_label = m_labels[currentlabel]){
         current_label->setHighlight(true);
         ui->label->setText(QString(current_label->getinfo()));

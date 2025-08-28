@@ -1,6 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-#define LABEL_COUNT 9
+#define LABEL_COUNT 10
 #include <QMainWindow>
 #include <QPalette>
 #include <QImage>
@@ -51,7 +51,8 @@ private:
     QPalette init_Palette;
     int currentlabel = 0;
     int page_current = 0;
-    MatrixLabel* m_labels[9];  // 标签矩阵
+    int current_page = 0;  // 当前页面索引 (0=第一页, 1=第二页)
+    MatrixLabel* m_labels[10];  // 标签矩阵
 public slots:
     void updateTopicInfo(QString);
     void onGpioData(int port , int oldValue,  int newValue);
