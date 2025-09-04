@@ -101,6 +101,15 @@ colcon build
 source install/setup.bash
 ```
 
+### 6. 常见问题
+
+#### 音频问题
+当禁止eMMC系统进入SD卡后，音频会产生无法播放的问题，终端中输入：
+```bash
+srpi-config
+```
+```1 System Options``` -> ```S7 Update Miniboot```  进行更新，重启后即正常。
+
 ## 使用方法
 
 ### 启动ROS2节点
